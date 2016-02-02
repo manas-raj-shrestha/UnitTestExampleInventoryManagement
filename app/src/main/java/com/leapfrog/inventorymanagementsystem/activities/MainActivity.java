@@ -1,10 +1,14 @@
-package com.leapfrog.inventorymanagementsystem;
+package com.leapfrog.inventorymanagementsystem.activities;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.leapfrog.inventorymanagementsystem.presenters.MainActivityPresenter;
+import com.leapfrog.inventorymanagementsystem.views.MainActivityView;
+import com.leapfrog.inventorymanagementsystem.R;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;

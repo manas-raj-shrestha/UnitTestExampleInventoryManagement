@@ -1,6 +1,8 @@
-package com.leapfrog.inventorymanagementsystem;
+package com.leapfrog.inventorymanagementsystem.presenters;
 
+import com.leapfrog.inventorymanagementsystem.ItemNotInStockException;
 import com.leapfrog.inventorymanagementsystem.models.Inventory;
+import com.leapfrog.inventorymanagementsystem.views.MainActivityView;
 
 /**
  * Presenter for main activity

@@ -1,4 +1,4 @@
-package com.leapfrog.inventorymanagementsystem;
+package com.leapfrog.inventorymanagementsystem.views;
 
 /**
  * Interface to fetch view from main activity for main activity presenter

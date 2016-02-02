@@ -1,5 +1,8 @@
 package com.leapfrog.inventorymanagementsystem;
 
+import com.leapfrog.inventorymanagementsystem.presenters.MainActivityPresenter;
+import com.leapfrog.inventorymanagementsystem.views.MainActivityView;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -27,15 +30,23 @@ public class MainActivityPresenterTest {
     }
 
     @Test
-    public void testPurchaseItem() throws Exception {
+    public void testPurchaseSuccess() throws Exception {
+        when(mainActivityView.getItemCode()).thenReturn("MB13");
+        when(mainActivityView.getQuantity()).thenReturn(50);
+
+        mainActivityPresenter.buyItems();
+
+        verify(mainActivityView, times(1)).purchaseSuccessful();
+    }
+
+    @Test
+    public void testPurchaseFailure() throws Exception {
         when(mainActivityView.getItemCode()).thenReturn("MB13");
         when(mainActivityView.getQuantity()).thenReturn(300);
 
         mainActivityPresenter.buyItems();
 
-        verify(mainActivityView, times(1)).purchaseSuccessful();
-
+        verify(mainActivityView, times(1)).purchaseFailure();
     }
-
 
 }
