@@ -13,4 +13,6 @@ public interface LoginActivityView {
     void setPasswordError();
 
     void loginSuccess();
+
+    void loginFailure();
 }
