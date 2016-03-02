@@ -6,13 +6,13 @@ import com.leapfrog.inventorymanagementsystem.views.LoginActivityView;
  * Presenter for login activity
  * Handle all the actions of login view via {@link com.leapfrog.inventorymanagementsystem.views.LoginActivityView}
  */
-public class LoginActivityPresenter {
+public class LoginActivityPresenter implements LoginActivityView.UserInteractions {
     String username = "zeppelin";
     String password = "asdf";
 
-    LoginActivityView loginActivityView;
+    LoginActivityView.Views loginActivityView;
 
-    public LoginActivityPresenter(LoginActivityView loginActivityView) {
+    public LoginActivityPresenter(LoginActivityView.Views loginActivityView) {
         this.loginActivityView = loginActivityView;
     }
 
@@ -28,14 +28,18 @@ public class LoginActivityPresenter {
             loginActivityView.setUsernameError();
         } else if (password.isEmpty()) {
             loginActivityView.setPasswordError();
-        }else {
-            if(userName.toLowerCase().contentEquals(this.username) && password.toLowerCase().contentEquals(this.password)){
+        } else {
+            if (userName.toLowerCase().contentEquals(this.username) && password.toLowerCase().contentEquals(this.password)) {
                 loginActivityView.loginSuccess();
-            }else {
+            } else {
                 loginActivityView.loginFailure();
             }
         }
 
     }
 
+    @Override
+    public void attemptLogin() {
+        login();
+    }
 }

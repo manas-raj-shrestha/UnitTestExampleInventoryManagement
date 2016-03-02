@@ -17,7 +17,7 @@ import butterknife.ButterKnife;
 /**
  * Screen for login
  */
-public class LoginActivity extends AppCompatActivity implements LoginActivityView {
+public class LoginActivity extends AppCompatActivity implements LoginActivityView.Views {
 
     @Bind(R.id.edt_password)
     EditText edtPassword;
@@ -25,7 +25,7 @@ public class LoginActivity extends AppCompatActivity implements LoginActivityVie
     @Bind(R.id.edt_username)
     EditText edtUsername;
 
-    LoginActivityPresenter loginActivityPresenter;
+    LoginActivityView.UserInteractions loginActivityPresenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,7 +81,7 @@ public class LoginActivity extends AppCompatActivity implements LoginActivityVie
      * @param view
      */
     public void login(View view) {
-        loginActivityPresenter.login();
+        loginActivityPresenter.attemptLogin();
     }
 
 }

@@ -4,15 +4,25 @@ package com.leapfrog.inventorymanagementsystem.views;
  * Created by ManasShrestha on 2/2/16.
  */
 public interface LoginActivityView {
-    String getUsername();
 
-    String getPassword();
+    interface Views {
 
-    void setUsernameError();
+        String getUsername();
 
-    void setPasswordError();
+        String getPassword();
 
-    void loginSuccess();
+        void setUsernameError();
 
-    void loginFailure();
+        void setPasswordError();
+
+        void loginSuccess();
+
+        void loginFailure();
+    }
+
+    interface UserInteractions{
+
+        void attemptLogin();
+    }
+
 }
