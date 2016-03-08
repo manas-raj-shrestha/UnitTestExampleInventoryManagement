@@ -1,6 +1,7 @@
 package com.leapfrog.inventorymanagementsystem.models;
 
 import com.leapfrog.inventorymanagementsystem.ItemNotInStockException;
+import com.leapfrog.inventorymanagementsystem.R;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -10,7 +11,7 @@ import java.util.Calendar;
  */
 public class Inventory implements InventoryActions {
     private static Inventory inventory;
-    ArrayList<Item> items = new ArrayList<>();
+    public static ArrayList<Item> items = new ArrayList<>();
 
     public static Inventory getInstance() {
         if (inventory == null)
@@ -20,12 +21,12 @@ public class Inventory implements InventoryActions {
     }
 
     private Inventory() {
-        items.add(new Item("MB13", "Mac book pro 13", 100, "13-inch: 2.5GHz dual-core Intel Core i5", Calendar.getInstance().getTimeInMillis()));
-        items.add(new Item("MB15", "Mac book pro 15", 100, "APPLE MACBOOK PRO RETINA 15.4/2.2GHZ/16GB/256GB ", Calendar.getInstance().getTimeInMillis()));
-        items.add(new Item("IM21", "IMAC 21", 100, "APPLE IMAC21.5' 1.4GHZ DUAL CORE/2X4GB/500GB", Calendar.getInstance().getTimeInMillis()));
-        items.add(new Item("MB27", "IMAC 27", 100, "APPLE IMAC 27 3.2QC/2X4GB/1TB/GT755M", Calendar.getInstance().getTimeInMillis()));
-        items.add(new Item("IPAD4", "APPLE IPAD MINI 4", 100, "APPLE IPAD MINI 4 WI-FI 16GB", Calendar.getInstance().getTimeInMillis()));
-        items.add(new Item("IPAD5", "APPLE IPAD MINI 5", 100, "APPLE IPAD MINI 5 WI-FI 16GB", Calendar.getInstance().getTimeInMillis()));
+        items.add(new Item("MB13", "Mac book pro 13", 100, "13-inch: 2.5GHz dual-core Intel Core i5", R.drawable.macbook13, Calendar.getInstance().getTimeInMillis()));
+        items.add(new Item("MB15", "Mac book pro 15", 100, "APPLE MACBOOK PRO RETINA 15.4/2.2GHZ/16GB/256GB ", R.drawable.macbook15, Calendar.getInstance().getTimeInMillis()));
+        items.add(new Item("IM21", "IMAC 21", 100, "APPLE IMAC21.5' 1.4GHZ DUAL CORE/2X4GB/500GB", R.drawable.imac21, Calendar.getInstance().getTimeInMillis()));
+        items.add(new Item("IM27", "IMAC 27", 100, "APPLE IMAC 27 3.2QC/2X4GB/1TB/GT755M", R.drawable.imac27, Calendar.getInstance().getTimeInMillis()));
+        items.add(new Item("IPAD4", "APPLE IPAD MINI 4", 100, "APPLE IPAD MINI 4 WI-FI 16GB", R.drawable.ipad4, Calendar.getInstance().getTimeInMillis()));
+        items.add(new Item("IPAD5", "APPLE IPAD MINI 5", 100, "APPLE IPAD MINI 5 WI-FI 16GB", R.drawable.ipad5, Calendar.getInstance().getTimeInMillis()));
     }
 
     @Override

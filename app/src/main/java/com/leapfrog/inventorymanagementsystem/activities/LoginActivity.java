@@ -67,7 +67,7 @@ public class LoginActivity extends AppCompatActivity implements LoginActivityVie
     @Override
     public void loginSuccess() {
         Toast.makeText(LoginActivity.this, "Login Success", Toast.LENGTH_SHORT).show();
-        startActivity(new Intent(this, MainActivity.class));
+        startActivity(new Intent(this, ItemListActivity.class));
     }
 
     @Override

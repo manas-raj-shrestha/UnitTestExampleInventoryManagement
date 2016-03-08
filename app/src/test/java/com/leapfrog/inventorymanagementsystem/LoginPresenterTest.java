@@ -9,15 +9,15 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
 
-import static org.mockito.Matchers.eq;
+import static org.junit.Assert.*;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 /**
- * Created by ManasShrestha on 2/2/16.
+ * To work on unit tests, switch the Test Artifact in the Build Variants view.
  */
 @RunWith(MockitoJUnitRunner.class)
-public class LoginActivityPresenterTest {
+public class LoginPresenterTest {
 
     /**
      * loginActivityView is mocked because this is login presenter test and we do need to real instance
@@ -25,7 +25,7 @@ public class LoginActivityPresenterTest {
      * values dependent on the methods of loginActivityView
      */
     @Mock
-    LoginActivityView loginActivityView;
+    LoginActivityView.Views loginActivityView;
 
     LoginActivityPresenter loginActivityPresenter;
 
@@ -35,6 +35,10 @@ public class LoginActivityPresenterTest {
     @Before
     public void setUp(){
         loginActivityPresenter = new LoginActivityPresenter(loginActivityView);
+    }
+    @Test
+    public void addition_isCorrect() throws Exception {
+        assertEquals(4, 2 + 2);
     }
 
     @Test
@@ -48,6 +52,7 @@ public class LoginActivityPresenterTest {
         //verify that setUserNameError is called at least once
         verify(loginActivityView).setUsernameError();
     }
+
 
     @Test
     public void passwordEmptyTest(){
@@ -78,13 +83,5 @@ public class LoginActivityPresenterTest {
 
         verify(loginActivityView).loginSuccess();
     }
-
-    @Test
-    public void correctUserNameTest(){
-        when(loginActivityView.getUsername()).thenReturn("zeppelin");
-
-//        verify(loginActivityView).getUsername(eq("zeppelin"));
-    }
-
 
 }

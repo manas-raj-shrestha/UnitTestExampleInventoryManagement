@@ -11,4 +11,5 @@ public interface MainActivityView {
     void purchaseSuccessful();
 
     void purchaseFailure();
+
 }

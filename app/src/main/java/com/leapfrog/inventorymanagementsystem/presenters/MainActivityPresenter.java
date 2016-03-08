@@ -25,4 +25,8 @@ public class MainActivityPresenter {
         }
     }
 
+    public void checkStub(String s){
+
+    }
+
 }
