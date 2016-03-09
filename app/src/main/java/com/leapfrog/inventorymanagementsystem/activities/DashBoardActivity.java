@@ -19,16 +19,16 @@ import butterknife.ButterKnife;
 /**
  * Created by Manas on 3/4/2016.
  */
-public class ItemListActivity extends AppCompatActivity {
+public class DashBoardActivity extends AppCompatActivity {
     @Bind(R.id.recyclerView)
     RecyclerView recyclerView;
 
     OnItemSelectListener onItemSelectListener = new OnItemSelectListener() {
         @Override
         public void onItemSelected(Item item) {
-            Toast.makeText(ItemListActivity.this, item.getItemName(), Toast.LENGTH_SHORT).show();
+            Toast.makeText(DashBoardActivity.this, item.getItemName(), Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(ItemListActivity.this, MainActivity.class);
+            Intent intent = new Intent(DashBoardActivity.this, MainActivity.class);
             intent.putExtra(Extras.KEY_ITEM_EXTRA, item);
             startActivity(intent);
         }
@@ -37,7 +37,7 @@ public class ItemListActivity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.item_listing_activity);
+        setContentView(R.layout.dashboard_activity);
 
         ButterKnife.bind(this);
         StaggeredGridLayoutManager layoutManager = new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL);

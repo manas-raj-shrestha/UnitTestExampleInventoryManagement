@@ -78,7 +78,7 @@ public class MockitoTests {
     //Stubbing void methods with exceptions
     @Test
     public void verifyWithExceptions() {
-
+        when(mocks.get(0)).thenThrow(ItemNotInStockException.class);
         doThrow(ItemNotInStockException.class).when(mocks).clear();
     }
 
@@ -93,6 +93,7 @@ public class MockitoTests {
 
         verify(mocks).add("something");
         verify(mocks).clear();
+
     }
 
     //consecutive calls

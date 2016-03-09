@@ -39,7 +39,7 @@ public class LoginActivity extends AppCompatActivity implements LoginActivityVie
     @Override
     public String getUsername() {
         String username = null;
-        if(edtUsername.getText() != null)
+        if (edtUsername.getText() != null)
             username = edtUsername.getText().toString();
 
         return username;
@@ -48,7 +48,7 @@ public class LoginActivity extends AppCompatActivity implements LoginActivityVie
     @Override
     public String getPassword() {
         String password = null;
-        if(edtPassword.getText() != null)
+        if (edtPassword.getText() != null)
             password = edtPassword.getText().toString();
 
         return password;
@@ -67,7 +67,7 @@ public class LoginActivity extends AppCompatActivity implements LoginActivityVie
     @Override
     public void loginSuccess() {
         Toast.makeText(LoginActivity.this, "Login Success", Toast.LENGTH_SHORT).show();
-        startActivity(new Intent(this, ItemListActivity.class));
+        startActivity(new Intent(this, DashBoardActivity.class));
     }
 
     @Override
@@ -82,6 +82,10 @@ public class LoginActivity extends AppCompatActivity implements LoginActivityVie
      */
     public void login(View view) {
         loginActivityPresenter.attemptLogin();
+    }
+
+    public void forgotPassword(View view) {
+        Toast.makeText(this, "Username :: zeppelin \n Password :: asdf", Toast.LENGTH_SHORT).show();
     }
 
 }

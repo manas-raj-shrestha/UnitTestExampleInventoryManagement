@@ -43,7 +43,7 @@ public class ItemListAdapter extends RecyclerView.Adapter<ItemListAdapter.ViewHo
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         holder.tvItemName.setText(items.get(position).getItemName());
-        Glide.with(context).load(items.get(position).getPicDrawableId()).into(holder.ivItemPic);
+        Glide.with(context).load(items.get(position).getPicDrawableId()).fitCenter().into(holder.ivItemPic);
     }
 
     @Override

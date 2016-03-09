@@ -12,9 +12,9 @@ public class Item implements Parcelable{
     private int itemQuantity;
     private String itemDescription;
     private long itemDateAdded;
-    private int picDrawableId;
+    private String picDrawableId;
 
-    public Item(String itemCode,String itemName, int itemQuantity, String itemDescription, int picDrawableId,long itemDateAdded) {
+    public Item(String itemCode,String itemName, int itemQuantity, String itemDescription, String picDrawableId,long itemDateAdded) {
         setItemCode(itemCode);
         setItemName(itemName);
         setItemQuantity(itemQuantity);
@@ -29,7 +29,7 @@ public class Item implements Parcelable{
         itemQuantity = in.readInt();
         itemDescription = in.readString();
         itemDateAdded = in.readLong();
-        picDrawableId = in.readInt();
+        picDrawableId = in.readString();
     }
 
     public static final Creator<Item> CREATOR = new Creator<Item>() {
@@ -96,14 +96,14 @@ public class Item implements Parcelable{
         parcel.writeInt(itemQuantity);
         parcel.writeString(itemDescription);
         parcel.writeLong(itemDateAdded);
-        parcel.writeInt(picDrawableId);
+        parcel.writeString(picDrawableId);
     }
 
-    public int getPicDrawableId() {
+    public String getPicDrawableId() {
         return picDrawableId;
     }
 
-    public void setPicDrawableId(int picDrawableId) {
+    public void setPicDrawableId(String picDrawableId) {
         this.picDrawableId = picDrawableId;
     }
 }

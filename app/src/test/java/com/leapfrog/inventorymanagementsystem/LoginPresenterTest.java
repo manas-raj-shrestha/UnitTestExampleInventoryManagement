@@ -10,6 +10,8 @@ import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
 
 import static org.junit.Assert.*;
+import static org.mockito.Mockito.never;
+import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
@@ -36,6 +38,7 @@ public class LoginPresenterTest {
     public void setUp(){
         loginActivityPresenter = new LoginActivityPresenter(loginActivityView);
     }
+
     @Test
     public void addition_isCorrect() throws Exception {
         assertEquals(4, 2 + 2);
