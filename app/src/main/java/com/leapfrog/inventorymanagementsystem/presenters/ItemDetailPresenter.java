@@ -8,28 +8,28 @@ import com.leapfrog.inventorymanagementsystem.ShopflixApplication;
 import com.leapfrog.inventorymanagementsystem.data.HawkUtils;
 import com.leapfrog.inventorymanagementsystem.models.Inventory;
 import com.leapfrog.inventorymanagementsystem.models.Item;
-import com.leapfrog.inventorymanagementsystem.views.ItemDetailView;
+import com.leapfrog.inventorymanagementsystem.contracts.ItemDetailContract;
 
 import java.util.ArrayList;
 
 /**
  * Presenter for item detail activity
  */
-public class ItemDetailPresenter implements ItemDetailView.UserInteractions {
-    ItemDetailView itemDetailView;
+public class ItemDetailPresenter implements ItemDetailContract.UserInteractions {
+    ItemDetailContract itemDetailContract;
     Inventory inventory;
 
-    public ItemDetailPresenter(ItemDetailView itemDetailView) {
-        this.itemDetailView = itemDetailView;
+    public ItemDetailPresenter(ItemDetailContract itemDetailContract) {
+        this.itemDetailContract = itemDetailContract;
         inventory = Inventory.getInstance();
     }
 
     public void buyItems() {
         try {
-            inventory.purchaseItems(itemDetailView.getItemCode(), itemDetailView.getQuantity());
-            itemDetailView.purchaseSuccessful();
+            inventory.purchaseItems(itemDetailContract.getItemCode(), itemDetailContract.getQuantity());
+            itemDetailContract.purchaseSuccessful();
         } catch (ItemNotInStockException e) {
-            itemDetailView.purchaseFailure();
+            itemDetailContract.purchaseFailure();
         }
     }
 

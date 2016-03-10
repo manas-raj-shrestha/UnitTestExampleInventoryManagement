@@ -1,4 +1,4 @@
-package com.leapfrog.inventorymanagementsystem.activities;
+package com.leapfrog.inventorymanagementsystem.adapters;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.leapfrog.inventorymanagementsystem.R;
+import com.leapfrog.inventorymanagementsystem.events.OnItemSelectListener;
 import com.leapfrog.inventorymanagementsystem.models.Inventory;
 import com.leapfrog.inventorymanagementsystem.models.Item;
 

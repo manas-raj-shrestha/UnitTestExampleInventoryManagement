@@ -1,9 +1,9 @@
-package com.leapfrog.inventorymanagementsystem.views;
+package com.leapfrog.inventorymanagementsystem.contracts;
 
 /**
  * Created by ManasShrestha on 2/2/16.
  */
-public interface LoginActivityView {
+public interface LoginActivityContract {
 
     interface Views {
 

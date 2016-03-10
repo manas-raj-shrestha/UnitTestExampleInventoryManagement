@@ -18,12 +18,12 @@ import com.leapfrog.inventorymanagementsystem.R;
 import com.leapfrog.inventorymanagementsystem.data.Extras;
 import com.leapfrog.inventorymanagementsystem.models.Item;
 import com.leapfrog.inventorymanagementsystem.presenters.ItemDetailPresenter;
-import com.leapfrog.inventorymanagementsystem.views.ItemDetailView;
+import com.leapfrog.inventorymanagementsystem.contracts.ItemDetailContract;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
-public class ItemDetailActivity extends AppCompatActivity implements ItemDetailView {
+public class ItemDetailActivity extends AppCompatActivity implements ItemDetailContract {
 
     ItemDetailPresenter itemDetailPresenter;
 

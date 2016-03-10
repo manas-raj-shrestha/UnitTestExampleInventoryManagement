@@ -1,4 +1,4 @@
-package com.leapfrog.inventorymanagementsystem.activities;
+package com.leapfrog.inventorymanagementsystem.events;
 
 import android.view.View;
 

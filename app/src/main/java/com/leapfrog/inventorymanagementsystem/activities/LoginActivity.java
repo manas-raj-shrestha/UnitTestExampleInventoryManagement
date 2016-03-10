@@ -9,7 +9,7 @@ import android.widget.Toast;
 
 import com.leapfrog.inventorymanagementsystem.R;
 import com.leapfrog.inventorymanagementsystem.presenters.LoginActivityPresenter;
-import com.leapfrog.inventorymanagementsystem.views.LoginActivityView;
+import com.leapfrog.inventorymanagementsystem.contracts.LoginActivityContract;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -17,7 +17,7 @@ import butterknife.ButterKnife;
 /**
  * Screen for login
  */
-public class LoginActivity extends AppCompatActivity implements LoginActivityView.Views {
+public class LoginActivity extends AppCompatActivity implements LoginActivityContract.Views {
 
     @Bind(R.id.edt_password)
     EditText edtPassword;
@@ -25,7 +25,7 @@ public class LoginActivity extends AppCompatActivity implements LoginActivityVie
     @Bind(R.id.edt_username)
     EditText edtUsername;
 
-    LoginActivityView.UserInteractions loginActivityPresenter;
+    LoginActivityContract.UserInteractions loginActivityPresenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

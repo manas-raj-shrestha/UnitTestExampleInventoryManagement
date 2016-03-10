@@ -1,18 +1,18 @@
 package com.leapfrog.inventorymanagementsystem.presenters;
 
-import com.leapfrog.inventorymanagementsystem.views.LoginActivityView;
+import com.leapfrog.inventorymanagementsystem.contracts.LoginActivityContract;
 
 /**
  * Presenter for login activity
- * Handle all the actions of login view via {@link com.leapfrog.inventorymanagementsystem.views.LoginActivityView}
+ * Handle all the actions of login view via {@link LoginActivityContract}
  */
-public class LoginActivityPresenter implements LoginActivityView.UserInteractions {
+public class LoginActivityPresenter implements LoginActivityContract.UserInteractions {
     String username = "zeppelin";
     String password = "asdf";
 
-    LoginActivityView.Views loginActivityView;
+    LoginActivityContract.Views loginActivityView;
 
-    public LoginActivityPresenter(LoginActivityView.Views loginActivityView) {
+    public LoginActivityPresenter(LoginActivityContract.Views loginActivityView) {
         this.loginActivityView = loginActivityView;
     }
 

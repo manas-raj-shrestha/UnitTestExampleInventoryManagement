@@ -1,7 +1,7 @@
 package com.leapfrog.inventorymanagementsystem;
 
 import com.leapfrog.inventorymanagementsystem.presenters.ItemDetailPresenter;
-import com.leapfrog.inventorymanagementsystem.views.ItemDetailView;
+import com.leapfrog.inventorymanagementsystem.contracts.ItemDetailContract;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -31,7 +31,7 @@ public class MainPresenterTest {
 
 
     @Mock
-    ItemDetailView itemDetailView;
+    ItemDetailContract itemDetailContract;
 
     ItemDetailPresenter itemDetailPresenter;
 
