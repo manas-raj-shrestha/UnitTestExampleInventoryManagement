@@ -71,12 +71,12 @@ public class DashBoardActivity extends AppCompatActivity {
         recyclerView.setAdapter(new ItemListAdapter(onItemSelectListener, this));
         recyclerView.addItemDecoration(new EqualSpaceItemDecoration((int) GeneralUtils.convertDpToPixel(4, DashBoardActivity.this)));
 
-        ArrayList<String> stringArrayList = new ArrayList<>();
-        stringArrayList.add("Hello");
-        stringArrayList.add("World");
-
-        HawkUtils.setCartItems(stringArrayList);
-        Log.e("size", HawkUtils.getCartItems().toString() + " NA");
+//        ArrayList<String> stringArrayList = new ArrayList<>();
+//        stringArrayList.add("Hello");
+//        stringArrayList.add("World");
+//
+//        HawkUtils.setCartItems(stringArrayList);
+//        Log.e("size", HawkUtils.getCartItems().toString() + " NA");
     }
 
     private void setToolbar() {

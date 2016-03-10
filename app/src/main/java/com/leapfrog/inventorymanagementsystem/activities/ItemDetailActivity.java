@@ -104,7 +104,7 @@ public class ItemDetailActivity extends AppCompatActivity implements ItemDetailV
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.action_add_to_cart) {
-            itemDetailPresenter.addToCart();
+            itemDetailPresenter.addToCart(this.item);
         }
 
         return super.onOptionsItemSelected(item);

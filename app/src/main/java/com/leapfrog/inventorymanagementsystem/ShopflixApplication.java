@@ -12,7 +12,7 @@ import com.orhanobut.hawk.LogLevel;
  */
 public class ShopflixApplication extends Application {
 
-    ShopflixApplication shopflixApplication;
+    static ShopflixApplication shopflixApplication;
 
     @Override
     public void onCreate() {
@@ -22,8 +22,8 @@ public class ShopflixApplication extends Application {
         initHawk();
     }
 
-    public Context getContext() {
-        return getApplicationContext();
+    public static Context getContext() {
+        return shopflixApplication;
     }
 
     /**
