@@ -9,6 +9,7 @@
         android:icon="@drawable/icon"
         android:label="@string/app_name"
         android:supportsRtl="true"
+        android:name=".ShopflixApplication"
         android:theme="@style/AppTheme" >
         <activity android:name="com.leapfrog.inventorymanagementsystem.activities.LoginActivity" >
             <intent-filter>
@@ -18,7 +19,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.leapfrog.inventorymanagementsystem.activities.MainActivity"/>
+        <activity android:name=".activities.ItemDetailActivity"/>
         <activity android:name=".activities.DashBoardActivity"/>
     </application>
 

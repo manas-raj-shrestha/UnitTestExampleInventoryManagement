@@ -13,14 +13,19 @@ public class Item implements Parcelable{
     private String itemDescription;
     private long itemDateAdded;
     private String picDrawableId;
+    private String dealerName;
+    private String price;
 
-    public Item(String itemCode,String itemName, int itemQuantity, String itemDescription, String picDrawableId,long itemDateAdded) {
+    public Item(String itemCode,String itemName, int itemQuantity, String itemDescription,
+                String picDrawableId,long itemDateAdded,String dealerName,String price) {
         setItemCode(itemCode);
         setItemName(itemName);
         setItemQuantity(itemQuantity);
         setItemDescription(itemDescription);
         setItemDateAdded(itemDateAdded);
         setPicDrawableId(picDrawableId);
+        setDealerName(dealerName);
+        setPrice(price);
     }
 
     protected Item(Parcel in) {
@@ -30,6 +35,8 @@ public class Item implements Parcelable{
         itemDescription = in.readString();
         itemDateAdded = in.readLong();
         picDrawableId = in.readString();
+        dealerName = in.readString();
+        price = in.readString();
     }
 
     public static final Creator<Item> CREATOR = new Creator<Item>() {
@@ -97,6 +104,8 @@ public class Item implements Parcelable{
         parcel.writeString(itemDescription);
         parcel.writeLong(itemDateAdded);
         parcel.writeString(picDrawableId);
+        parcel.writeString(dealerName);
+        parcel.writeString(price);
     }
 
     public String getPicDrawableId() {
@@ -105,5 +114,21 @@ public class Item implements Parcelable{
 
     public void setPicDrawableId(String picDrawableId) {
         this.picDrawableId = picDrawableId;
+    }
+
+    public String getDealerName() {
+        return dealerName;
+    }
+
+    public void setDealerName(String dealerName) {
+        this.dealerName = dealerName;
+    }
+
+    public String getPrice() {
+        return price;
+    }
+
+    public void setPrice(String price) {
+        this.price = price;
     }
 }

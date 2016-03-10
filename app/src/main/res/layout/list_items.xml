@@ -11,19 +11,37 @@
         android:background="@android:color/white">
 
         <ImageView
-            android:adjustViewBounds="true"
-            android:maxHeight="200dp"
             android:id="@+id/iv_item_pic"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"/>
+            android:transitionName="itempic"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:maxHeight="200dp" />
 
         <TextView
-            android:layout_centerHorizontal="true"
             android:id="@+id/tv_item_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/iv_item_pic" />
+            android:layout_below="@+id/iv_item_pic"
+            android:layout_marginLeft="8dp" />
+
+        <TextView
+            android:id="@+id/tv_dealer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_item_name"
+            android:layout_marginLeft="8dp"
+            android:textColor="#BEBEBE"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_dealer_name"
+            android:layout_marginLeft="8dp" />
 
     </RelativeLayout>
 

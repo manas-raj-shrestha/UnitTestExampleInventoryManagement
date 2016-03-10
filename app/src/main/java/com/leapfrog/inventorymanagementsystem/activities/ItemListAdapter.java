@@ -43,6 +43,8 @@ public class ItemListAdapter extends RecyclerView.Adapter<ItemListAdapter.ViewHo
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         holder.tvItemName.setText(items.get(position).getItemName());
+        holder.tvDealerName.setText(items.get(position).getDealerName());
+        holder.tvPrice.setText(items.get(position).getPrice());
         Glide.with(context).load(items.get(position).getPicDrawableId()).fitCenter().into(holder.ivItemPic);
     }
 
@@ -58,14 +60,20 @@ public class ItemListAdapter extends RecyclerView.Adapter<ItemListAdapter.ViewHo
         @Bind(R.id.iv_item_pic)
         ImageView ivItemPic;
 
-        public ViewHolder(View itemView) {
+        @Bind(R.id.tv_dealer_name)
+        TextView tvDealerName;
+
+        @Bind(R.id.tv_price)
+        TextView tvPrice;
+
+        public ViewHolder(final View itemView) {
             super(itemView);
             ButterKnife.bind(this, itemView);
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    onItemSelectListener.onItemSelected(items.get(getPosition()));
+                    onItemSelectListener.onItemSelected(items.get(getPosition()),ivItemPic);
                 }
             });
         }

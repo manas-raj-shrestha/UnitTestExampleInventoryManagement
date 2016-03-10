@@ -1,7 +1,7 @@
 package com.leapfrog.inventorymanagementsystem;
 
-import com.leapfrog.inventorymanagementsystem.presenters.MainActivityPresenter;
-import com.leapfrog.inventorymanagementsystem.views.MainActivityView;
+import com.leapfrog.inventorymanagementsystem.presenters.ItemDetailPresenter;
+import com.leapfrog.inventorymanagementsystem.views.ItemDetailView;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -11,8 +11,6 @@ import org.mockito.Mock;
 import org.mockito.invocation.InvocationOnMock;
 import org.mockito.runners.MockitoJUnitRunner;
 import org.mockito.stubbing.Answer;
-
-import java.util.List;
 
 import static junit.framework.TestCase.assertEquals;
 import static org.mockito.Matchers.anyInt;
@@ -33,13 +31,13 @@ public class MainPresenterTest {
 
 
     @Mock
-    MainActivityView mainActivityView;
+    ItemDetailView itemDetailView;
 
-    MainActivityPresenter mainActivityPresenter;
+    ItemDetailPresenter itemDetailPresenter;
 
     @Before
     public void setMainActivityView() {
-        mainActivityPresenter = new MainActivityPresenter(mainActivityView);
+        mainActivityPresenter = new ItemDetailPresenter(mainActivityView);
     }
 
     @Test

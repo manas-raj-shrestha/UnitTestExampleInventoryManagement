@@ -34,6 +34,7 @@ public class LoginActivity extends AppCompatActivity implements LoginActivityVie
         ButterKnife.bind(this);
 
         loginActivityPresenter = new LoginActivityPresenter(this);
+        loginSuccess();
     }
 
     @Override
