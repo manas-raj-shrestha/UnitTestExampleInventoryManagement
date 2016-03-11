@@ -5,10 +5,10 @@ import android.widget.Toast;
 
 import com.leapfrog.inventorymanagementsystem.ItemNotInStockException;
 import com.leapfrog.inventorymanagementsystem.ShopflixApplication;
+import com.leapfrog.inventorymanagementsystem.contracts.ItemDetailContract;
 import com.leapfrog.inventorymanagementsystem.data.HawkUtils;
 import com.leapfrog.inventorymanagementsystem.models.Inventory;
 import com.leapfrog.inventorymanagementsystem.models.Item;
-import com.leapfrog.inventorymanagementsystem.contracts.ItemDetailContract;
 
 import java.util.ArrayList;
 
@@ -46,6 +46,7 @@ public class ItemDetailPresenter implements ItemDetailContract.UserInteractions 
                 Toast.makeText(ShopflixApplication.getContext(), "Item added to your cart", Toast.LENGTH_SHORT).show();
             }
         } else {
+            cartItems = new ArrayList<>();
             cartItems.add(item.getItemCode());
             Toast.makeText(ShopflixApplication.getContext(), "Item added to your cart", Toast.LENGTH_SHORT).show();
         }
@@ -55,4 +56,5 @@ public class ItemDetailPresenter implements ItemDetailContract.UserInteractions 
 
         Log.e("added to card", "added to cart " + item.getItemCode());
     }
+
 }

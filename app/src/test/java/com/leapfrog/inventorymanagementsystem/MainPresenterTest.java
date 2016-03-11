@@ -1,5 +1,6 @@
 package com.leapfrog.inventorymanagementsystem;
 
+import com.leapfrog.inventorymanagementsystem.activities.ItemDetailActivity;
 import com.leapfrog.inventorymanagementsystem.presenters.ItemDetailPresenter;
 import com.leapfrog.inventorymanagementsystem.contracts.ItemDetailContract;
 
@@ -27,37 +28,34 @@ import static org.mockito.Mockito.when;
 @RunWith(MockitoJUnitRunner.class)
 public class MainPresenterTest {
 
-
-
-
     @Mock
     ItemDetailContract itemDetailContract;
 
     ItemDetailPresenter itemDetailPresenter;
 
     @Before
-    public void setMainActivityView() {
-        mainActivityPresenter = new ItemDetailPresenter(mainActivityView);
+    public void setitemDetailContract() {
+        itemDetailPresenter = new ItemDetailPresenter(itemDetailContract);
     }
 
     @Test
     public void testPurchaseSuccess() throws Exception {
-        when(mainActivityView.getItemCode()).thenReturn("MB13");
-        when(mainActivityView.getQuantity()).thenReturn(50);
+        when(itemDetailContract.getItemCode()).thenReturn("MB13");
+        when(itemDetailContract.getQuantity()).thenReturn(50);
 
-        mainActivityPresenter.buyItems();
+        itemDetailPresenter.buyItems();
 
-        verify(mainActivityView, times(1)).purchaseSuccessful();
+        verify(itemDetailContract, times(1)).purchaseSuccessful();
     }
 
     @Test
     public void testPurchaseFailure() throws Exception {
-        when(mainActivityView.getItemCode()).thenReturn("MB13");
-        when(mainActivityView.getQuantity()).thenReturn(300);
+        when(itemDetailContract.getItemCode()).thenReturn("MB13");
+        when(itemDetailContract.getQuantity()).thenReturn(300);
 
-        mainActivityPresenter.buyItems();
+        itemDetailPresenter.buyItems();
 
-        verify(mainActivityView, times(1)).purchaseFailure();
+        verify(itemDetailContract, times(1)).purchaseFailure();
     }
 
 

@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v4.content.ContextCompat;
+import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -23,6 +24,7 @@ import com.leapfrog.inventorymanagementsystem.R;
 import com.leapfrog.inventorymanagementsystem.adapters.ItemListAdapter;
 import com.leapfrog.inventorymanagementsystem.data.Extras;
 import com.leapfrog.inventorymanagementsystem.events.OnItemSelectListener;
+import com.leapfrog.inventorymanagementsystem.events.OnNavigationOptionSelected;
 import com.leapfrog.inventorymanagementsystem.fragments.NavigationDrawerFragment;
 import com.leapfrog.inventorymanagementsystem.models.Item;
 import com.leapfrog.inventorymanagementsystem.utils.GeneralUtils;
@@ -33,7 +35,7 @@ import butterknife.ButterKnife;
 /**
  * Dashboard screen
  */
-public class DashBoardActivity extends AppCompatActivity {
+public class DashBoardActivity extends AppCompatActivity implements OnNavigationOptionSelected {
 
     @Bind(R.id.drawer_layout)
     DrawerLayout mDrawerLayout;
@@ -48,6 +50,13 @@ public class DashBoardActivity extends AppCompatActivity {
 
     @Bind(R.id.collapsing_toolbar)
     CollapsingToolbarLayout collapsingToolbarLayout;
+
+    OnNavigationOptionSelected onNavigationOptionSelected = new OnNavigationOptionSelected() {
+        @Override
+        public void onNavigationOptionSelected(String option) {
+
+        }
+    };
 
     OnItemSelectListener onItemSelectListener = new OnItemSelectListener() {
         @Override
@@ -121,6 +130,11 @@ public class DashBoardActivity extends AppCompatActivity {
         actionBar.setHomeButtonEnabled(true);
         actionBar.setHomeAsUpIndicator(ContextCompat.getDrawable(this, R.drawable.ic_dehaze_white_24dp));
 
+    }
+
+    @Override
+    public void onNavigationOptionSelected(String option) {
+        mDrawerLayout.closeDrawer(GravityCompat.START);
     }
 
     /**

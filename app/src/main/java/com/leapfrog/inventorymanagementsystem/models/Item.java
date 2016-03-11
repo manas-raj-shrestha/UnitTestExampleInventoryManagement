@@ -6,7 +6,7 @@ import android.os.Parcelable;
 /**
  * Model class for inventory items
  */
-public class Item implements Parcelable{
+public class Item implements Parcelable {
     private String itemCode;
     private String itemName;
     private int itemQuantity;
@@ -14,10 +14,10 @@ public class Item implements Parcelable{
     private long itemDateAdded;
     private String picDrawableId;
     private String dealerName;
-    private String price;
+    private int price;
 
-    public Item(String itemCode,String itemName, int itemQuantity, String itemDescription,
-                String picDrawableId,long itemDateAdded,String dealerName,String price) {
+    public Item(String itemCode, String itemName, int itemQuantity, String itemDescription,
+                String picDrawableId, long itemDateAdded, String dealerName, int price) {
         setItemCode(itemCode);
         setItemName(itemName);
         setItemQuantity(itemQuantity);
@@ -36,7 +36,7 @@ public class Item implements Parcelable{
         itemDateAdded = in.readLong();
         picDrawableId = in.readString();
         dealerName = in.readString();
-        price = in.readString();
+        price = in.readInt();
     }
 
     public static final Creator<Item> CREATOR = new Creator<Item>() {
@@ -105,7 +105,7 @@ public class Item implements Parcelable{
         parcel.writeLong(itemDateAdded);
         parcel.writeString(picDrawableId);
         parcel.writeString(dealerName);
-        parcel.writeString(price);
+        parcel.writeInt(price);
     }
 
     public String getPicDrawableId() {
@@ -124,11 +124,11 @@ public class Item implements Parcelable{
         this.dealerName = dealerName;
     }
 
-    public String getPrice() {
+    public int getPrice() {
         return price;
     }
 
-    public void setPrice(String price) {
+    public void setPrice(int price) {
         this.price = price;
     }
 }

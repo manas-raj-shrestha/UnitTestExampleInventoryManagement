@@ -21,6 +21,7 @@
 
         <activity android:name=".activities.ItemDetailActivity"/>
         <activity android:name=".activities.DashBoardActivity"/>
+        <activity android:name=".activities.CartActivity"/>
     </application>
 
 </manifest>

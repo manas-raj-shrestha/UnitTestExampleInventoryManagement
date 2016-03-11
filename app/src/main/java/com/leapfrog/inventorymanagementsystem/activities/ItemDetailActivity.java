@@ -57,7 +57,7 @@ public class ItemDetailActivity extends AppCompatActivity implements ItemDetailC
 
             Glide.with(this).load(item.getPicDrawableId()).into(ivItemPic);
 
-            tvPrice.setText(item.getPrice());
+            tvPrice.setText("$" + item.getPrice());
         }
 
         setToolbar();

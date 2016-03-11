@@ -45,7 +45,7 @@ public class ItemListAdapter extends RecyclerView.Adapter<ItemListAdapter.ViewHo
     public void onBindViewHolder(ViewHolder holder, int position) {
         holder.tvItemName.setText(items.get(position).getItemName());
         holder.tvDealerName.setText(items.get(position).getDealerName());
-        holder.tvPrice.setText(items.get(position).getPrice());
+        holder.tvPrice.setText("$" + items.get(position).getPrice());
         Glide.with(context).load(items.get(position).getPicDrawableId()).fitCenter().into(holder.ivItemPic);
     }
 
@@ -74,7 +74,7 @@ public class ItemListAdapter extends RecyclerView.Adapter<ItemListAdapter.ViewHo
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    onItemSelectListener.onItemSelected(items.get(getPosition()),ivItemPic);
+                    onItemSelectListener.onItemSelected(items.get(getPosition()), ivItemPic);
                 }
             });
         }
