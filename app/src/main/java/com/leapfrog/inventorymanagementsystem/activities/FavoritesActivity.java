@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 import com.leapfrog.inventorymanagementsystem.R;
 import com.leapfrog.inventorymanagementsystem.adapters.CartRvAdapter;
+import com.leapfrog.inventorymanagementsystem.adapters.FavoritesRvAdapter;
 import com.leapfrog.inventorymanagementsystem.data.Extras;
 import com.leapfrog.inventorymanagementsystem.events.OnItemSelectListener;
 import com.leapfrog.inventorymanagementsystem.models.Item;
@@ -21,9 +22,9 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 
 /**
- * Shows cart items
+ * Created by Manas on 3/14/2016.
  */
-public class CartActivity extends AppCompatActivity {
+public class FavoritesActivity extends AppCompatActivity{
 
     @Bind(R.id.toolbar)
     Toolbar toolbar;
@@ -34,8 +35,8 @@ public class CartActivity extends AppCompatActivity {
     OnItemSelectListener onItemSelectListener = new OnItemSelectListener() {
         @Override
         public void onItemSelected(Item item, View view) {
-            Toast.makeText(CartActivity.this, item.getItemName(), Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(CartActivity.this, ItemDetailActivity.class);
+            Toast.makeText(FavoritesActivity.this, item.getItemName(), Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(FavoritesActivity.this, ItemDetailActivity.class);
             intent.putExtra(Extras.KEY_ITEM_EXTRA, item);
             startActivity(intent);
         }
@@ -56,7 +57,7 @@ public class CartActivity extends AppCompatActivity {
      * set up recycler view for cart items
      */
     private void setRecyclerView() {
-        rvCart.setAdapter(new CartRvAdapter(this, onItemSelectListener));
+        rvCart.setAdapter(new FavoritesRvAdapter(this, onItemSelectListener));
         rvCart.setLayoutManager(new LinearLayoutManager(this));
     }
 
@@ -68,7 +69,7 @@ public class CartActivity extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
 
         actionBar.setDisplayHomeAsUpEnabled(true);
-        actionBar.setTitle("Cart");
+        actionBar.setTitle("Favorites");
     }
 
     @Override
@@ -82,4 +83,6 @@ public class CartActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+
 }

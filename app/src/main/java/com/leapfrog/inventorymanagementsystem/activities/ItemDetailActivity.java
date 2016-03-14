@@ -15,10 +15,10 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.leapfrog.inventorymanagementsystem.R;
+import com.leapfrog.inventorymanagementsystem.contracts.ItemDetailContract;
 import com.leapfrog.inventorymanagementsystem.data.Extras;
 import com.leapfrog.inventorymanagementsystem.models.Item;
 import com.leapfrog.inventorymanagementsystem.presenters.ItemDetailPresenter;
-import com.leapfrog.inventorymanagementsystem.contracts.ItemDetailContract;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -103,8 +103,14 @@ public class ItemDetailActivity extends AppCompatActivity implements ItemDetailC
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == R.id.action_add_to_cart) {
-            itemDetailPresenter.addToCart(this.item);
+
+        switch (item.getItemId()) {
+            case R.id.action_add_to_cart:
+                itemDetailPresenter.addToCart(this.item);
+                break;
+            case android.R.id.home:
+                onBackPressed();
+                break;
         }
 
         return super.onOptionsItemSelected(item);

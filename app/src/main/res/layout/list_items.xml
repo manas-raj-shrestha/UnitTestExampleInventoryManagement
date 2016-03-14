@@ -10,14 +10,15 @@
         android:layout_height="wrap_content"
         android:background="@android:color/white">
 
+
         <ImageView
             android:id="@+id/iv_item_pic"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:transitionName="itempic"
             android:layout_centerHorizontal="true"
             android:adjustViewBounds="true"
-            android:maxHeight="200dp" />
+            android:maxHeight="200dp"
+            android:transitionName="itempic" />
 
         <TextView
             android:id="@+id/tv_item_name"
@@ -38,10 +39,28 @@
         <TextView
             android:id="@+id/tv_price"
             android:layout_width="wrap_content"
-            android:textColor="@color/colorAccent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tv_dealer_name"
-            android:layout_marginLeft="8dp" />
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/colorAccent" />
+
+        <ImageView
+            android:id="@+id/iv_favorite"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_centerInParent="true"
+            android:alpha="0.75"
+            android:src="@drawable/ic_favorite_orange_24dp" />
+
+        <ImageView
+            android:id="@+id/iv_fav_indicator"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:padding="4dp"
+            android:src="@drawable/ic_favorite_orange_24dp"
+            android:visibility="gone" />
 
     </RelativeLayout>
 

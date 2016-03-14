@@ -19,6 +19,7 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.target.BitmapImageViewTarget;
 import com.leapfrog.inventorymanagementsystem.R;
 import com.leapfrog.inventorymanagementsystem.activities.CartActivity;
+import com.leapfrog.inventorymanagementsystem.activities.FavoritesActivity;
 import com.leapfrog.inventorymanagementsystem.adapters.NavigationDrawerRvAdapter;
 import com.leapfrog.inventorymanagementsystem.events.OnNavigationOptionSelected;
 
@@ -42,13 +43,15 @@ public class NavigationDrawerFragment extends Fragment {
     OnNavigationOptionSelected onNavigationOptionSelected = new OnNavigationOptionSelected() {
         @Override
         public void onNavigationOptionSelected(String option) {
+            Intent intent;
             switch (option) {
                 case "Cart":
-                    Intent intent = new Intent(getActivity(), CartActivity.class);
+                    intent = new Intent(getActivity(), CartActivity.class);
                     startActivity(intent);
-                    Log.e("cart selected", "cart selected");
                     break;
                 case "Favorites":
+                    intent = new Intent(getActivity(), FavoritesActivity.class);
+                    startActivity(intent);
                     break;
                 case "Log Out":
                     break;

@@ -31,6 +31,7 @@ import com.leapfrog.inventorymanagementsystem.utils.GeneralUtils;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 /**
  * Dashboard screen
@@ -155,6 +156,15 @@ public class DashBoardActivity extends AppCompatActivity implements OnNavigation
             outRect.left = mSpaceHeight;
             outRect.right = mSpaceHeight;
             outRect.top = mSpaceHeight;
+        }
+    }
+
+    @OnClick({R.id.fab_cart})
+    public void setOnClicks(View view) {
+        switch (view.getId()) {
+            case R.id.fab_cart:
+                startActivity(new Intent(DashBoardActivity.this, CartActivity.class));
+                break;
         }
     }
 }

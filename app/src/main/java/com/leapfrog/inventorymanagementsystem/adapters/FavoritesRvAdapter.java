@@ -18,26 +18,25 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 
 /**
- * Show cart items
+ * Created by Manas on 3/14/2016.
  */
-public class CartRvAdapter extends RecyclerView.Adapter<CartRvAdapter.ViewHolder> {
-    ArrayList<String> cartItemNames = new ArrayList<>();
-    ArrayList<Item> cartItems = new ArrayList<>();
+public class FavoritesRvAdapter extends RecyclerView.Adapter<FavoritesRvAdapter.ViewHolder> {
+
+    ArrayList<String> favItemNames = new ArrayList<>();
+    ArrayList<Item> favoriteItems = new ArrayList<>();
     Context context;
-    int totalPrice;
     OnItemSelectListener onItemSelectListener;
 
-    public CartRvAdapter(Context context, OnItemSelectListener onItemSelectListener) {
+    public FavoritesRvAdapter(Context context, OnItemSelectListener onItemSelectListener) {
         this.context = context;
         this.onItemSelectListener = onItemSelectListener;
 
-        if (HawkUtils.getCartItems() != null) {
-            cartItemNames = HawkUtils.getCartItems();
+        if (HawkUtils.getFavoriteItems() != null) {
+            favItemNames = HawkUtils.getFavoriteItems();
 
-            for (String cartItemName : cartItemNames) {
-                Item item = getItemById(cartItemName);
-                cartItems.add(item);
-                totalPrice = totalPrice + item.getPrice();
+            for (String favItemName : favItemNames) {
+                Item item = getItemById(favItemName);
+                favoriteItems.add(item);
             }
 
         }
@@ -51,15 +50,12 @@ public class CartRvAdapter extends RecyclerView.Adapter<CartRvAdapter.ViewHolder
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        if (position < cartItems.size())
-            holder.tvItemName.setText(cartItems.get(position).getItemName() + " $" + cartItems.get(position).getPrice());
-        else
-            holder.tvItemName.setText("Total : $" + totalPrice);
+        holder.tvItemName.setText(favoriteItems.get(position).getItemName() + " $" + favoriteItems.get(position).getPrice());
     }
 
     @Override
     public int getItemCount() {
-        return cartItems.size() + 1;
+        return favoriteItems.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
@@ -71,11 +67,10 @@ public class CartRvAdapter extends RecyclerView.Adapter<CartRvAdapter.ViewHolder
             super(itemView);
             ButterKnife.bind(this, itemView);
 
-//            if (cartItems.size() > 0 && getPosition() < cartItems.size())
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    onItemSelectListener.onItemSelected(cartItems.get(getPosition()), itemView);
+                    onItemSelectListener.onItemSelected(favoriteItems.get(getPosition()), itemView);
                 }
             });
 
@@ -100,5 +95,4 @@ public class CartRvAdapter extends RecyclerView.Adapter<CartRvAdapter.ViewHolder
 
         return null;
     }
-
 }

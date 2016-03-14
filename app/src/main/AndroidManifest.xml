@@ -22,6 +22,7 @@
         <activity android:name=".activities.ItemDetailActivity"/>
         <activity android:name=".activities.DashBoardActivity"/>
         <activity android:name=".activities.CartActivity"/>
+        <activity android:name=".activities.FavoritesActivity"/>
     </application>
 
 </manifest>
