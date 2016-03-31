@@ -12,10 +12,10 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.leapfrog.inventorymanagementsystem.R;
-import com.leapfrog.inventorymanagementsystem.adapters.CartRvAdapter;
 import com.leapfrog.inventorymanagementsystem.adapters.FavoritesRvAdapter;
 import com.leapfrog.inventorymanagementsystem.data.Extras;
 import com.leapfrog.inventorymanagementsystem.events.OnItemSelectListener;
+import com.leapfrog.inventorymanagementsystem.itemdetail.ItemDetailActivity;
 import com.leapfrog.inventorymanagementsystem.models.Item;
 
 import butterknife.Bind;

@@ -19,9 +19,9 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".activities.ItemDetailActivity"/>
+        <activity android:name=".itemdetail.ItemDetailActivity"/>
         <activity android:name=".activities.DashBoardActivity"/>
-        <activity android:name=".activities.CartActivity"/>
+        <activity android:name=".cart.CartActivity"/>
         <activity android:name=".activities.FavoritesActivity"/>
     </application>
 

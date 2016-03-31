@@ -12,12 +12,27 @@ public class Item implements Parcelable {
     private int itemQuantity;
     private String itemDescription;
     private long itemDateAdded;
-    private String picDrawableId;
+    private int picDrawableId;
     private String dealerName;
     private int price;
+    private ItemType itemType;
+
+    public ItemType getItemType() {
+        return itemType;
+    }
+
+    public void setItemType(ItemType itemType) {
+        this.itemType = itemType;
+    }
+
+    public enum ItemType {
+        WIRE,
+        CONTROL,
+        itemType, KNIFE_AND_TOOLS
+    }
 
     public Item(String itemCode, String itemName, int itemQuantity, String itemDescription,
-                String picDrawableId, long itemDateAdded, String dealerName, int price) {
+                int picDrawableId, long itemDateAdded, String dealerName, int price,ItemType itemType) {
         setItemCode(itemCode);
         setItemName(itemName);
         setItemQuantity(itemQuantity);
@@ -26,6 +41,7 @@ public class Item implements Parcelable {
         setPicDrawableId(picDrawableId);
         setDealerName(dealerName);
         setPrice(price);
+        setItemType(itemType);
     }
 
     protected Item(Parcel in) {
@@ -34,9 +50,10 @@ public class Item implements Parcelable {
         itemQuantity = in.readInt();
         itemDescription = in.readString();
         itemDateAdded = in.readLong();
-        picDrawableId = in.readString();
+        picDrawableId = in.readInt();
         dealerName = in.readString();
         price = in.readInt();
+        itemType = ItemType.valueOf(in.readString());
     }
 
     public static final Creator<Item> CREATOR = new Creator<Item>() {
@@ -103,16 +120,17 @@ public class Item implements Parcelable {
         parcel.writeInt(itemQuantity);
         parcel.writeString(itemDescription);
         parcel.writeLong(itemDateAdded);
-        parcel.writeString(picDrawableId);
+        parcel.writeInt(picDrawableId);
         parcel.writeString(dealerName);
         parcel.writeInt(price);
+        parcel.writeString(itemType.name());
     }
 
-    public String getPicDrawableId() {
+    public int getPicDrawableId() {
         return picDrawableId;
     }
 
-    public void setPicDrawableId(String picDrawableId) {
+    public void setPicDrawableId(int picDrawableId) {
         this.picDrawableId = picDrawableId;
     }
 
@@ -131,4 +149,5 @@ public class Item implements Parcelable {
     public void setPrice(int price) {
         this.price = price;
     }
+
 }

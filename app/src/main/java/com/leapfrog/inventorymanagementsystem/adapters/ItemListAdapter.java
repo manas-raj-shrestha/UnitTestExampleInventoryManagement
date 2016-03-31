@@ -5,6 +5,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.leapfrog.inventorymanagementsystem.utils.GeneralUtils;
 import com.leapfrog.inventorymanagementsystem.widgets.CustomItemViewGroup;
 import com.leapfrog.inventorymanagementsystem.events.OnItemSelectListener;
 import com.leapfrog.inventorymanagementsystem.models.Inventory;
@@ -24,11 +25,10 @@ public class ItemListAdapter extends RecyclerView.Adapter<ItemListAdapter.ViewHo
     Context context;
 
     public ItemListAdapter(OnItemSelectListener onItemSelectListener,
-                           Context context) {
-        items = inventory.items;
+                           Context context, Item.ItemType category) {
+        items = GeneralUtils.filterItems(inventory.items, category);
         this.onItemSelectListener = onItemSelectListener;
         this.context = context;
-
     }
 
     @Override
