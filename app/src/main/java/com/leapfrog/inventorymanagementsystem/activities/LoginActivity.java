@@ -40,6 +40,7 @@ public class LoginActivity extends AppCompatActivity implements LoginActivityCon
     @Override
     public String getUsername() {
         String username = null;
+
         if (edtUsername.getText() != null)
             username = edtUsername.getText().toString();
 

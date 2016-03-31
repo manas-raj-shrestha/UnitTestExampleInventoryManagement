@@ -1,6 +1,10 @@
 package com.leapfrog.inventorymanagementsystem.presenters;
 
+import android.util.Log;
+
 import com.leapfrog.inventorymanagementsystem.contracts.LoginActivityContract;
+
+import org.junit.Test;
 
 /**
  * Presenter for login activity
@@ -42,4 +46,10 @@ public class LoginActivityPresenter implements LoginActivityContract.UserInterac
     public void attemptLogin() {
         login();
     }
+
+    public Boolean  checkConnection(){
+        System.out.println("check");
+        return  true;
+    }
+
 }

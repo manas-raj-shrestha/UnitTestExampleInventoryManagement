@@ -7,6 +7,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
+import org.mockito.Mockito;
 import org.mockito.runners.MockitoJUnitRunner;
 
 import static org.junit.Assert.*;
@@ -85,6 +86,13 @@ public class LoginPresenterTest {
         loginActivityPresenter.login();
 
         verify(loginActivityView).loginSuccess();
+    }
+
+    @Test
+    public void mockingSpy(){
+        LoginActivityPresenter loginActivityPresenter1 = Mockito.spy(loginActivityPresenter);
+        when(loginActivityPresenter1.checkConnection()).thenReturn(false);
+        System.out.println(loginActivityPresenter1.checkConnection());
     }
 
 }
