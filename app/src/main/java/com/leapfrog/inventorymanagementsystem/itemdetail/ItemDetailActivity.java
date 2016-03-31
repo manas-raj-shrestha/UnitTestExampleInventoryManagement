@@ -32,6 +32,12 @@ public class ItemDetailActivity extends AppCompatActivity implements ItemDetailC
     @Bind(R.id.tv_price)
     TextView tvPrice;
 
+    @Bind(R.id.tv_item_desc)
+    TextView tvItemDesc;
+
+    @Bind(R.id.tv_brand)
+    TextView tvBrand;
+
     @Bind(R.id.ll_parent)
     LinearLayout linearLayout;
 
@@ -43,7 +49,7 @@ public class ItemDetailActivity extends AppCompatActivity implements ItemDetailC
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_item_detail);
 
         ButterKnife.bind(this);
         itemDetailPresenter = new ItemDetailPresenter(this);
@@ -56,7 +62,7 @@ public class ItemDetailActivity extends AppCompatActivity implements ItemDetailC
 
             Glide.with(this).load(item.getPicDrawableId()).into(ivItemPic);
 
-            tvPrice.setText("$" + item.getPrice());
+            setData(item);
         }
 
         setToolbar();
@@ -113,5 +119,16 @@ public class ItemDetailActivity extends AppCompatActivity implements ItemDetailC
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    /**
+     * set data to views
+     *
+     * @param item
+     */
+    private void setData(Item item){
+        tvPrice.setText("¥" + item.getPrice());
+        tvItemDesc.setText(item.getItemDescription());
+        tvBrand.setText(item.getDealerName());
     }
 }

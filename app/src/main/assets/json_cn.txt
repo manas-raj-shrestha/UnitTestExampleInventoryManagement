@@ -1,0 +1,139 @@
+[{
+		"itemCode": "OK50H",
+		"itemName": "50H开孔铣刀",
+		"itemQuantity": 100,
+		"itemDescription": "50H开孔铣刀",
+		"dealerName": "OMI Kogyo",
+		"price": 150,
+		"itemType": "KNIFE_AND_TOOLS"
+	}, {
+		"itemCode": "OK35SQ",
+		"itemName": "35SQ开孔铣刀",
+		"itemQuantity": 100,
+		"itemDescription": "35SQ开孔铣刀",
+		"dealerName": "OMI Kogyo",
+		"price": 150,
+		"itemType": "KNIFE_AND_TOOLS"
+	}, {
+		"itemCode": "CX500",
+		"itemName": "高硬度钢用2刃球型立铣刀CX500涂层",
+		"itemQuantity": 100,
+		"itemDescription": "提高的使用寿命，适合高速加工和干式加工。最适用于高精度的三维加工。加工后的表面粗糙度良好",
+		"dealerName": "CKK",
+		"price": 150,
+		"itemType": "KNIFE_AND_TOOLS"
+	}, {
+		"itemCode": "BEM1",
+		"itemName": "BEM硬质合金两刃球头铣刀",
+		"itemQuantity": 100,
+		"itemDescription": "BEM硬质合金两刃球头铣刀",
+		"dealerName": "AST",
+		"price": 150,
+		"itemType": "KNIFE_AND_TOOLS"
+	}, {
+		"itemCode": "FKD1",
+		"itemName": "侧面铣刀(普通刃)",
+		"itemQuantity": 100,
+		"itemDescription": "外周和侧面具有切削刃，广泛用于槽加工、台阶面加工、侧面加工、宽度确定等。",
+		"dealerName": "FKD",
+		"price": 150,
+		"itemType": "KNIFE_AND_TOOLS"
+	}, {
+		"itemCode": "QEFD",
+		"itemName": "外圆切断/切槽车削刀具QEFD",
+		"itemQuantity": 100,
+		"itemDescription": "结构简单紧凑，美观大方",
+		"dealerName": "Zhuzhou China",
+		"price": 150,
+		"itemType": "KNIFE_AND_TOOLS"
+	}, {
+		"itemCode": "FX3U",
+		"itemName": "MELSEC-F FX3U系列基本单元",
+		"itemQuantity": 100,
+		"itemDescription": "具备多和一的易操作性和灵活性的扩展性，将FX3的易操作性带到了128点*1以下的控制中适合小规模控制的出色性价比。",
+		"dealerName": "MITSUBISHI",
+		"price": 150,
+		"itemType": "CONTROL"
+	}, {
+		"itemCode": "FX3G",
+		"itemName": "MELSEC-F FX3G系列基本单元",
+		"itemQuantity": 100,
+		"itemDescription": "同时具备多合一的易操作性和灵活的扩展性，适合小规模控制的出色性价比。",
+		"dealerName": "MITSUBISHI",
+		"price": 150,
+		"itemType": "CONTROL"
+	},  {
+		"itemCode": "S7",
+		"itemName": "S7-200中央处理器单元（CPU",
+		"itemQuantity": 100,
+		"itemDescription": "模块化微型PLC系统，满足中、小规模的性能要求，可以非常好地满足和适应自动化控制任务，简单实用的分布式结构和多界面网络能力，使得应用十分灵活。",
+		"dealerName": "Seimens",
+		"price": 150,
+		"itemType": "CONTROL"
+	}, {
+		"itemCode": "S73",
+		"itemName": "S7-300中央处理器单元(CPU)",
+		"itemQuantity": 100,
+		"itemDescription": "模块化微型PLC系统，满足中、小规模的性能要求，可以非常好地满足和适应自动化控制任务，简单实用的分布式结构和多界面网络能力，使得应用十分灵活。",
+		"dealerName": "Seimens",
+		"price": 150,
+		"itemType": "CONTROL"
+	}, {
+		"itemCode": "qnu1",
+		"itemName": "QnU系列CPU模块",
+		"itemQuantity": 100,
+		"itemDescription": "QnU系列CPU模块",
+		"dealerName": "MITSUBISHI",
+		"price": 150,
+		"itemType": "CONTROL"
+	}, {
+		"itemCode": "UC1",
+		"itemName": "通用同轴电缆 C/D/RG型",
+		"itemQuantity": 100,
+		"itemDescription": "通用同轴电缆 C/D/RG型",
+		"dealerName": "MISUMI",
+		"price": 150,
+		"itemType": "WIRE"
+	}, {
+		"itemCode": "SYV1",
+		"itemName": "聚乙烯绝缘射频同轴电缆 SYV",
+		"itemQuantity": 100,
+		"itemDescription": "聚乙烯绝缘射频同轴电缆 SYV",
+		"dealerName": "MISUMI",
+		"price": 150,
+		"itemType": "WIRE"
+	}, {
+		"itemCode": "CC1",
+		"itemName": "同轴电缆",
+		"itemQuantity": 100,
+		"itemDescription": "同轴电缆",
+		"dealerName": "BELDEN USA",
+		"price": 150,
+		"itemType": "WIRE"
+	}, {
+		"itemCode": "NACC1",
+		"itemName": "NACC-UL规格CC-Link电缆",
+		"itemQuantity": 100,
+		"itemDescription": "NACC-UL规格CC-Link电缆",
+		"dealerName": "MISUMI",
+		"price": 150,
+		"itemType": "WIRE"
+	}, {
+		"itemCode": "CAT51",
+		"itemName": "高弯曲CAT.5ELAN电缆",
+		"itemQuantity": 100,
+		"itemDescription": "适用于电缆托链中使用的需要滑动特性用途。以独自的导体结构，电缆材料・结构，实现电缆高滑动性能。",
+		"dealerName": "Japan Oki Electric Cable (OKI)",
+		"price": 150,
+		"itemType": "WIRE"
+	}, {
+		"itemCode": "DNC1",
+		"itemName": "固定部/低速可动-UL规格-Device-Net电缆",
+		"itemQuantity": 100,
+		"itemDescription": "固定部、低速可动 UL规格 Device-Net",
+		"dealerName": "MISUMI",
+		"price": 150,
+		"itemType": "WIRE"
+	}
+
+]

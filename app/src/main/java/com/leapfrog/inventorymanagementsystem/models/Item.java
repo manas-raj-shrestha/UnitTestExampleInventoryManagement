@@ -31,6 +31,10 @@ public class Item implements Parcelable {
         itemType, KNIFE_AND_TOOLS
     }
 
+    public Item(){
+
+    }
+
     public Item(String itemCode, String itemName, int itemQuantity, String itemDescription,
                 int picDrawableId, long itemDateAdded, String dealerName, int price,ItemType itemType) {
         setItemCode(itemCode);

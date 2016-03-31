@@ -34,14 +34,13 @@ public class NavigationDrawerRvAdapter extends RecyclerView.Adapter<NavigationDr
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(context).inflate(R.layout.navigation_items, parent, false);
+        View view = LayoutInflater.from(context).inflate(android.R.layout.simple_list_item_1, parent, false);
         return new ViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         holder.tvOption.setText(options[position]);
-        holder.ivOptionIcon.setImageDrawable(ContextCompat.getDrawable(context, optionIcons[position]));
     }
 
     @Override
@@ -51,11 +50,8 @@ public class NavigationDrawerRvAdapter extends RecyclerView.Adapter<NavigationDr
 
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-        @Bind(R.id.tv_option_name)
+        @Bind(android.R.id.text1)
         TextView tvOption;
-
-        @Bind(R.id.iv_option_icon)
-        ImageView ivOptionIcon;
 
         public ViewHolder(View itemView) {
             super(itemView);

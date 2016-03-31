@@ -11,6 +11,7 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 
 import com.leapfrog.inventorymanagementsystem.R;
@@ -19,6 +20,15 @@ import com.leapfrog.inventorymanagementsystem.events.OnNavigationOptionSelected;
 import com.leapfrog.inventorymanagementsystem.models.Item;
 import com.leapfrog.inventorymanagementsystem.navigationdrawer.NavigationDrawerFragment;
 import com.leapfrog.inventorymanagementsystem.category.CategoryFragment;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.HashMap;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -50,6 +60,8 @@ public class DashBoardActivity extends AppCompatActivity implements OnNavigation
 
         initializeFragments();
         initializeDrawer();
+
+
 
     }
 
@@ -120,4 +132,8 @@ public class DashBoardActivity extends AppCompatActivity implements OnNavigation
                 break;
         }
     }
+
+
+
+
 }

@@ -10,8 +10,12 @@ public class ItemDetailActivity$$ViewBinder<T extends com.leapfrog.inventorymana
     View view;
     view = finder.findRequiredView(source, 2131492970, "field 'ivItemPic'");
     target.ivItemPic = finder.castView(view, 2131492970, "field 'ivItemPic'");
-    view = finder.findRequiredView(source, 2131492971, "field 'tvPrice'");
-    target.tvPrice = finder.castView(view, 2131492971, "field 'tvPrice'");
+    view = finder.findRequiredView(source, 2131492972, "field 'tvPrice'");
+    target.tvPrice = finder.castView(view, 2131492972, "field 'tvPrice'");
+    view = finder.findRequiredView(source, 2131492971, "field 'tvItemDesc'");
+    target.tvItemDesc = finder.castView(view, 2131492971, "field 'tvItemDesc'");
+    view = finder.findRequiredView(source, 2131492973, "field 'tvBrand'");
+    target.tvBrand = finder.castView(view, 2131492973, "field 'tvBrand'");
     view = finder.findRequiredView(source, 2131492968, "field 'linearLayout'");
     target.linearLayout = finder.castView(view, 2131492968, "field 'linearLayout'");
     view = finder.findRequiredView(source, 2131492969, "field 'toolbar'");
@@ -21,6 +25,8 @@ public class ItemDetailActivity$$ViewBinder<T extends com.leapfrog.inventorymana
   @Override public void unbind(T target) {
     target.ivItemPic = null;
     target.tvPrice = null;
+    target.tvItemDesc = null;
+    target.tvBrand = null;
     target.linearLayout = null;
     target.toolbar = null;
   }

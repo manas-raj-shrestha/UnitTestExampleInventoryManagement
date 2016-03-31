@@ -82,7 +82,7 @@ public class CustomItemViewGroup extends RelativeLayout implements View.OnTouchL
         this.item = item;
         tvItemName.setText(item.getItemName());
         tvDealerName.setText(item.getDealerName());
-        tvPrice.setText("$" + item.getPrice());
+        tvPrice.setText("¥" + item.getPrice());
         Glide.with(getContext()).load(item.getPicDrawableId()).fitCenter().into(ivItemPic);
 
         if (HawkUtils.getFavoriteItems() != null)
