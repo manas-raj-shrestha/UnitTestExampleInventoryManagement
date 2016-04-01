@@ -21,7 +21,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 
 /**
- * Created by Manas on 3/14/2016.
+ * Shows favorite items
  */
 public class FavoritesActivity extends AppCompatActivity{
 

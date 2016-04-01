@@ -15,7 +15,8 @@ import java.util.ArrayList;
 import butterknife.ButterKnife;
 
 /**
- * Created by Manas on 3/4/2016.
+ * {@link android.support.v7.widget.RecyclerView.Adapter} to filter and show the items
+ * according to their item type(category)
  */
 public class CategoryRvAdapter extends RecyclerView.Adapter<CategoryRvAdapter.ViewHolder> {
     Inventory inventory = Inventory.getInstance();

@@ -84,8 +84,8 @@ public class DashBoardActivity extends AppCompatActivity implements OnNavigation
         setSupportActionBar(toolbar);
 
         ActionBar actionBar = getSupportActionBar();
-        actionBar.setTitle("MISUMI");
-        collapsingToolbarLayout.setTitle("MISUMI");
+        actionBar.setTitle(getString(R.string.app_name));
+        collapsingToolbarLayout.setTitle(getString(R.string.app_name));
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setHomeButtonEnabled(true);
         actionBar.setHomeAsUpIndicator(ContextCompat.getDrawable(this, R.drawable.ic_dehaze_white_24dp));
@@ -122,8 +122,5 @@ public class DashBoardActivity extends AppCompatActivity implements OnNavigation
                 break;
         }
     }
-
-
-
 
 }

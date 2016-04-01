@@ -18,7 +18,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 
 /**
- * Created by Manas on 3/14/2016.
+ * Favorites recycler view adapter
  */
 public class FavoritesRvAdapter extends RecyclerView.Adapter<FavoritesRvAdapter.ViewHolder> {
 

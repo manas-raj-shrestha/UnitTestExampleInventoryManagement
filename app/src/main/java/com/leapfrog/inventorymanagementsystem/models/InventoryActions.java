@@ -3,7 +3,7 @@ package com.leapfrog.inventorymanagementsystem.models;
 import com.leapfrog.inventorymanagementsystem.ItemNotInStockException;
 
 /**
- * Created by Manas on 1/28/2016.
+ * Contract for inventory
  */
 public interface InventoryActions {
     void purchaseItems(String itemId, int itemQuantity) throws ItemNotInStockException;

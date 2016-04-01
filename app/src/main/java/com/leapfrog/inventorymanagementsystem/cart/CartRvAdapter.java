@@ -18,7 +18,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 
 /**
- * Show cart items
+ * Recycler view adapter for showing cart items
  */
 public class CartRvAdapter extends RecyclerView.Adapter<CartRvAdapter.ViewHolder> {
     ArrayList<String> cartItemNames = new ArrayList<>();
@@ -71,7 +71,6 @@ public class CartRvAdapter extends RecyclerView.Adapter<CartRvAdapter.ViewHolder
             super(itemView);
             ButterKnife.bind(this, itemView);
 
-//            if (cartItems.size() > 0 && getPosition() < cartItems.size())
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {

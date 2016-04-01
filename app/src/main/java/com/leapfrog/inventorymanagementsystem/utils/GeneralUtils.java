@@ -9,7 +9,7 @@ import com.leapfrog.inventorymanagementsystem.models.Item;
 import java.util.ArrayList;
 
 /**
- * Created by Manas on 3/9/2016.
+ * Methods used by app
  */
 public class GeneralUtils {
 

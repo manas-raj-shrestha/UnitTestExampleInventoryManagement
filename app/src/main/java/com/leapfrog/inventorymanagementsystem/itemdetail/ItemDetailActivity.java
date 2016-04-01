@@ -21,6 +21,9 @@ import com.leapfrog.inventorymanagementsystem.models.Item;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
+/**
+ * Shows detail for selected item
+ */
 public class ItemDetailActivity extends AppCompatActivity implements ItemDetailContract {
 
     ItemDetailPresenter itemDetailPresenter;

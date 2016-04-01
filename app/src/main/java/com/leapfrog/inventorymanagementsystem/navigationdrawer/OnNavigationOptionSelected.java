@@ -1,7 +1,7 @@
 package com.leapfrog.inventorymanagementsystem.navigationdrawer;
 
 /**
- * Created by Manas on 3/10/2016.
+ * Event when option in navigation drawer is selected
  */
 public interface OnNavigationOptionSelected {
     void onNavigationOptionSelected(String option);
