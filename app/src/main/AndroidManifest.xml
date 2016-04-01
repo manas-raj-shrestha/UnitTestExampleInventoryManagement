@@ -6,12 +6,12 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/icon"
+        android:icon="@drawable/luncher_icon"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:name=".ShopflixApplication"
+        android:name=".MisumiApplication"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.leapfrog.inventorymanagementsystem.activities.LoginActivity" >
+        <activity android:name=".login.LoginActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,9 +20,9 @@
         </activity>
 
         <activity android:name=".itemdetail.ItemDetailActivity"/>
-        <activity android:name=".activities.DashBoardActivity"/>
+        <activity android:name=".dashboard.DashBoardActivity"/>
         <activity android:name=".cart.CartActivity"/>
-        <activity android:name=".activities.FavoritesActivity"/>
+        <activity android:name=".favorites.FavoritesActivity"/>
     </application>
 
 </manifest>

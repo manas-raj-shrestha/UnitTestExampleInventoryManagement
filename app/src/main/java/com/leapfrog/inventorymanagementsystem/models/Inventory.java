@@ -4,7 +4,7 @@ import android.util.Log;
 
 import com.leapfrog.inventorymanagementsystem.ItemNotInStockException;
 import com.leapfrog.inventorymanagementsystem.R;
-import com.leapfrog.inventorymanagementsystem.ShopflixApplication;
+import com.leapfrog.inventorymanagementsystem.MisumiApplication;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -66,7 +66,7 @@ public class Inventory implements InventoryActions {
     public String loadJSONFromAsset() {
         String json = null;
         try {
-            InputStream is = ShopflixApplication.getContext().getAssets().open("json_cn.txt");
+            InputStream is = MisumiApplication.getContext().getAssets().open("json_cn.txt");
             int size = is.available();
             byte[] buffer = new byte[size];
             is.read(buffer);

@@ -1,7 +1,7 @@
 package com.leapfrog.inventorymanagementsystem;
 
 import com.leapfrog.inventorymanagementsystem.itemdetail.ItemDetailPresenter;
-import com.leapfrog.inventorymanagementsystem.contracts.ItemDetailContract;
+import com.leapfrog.inventorymanagementsystem.itemdetail.ItemDetailContract;
 
 import org.junit.Before;
 import org.junit.Test;

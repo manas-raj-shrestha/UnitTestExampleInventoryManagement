@@ -15,7 +15,6 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.leapfrog.inventorymanagementsystem.R;
-import com.leapfrog.inventorymanagementsystem.contracts.ItemDetailContract;
 import com.leapfrog.inventorymanagementsystem.data.Extras;
 import com.leapfrog.inventorymanagementsystem.models.Item;
 

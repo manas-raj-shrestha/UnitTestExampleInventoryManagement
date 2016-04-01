@@ -29,54 +29,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DashBoardActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/leapfrog/inventorymanagementsystem/activities/DashBoardActivity.java">
+      <file leaf-file-name="OnItemSelectListener.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/leapfrog/inventorymanagementsystem/events/OnItemSelectListener.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="135" column="0" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
-              <folding>
-                <element signature="e#2199#2216#0" expanded="true" />
-                <element signature="e#2285#2302#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Inventory.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/leapfrog/inventorymanagementsystem/models/Inventory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="68" column="87" selection-start-line="68" selection-start-column="87" selection-end-line="68" selection-end-column="87" />
+              <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="json_cn.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/assets/json_cn.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.38073394">
-              <caret line="122" column="35" selection-start-line="122" selection-start-column="35" selection-end-line="122" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="json.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/assets/json.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.2962962">
-              <caret line="60" column="56" selection-start-line="60" selection-start-column="56" selection-end-line="60" selection-end-column="56" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Item.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/leapfrog/inventorymanagementsystem/models/Item.java">
+      <file leaf-file-name="MisumiApplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/leapfrog/inventorymanagementsystem/MisumiApplication.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ItemNotInStockException.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/leapfrog/inventorymanagementsystem/ItemNotInStockException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.11061947">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -1584,7 +1561,6 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/navigation_items.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/leapfrog/inventorymanagementsystem/navigationdrawer/NavigationDrawerRvAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/leapfrog/inventorymanagementsystem/contracts/ItemDetailContract.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_item_detail.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/leapfrog/inventorymanagementsystem/itemdetail/ItemDetailActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/leapfrog/inventorymanagementsystem/widgets/CustomItemViewGroup.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/leapfrog/inventorymanagementsystem/activities/DashBoardActivity.java" />
@@ -1593,6 +1569,16 @@
         <option value="$PROJECT_DIR$/app/src/main/assets/json.txt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/leapfrog/inventorymanagementsystem/models/Inventory.java" />
         <option value="$PROJECT_DIR$/app/src/main/assets/json_cn.txt" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_item_detail.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/leapfrog/inventorymanagementsystem/presenters/LoginActivityPresenter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/leapfrog/inventorymanagementsystem/activities/LoginActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/login_activity.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/leapfrog/inventorymanagementsystem/login/LoginActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/leapfrog/inventorymanagementsystem/login/LoginActivityPresenter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/leapfrog/inventorymanagementsystem/login/LoginActivityContract.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/leapfrog/inventorymanagementsystem/MisumiApplication.java" />
       </list>
     </option>
   </component>
@@ -1714,6 +1700,10 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="manifests" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidManifestsGroupNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -1738,13 +1728,13 @@
     <property name="FullScreen" value="true" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="511f4180" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Nexus_5_API_21_x86" />
-    <property name="SearchEverywhereHistoryKey" value="IN&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/java/com/leapfrog/inventorymanagementsystem/models/Inventory.java&#10;Das&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/java/com/leapfrog/inventorymanagementsystem/activities/DashBoardActivity.java&#10;ItemAda&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/java/com/leapfrog/inventorymanagementsystem/adapters/ItemListAdapter.java&#10;Item&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/java/com/leapfrog/inventorymanagementsystem/models/Item.java&#10;In&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/java/com/leapfrog/inventorymanagementsystem/models/Inventory.java&#10;ItemDeta&#9;PSI&#9;JAVA://com.leapfrog.inventorymanagementsystem.itemdetail.ItemDetailActivity&#10;rv&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/java/com/leapfrog/inventorymanagementsystem/navigationdrawer/NavigationDrawerRvAdapter.java&#10;Na&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/java/com/leapfrog/inventorymanagementsystem/navigationdrawer/NavigationDrawerFragment.java&#10;ite&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/res/layout/navigation_items.xml&#10;Navi&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/java/com/leapfrog/inventorymanagementsystem/navigationdrawer/NavigationDrawerFragment.java&#10;Navigation&#9;PSI&#9;JAVA://com.leapfrog.inventorymanagementsystem.navigationdrawer.NavigationDrawerFragment&#10;Inv&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/java/com/leapfrog/inventorymanagementsystem/models/Inventory.java&#10;Inve&#9;PSI&#9;JAVA://com.leapfrog.inventorymanagementsystem.models.Inventory&#10;item&#9;PSI&#9;JAVA://com.leapfrog.inventorymanagementsystem.models.Item" />
+    <property name="SearchEverywhereHistoryKey" value="str&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/res/values/strings.xml&#10;Log&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/java/com/leapfrog/inventorymanagementsystem/activities/LoginActivity.java&#10;Lo&#9;PSI&#9;JAVA://com.leapfrog.inventorymanagementsystem.activities.LoginActivity&#10;itemli&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/java/com/leapfrog/inventorymanagementsystem/adapters/ItemListAdapter.java&#10;item&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/java/com/leapfrog/inventorymanagementsystem/events/OnItemSelectListener.java&#10;item_deta&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/res/layout/activity_item_detail.xml&#10;IN&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/java/com/leapfrog/inventorymanagementsystem/models/Inventory.java&#10;Das&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/java/com/leapfrog/inventorymanagementsystem/activities/DashBoardActivity.java&#10;ItemAda&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/java/com/leapfrog/inventorymanagementsystem/adapters/ItemListAdapter.java&#10;Item&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/java/com/leapfrog/inventorymanagementsystem/models/Item.java&#10;In&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/java/com/leapfrog/inventorymanagementsystem/models/Inventory.java&#10;ItemDeta&#9;PSI&#9;JAVA://com.leapfrog.inventorymanagementsystem.itemdetail.ItemDetailActivity&#10;rv&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/java/com/leapfrog/inventorymanagementsystem/navigationdrawer/NavigationDrawerRvAdapter.java&#10;Na&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/java/com/leapfrog/inventorymanagementsystem/navigationdrawer/NavigationDrawerFragment.java&#10;ite&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/res/layout/navigation_items.xml&#10;Navi&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/java/com/leapfrog/inventorymanagementsystem/navigationdrawer/NavigationDrawerFragment.java&#10;Navigation&#9;PSI&#9;JAVA://com.leapfrog.inventorymanagementsystem.navigationdrawer.NavigationDrawerFragment&#10;Inv&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/java/com/leapfrog/inventorymanagementsystem/models/Inventory.java&#10;Inve&#9;PSI&#9;JAVA://com.leapfrog.inventorymanagementsystem.models.Inventory" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable-hdpi" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/src/main/assets" />
       <recent name="$PROJECT_DIR$/app/src/main/res/drawable-hdpi" />
+      <recent name="$PROJECT_DIR$/app/src/main/assets" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.leapfrog.inventorymanagementsystem.navigationdrawer" />
@@ -1938,7 +1928,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3045326" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3045326" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32724506" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1947,7 +1937,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42084005" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23667206" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286119" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -2056,7 +2046,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/leapfrog/inventorymanagementsystem/EqualSpaceItemDecoration.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/leapfrog/inventorymanagementsystem/category/EqualSpaceItemDecoration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -2099,10 +2089,10 @@
           <caret line="75" column="97" selection-start-line="75" selection-start-column="97" selection-end-line="75" selection-end-column="97" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1388#1389#0" expanded="true" />
-            <element signature="e#1428#1429#0" expanded="true" />
-            <element signature="e#1479#2104#0" expanded="true" />
-            <element signature="e#2103#2104#0" expanded="true" />
+            <element signature="e#1244#1245#0" expanded="true" />
+            <element signature="e#1284#1285#0" expanded="true" />
+            <element signature="e#1335#1960#0" expanded="true" />
+            <element signature="e#1959#1960#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2128,37 +2118,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/leapfrog/inventorymanagementsystem/contracts/ItemDetailContract.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/leapfrog/inventorymanagementsystem/itemdetail/ItemDetailContract.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_item_detail.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23728813">
-          <caret line="152" column="59" selection-start-line="152" selection-start-column="59" selection-end-line="152" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/leapfrog/inventorymanagementsystem/widgets/CustomItemViewGroup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25663716">
-          <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/leapfrog/inventorymanagementsystem/adapters/ItemListAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38053098">
-          <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
           <folding />
         </state>
       </provider>
@@ -2168,38 +2131,22 @@
         <state vertical-scroll-proportion="0.40265486">
           <caret line="113" column="57" selection-start-line="113" selection-start-column="57" selection-end-line="113" selection-end-column="57" />
           <folding>
-            <element signature="e#2114#2115#0" expanded="true" />
-            <element signature="e#2158#2159#0" expanded="true" />
-            <element signature="e#2584#2585#0" expanded="true" />
-            <element signature="e#2630#2631#0" expanded="true" />
+            <element signature="e#2038#2039#0" expanded="true" />
+            <element signature="e#2082#2083#0" expanded="true" />
+            <element signature="e#2508#2509#0" expanded="true" />
+            <element signature="e#2554#2555#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/leapfrog/inventorymanagementsystem/activities/DashBoardActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/leapfrog/inventorymanagementsystem/dashboard/DashBoardActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="135" column="0" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
           <folding>
-            <element signature="e#2199#2216#0" expanded="true" />
-            <element signature="e#2285#2302#0" expanded="true" />
+            <element signature="e#1985#2002#0" expanded="true" />
+            <element signature="e#2071#2088#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/leapfrog/inventorymanagementsystem/models/Item.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/assets/json.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.2962962">
-          <caret line="60" column="56" selection-start-line="60" selection-start-column="56" selection-end-line="60" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2213,8 +2160,162 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/assets/json_cn.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38073394">
-          <caret line="122" column="35" selection-start-line="122" selection-start-column="35" selection-end-line="122" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.27752292">
+          <caret line="123" column="28" selection-start-line="123" selection-start-column="28" selection-end-line="123" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/assets/json.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17114915">
+          <caret line="60" column="56" selection-start-line="60" selection-start-column="56" selection-end-line="60" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/leapfrog/inventorymanagementsystem/models/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.1598272">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_item_detail.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.793103">
+          <caret line="79" column="23" selection-start-line="79" selection-start-column="23" selection-end-line="79" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/login_activity.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3697997">
+          <caret line="16" column="45" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
+          <folding>
+            <element signature="e#1674#1696#0" expanded="true" />
+            <element signature="e#2051#2073#0" expanded="true" />
+            <element signature="e#3103#3132#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17699115">
+          <caret line="8" column="44" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="44" />
+          <folding>
+            <element signature="e#351#369#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29953918">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_items.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27734977">
+          <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/leapfrog/inventorymanagementsystem/category/CategoryRvAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38053098">
+          <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/leapfrog/inventorymanagementsystem/category/CustomItemViewGroup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3761062">
+          <caret line="84" column="25" selection-start-line="84" selection-start-column="25" selection-end-line="84" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/leapfrog/inventorymanagementsystem/login/LoginActivityPresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.088495575">
+          <caret line="4" column="64" selection-start-line="4" selection-start-column="64" selection-end-line="4" selection-end-column="64" />
+          <folding>
+            <element signature="e#1343#1344#0" expanded="true" />
+            <element signature="e#1371#1372#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/leapfrog/inventorymanagementsystem/login/LoginActivityContract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06637168">
+          <caret line="3" column="54" selection-start-line="3" selection-start-column="54" selection-end-line="3" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/leapfrog/inventorymanagementsystem/login/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.07079646">
+          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1506#1507#0" expanded="true" />
+            <element signature="e#1578#1579#0" expanded="true" />
+            <element signature="e#1630#1631#0" expanded="true" />
+            <element signature="e#1702#1703#0" expanded="true" />
+            <element signature="e#2206#2207#0" expanded="true" />
+            <element signature="e#2259#2260#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/leapfrog/inventorymanagementsystem/favorites/FavoritesRvAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3539823">
+          <caret line="41" column="9" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/leapfrog/inventorymanagementsystem/events/OnItemSelectListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/leapfrog/inventorymanagementsystem/MisumiApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/leapfrog/inventorymanagementsystem/ItemNotInStockException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11061947">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding />
         </state>
       </provider>

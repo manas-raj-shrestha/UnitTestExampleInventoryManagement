@@ -12,10 +12,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.leapfrog.inventorymanagementsystem.EqualSpaceItemDecoration;
 import com.leapfrog.inventorymanagementsystem.R;
 import com.leapfrog.inventorymanagementsystem.itemdetail.ItemDetailActivity;
-import com.leapfrog.inventorymanagementsystem.adapters.ItemListAdapter;
 import com.leapfrog.inventorymanagementsystem.data.Extras;
 import com.leapfrog.inventorymanagementsystem.events.OnItemSelectListener;
 import com.leapfrog.inventorymanagementsystem.models.Item;
@@ -73,7 +71,7 @@ public class CategoryFragment extends Fragment {
         staggeredGridLayoutManager.setGapStrategy(StaggeredGridLayoutManager.GAP_HANDLING_NONE);
 
         recyclerView.setLayoutManager(staggeredGridLayoutManager);
-        recyclerView.setAdapter(new ItemListAdapter(onItemSelectListener, getActivity(), itemType));
+        recyclerView.setAdapter(new CategoryRvAdapter(onItemSelectListener, getActivity(), itemType));
         recyclerView.addItemDecoration(new EqualSpaceItemDecoration((int) GeneralUtils.convertDpToPixel(4, getActivity())));
     }
 }

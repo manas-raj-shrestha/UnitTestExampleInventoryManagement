@@ -2229,18 +2229,20 @@ containing a value of this type.
         public static final int ic_shopping_cart_black_24dp=0x7f020055;
         public static final int ic_shopping_cart_grey_24dp=0x7f020056;
         public static final int icon=0x7f020057;
-        public static final int nacc1=0x7f020058;
-        public static final int notification_template_icon_bg=0x7f020063;
-        public static final int ok35sq=0x7f020059;
-        public static final int ok50h=0x7f02005a;
-        public static final int qefd=0x7f02005b;
-        public static final int qnu1=0x7f02005c;
-        public static final int s7=0x7f02005d;
-        public static final int s73=0x7f02005e;
-        public static final int snackbar_background=0x7f02005f;
-        public static final int syv1=0x7f020060;
-        public static final int uc1=0x7f020061;
-        public static final int user_pic=0x7f020062;
+        public static final int luncher_icon=0x7f020058;
+        public static final int misumi=0x7f020059;
+        public static final int nacc1=0x7f02005a;
+        public static final int notification_template_icon_bg=0x7f020065;
+        public static final int ok35sq=0x7f02005b;
+        public static final int ok50h=0x7f02005c;
+        public static final int qefd=0x7f02005d;
+        public static final int qnu1=0x7f02005e;
+        public static final int s7=0x7f02005f;
+        public static final int s73=0x7f020060;
+        public static final int snackbar_background=0x7f020061;
+        public static final int syv1=0x7f020062;
+        public static final int uc1=0x7f020063;
+        public static final int user_pic=0x7f020064;
     }
     public static final class id {
         public static final int action0=0x7f0c0080;
@@ -2476,7 +2478,14 @@ containing a value of this type.
         public static final int abc_toolbar_collapse_description=0x7f060012;
         public static final int app_name=0x7f060014;
         public static final int appbar_scrolling_view_behavior=0x7f060015;
+        public static final int invalid_login=0x7f060016;
+        public static final int login_success=0x7f060017;
+        public static final int password_error=0x7f060018;
         public static final int status_bar_notification_info_overflow=0x7f060013;
+        public static final int txt_forgot_password=0x7f060019;
+        public static final int txt_password=0x7f06001a;
+        public static final int txt_username=0x7f06001b;
+        public static final int username_error=0x7f06001c;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat=0x7f09007e;

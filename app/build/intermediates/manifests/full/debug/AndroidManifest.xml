@@ -11,13 +11,13 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:name="com.leapfrog.inventorymanagementsystem.ShopflixApplication"
+        android:name="com.leapfrog.inventorymanagementsystem.MisumiApplication"
         android:allowBackup="true"
-        android:icon="@drawable/icon"
+        android:icon="@drawable/luncher_icon"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.leapfrog.inventorymanagementsystem.activities.LoginActivity" >
+        <activity android:name="com.leapfrog.inventorymanagementsystem.login.LoginActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,9 +25,9 @@
             </intent-filter>
         </activity>
         <activity android:name="com.leapfrog.inventorymanagementsystem.itemdetail.ItemDetailActivity" />
-        <activity android:name="com.leapfrog.inventorymanagementsystem.activities.DashBoardActivity" />
+        <activity android:name="com.leapfrog.inventorymanagementsystem.dashboard.DashBoardActivity" />
         <activity android:name="com.leapfrog.inventorymanagementsystem.cart.CartActivity" />
-        <activity android:name="com.leapfrog.inventorymanagementsystem.activities.FavoritesActivity" />
+        <activity android:name="com.leapfrog.inventorymanagementsystem.favorites.FavoritesActivity" />
     </application>
 
 </manifest>

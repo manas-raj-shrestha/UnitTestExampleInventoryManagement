@@ -1,7 +1,7 @@
 package com.leapfrog.inventorymanagementsystem;
 
-import com.leapfrog.inventorymanagementsystem.presenters.LoginActivityPresenter;
-import com.leapfrog.inventorymanagementsystem.contracts.LoginActivityContract;
+import com.leapfrog.inventorymanagementsystem.login.LoginActivity;
+import com.leapfrog.inventorymanagementsystem.login.LoginActivityPresenter;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -28,7 +28,7 @@ public class LoginPresenterTest {
      * values dependent on the methods of loginActivityView
      */
     @Mock
-    LoginActivityContract.Views loginActivityView;
+    LoginActivity.LoginActivityContract.Views loginActivityView;
 
     LoginActivityPresenter loginActivityPresenter;
 

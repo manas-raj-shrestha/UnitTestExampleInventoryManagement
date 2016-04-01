@@ -2,7 +2,6 @@ package com.leapfrog.inventorymanagementsystem.navigationdrawer;
 
 import android.app.Activity;
 import android.app.Fragment;
-import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.support.v4.graphics.drawable.RoundedBitmapDrawable;
@@ -17,9 +16,6 @@ import android.widget.ImageView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.target.BitmapImageViewTarget;
 import com.leapfrog.inventorymanagementsystem.R;
-import com.leapfrog.inventorymanagementsystem.cart.CartActivity;
-import com.leapfrog.inventorymanagementsystem.activities.FavoritesActivity;
-import com.leapfrog.inventorymanagementsystem.events.OnNavigationOptionSelected;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;

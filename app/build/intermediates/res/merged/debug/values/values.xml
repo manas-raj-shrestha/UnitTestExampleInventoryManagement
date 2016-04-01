@@ -333,13 +333,26 @@
     <string name="abc_toolbar_collapse_description">Collapse</string>
     <!-- From: file:/Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/res/values/strings.xml -->
     <eat-comment/>
-    <string name="app_name">Shopflix</string>
+    <string name="app_name">MiSUMi</string>
     <!-- From: file:/Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+    <!-- From: file:/Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="invalid_login">Invalid Credentials</string>
+    <string name="login_success">Login Success</string>
+    <string name="password_error">Password cannot be empty</string>
     <!-- From: file:/Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <!-- From: file:/Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="txt_forgot_password">Forgot Your Password</string>
+    <string name="txt_password">Password</string>
+    <string name="txt_username">Username</string>
+    <string name="username_error">Username cannot be empty.</string>
+    <!-- From: file:/Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <eat-comment/>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>
