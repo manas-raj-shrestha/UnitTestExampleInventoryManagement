@@ -8,10 +8,10 @@ import butterknife.ButterKnife.ViewBinder;
 public class LoginActivity$$ViewBinder<T extends com.leapfrog.inventorymanagementsystem.login.LoginActivity> implements ViewBinder<T> {
   @Override public void bind(final Finder finder, final T target, Object source) {
     View view;
-    view = finder.findRequiredView(source, 2131492991, "field 'edtPassword'");
-    target.edtPassword = finder.castView(view, 2131492991, "field 'edtPassword'");
-    view = finder.findRequiredView(source, 2131492990, "field 'edtUsername'");
-    target.edtUsername = finder.castView(view, 2131492990, "field 'edtUsername'");
+    view = finder.findRequiredView(source, 2131492994, "field 'edtPassword'");
+    target.edtPassword = finder.castView(view, 2131492994, "field 'edtPassword'");
+    view = finder.findRequiredView(source, 2131492993, "field 'edtUsername'");
+    target.edtUsername = finder.castView(view, 2131492993, "field 'edtUsername'");
   }
 
   @Override public void unbind(T target) {

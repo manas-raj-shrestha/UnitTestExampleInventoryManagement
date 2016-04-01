@@ -68,7 +68,7 @@ public class CartActivity extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
 
         actionBar.setDisplayHomeAsUpEnabled(true);
-        actionBar.setTitle("Cart");
+        actionBar.setTitle(getString(R.string.txt_cart));
     }
 
     @Override

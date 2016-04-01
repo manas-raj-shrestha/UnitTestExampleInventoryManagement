@@ -50,9 +50,6 @@ public class DashBoardActivity extends AppCompatActivity implements OnNavigation
 
         initializeFragments();
         initializeDrawer();
-
-
-
     }
 
     /**

@@ -54,6 +54,8 @@ public class ItemDetailPresenter implements ItemDetailContract.UserInteractions 
 
 
         Log.e("added to card", "added to cart " + item.getItemCode());
+
+//        itemDetailContract.showAddToCartDialog();
     }
 
 }

@@ -1,5 +1,6 @@
 package com.leapfrog.inventorymanagementsystem.itemdetail;
 
+import android.app.Dialog;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -8,8 +9,11 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
+import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -17,6 +21,9 @@ import com.bumptech.glide.Glide;
 import com.leapfrog.inventorymanagementsystem.R;
 import com.leapfrog.inventorymanagementsystem.data.Extras;
 import com.leapfrog.inventorymanagementsystem.models.Item;
+
+import java.lang.reflect.Field;
+import java.util.ArrayList;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -89,12 +96,18 @@ public class ItemDetailActivity extends AppCompatActivity implements ItemDetailC
 
     @Override
     public void purchaseSuccessful() {
-        Toast.makeText(ItemDetailActivity.this, "Purchase Successful", Toast.LENGTH_SHORT).show();
+        Toast.makeText(ItemDetailActivity.this, getString(R.string.txt_purchase_successful), Toast.LENGTH_SHORT).show();
     }
 
     @Override
     public void purchaseFailure() {
-        Toast.makeText(this, "Item is not available", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, getString(R.string.txt_item_not_available), Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void showAddToCartDialog() {
+        AddToCartDialog addToCartDialog = new AddToCartDialog(this,item,itemDetailPresenter);
+        addToCartDialog.show();
     }
 
     public void buyItem(View view) {
@@ -113,7 +126,8 @@ public class ItemDetailActivity extends AppCompatActivity implements ItemDetailC
 
         switch (item.getItemId()) {
             case R.id.action_add_to_cart:
-                itemDetailPresenter.addToCart(this.item);
+//                itemDetailPresenter.addToCart(this.item);
+                showAddToCartDialog();
                 break;
             case android.R.id.home:
                 onBackPressed();
@@ -133,4 +147,5 @@ public class ItemDetailActivity extends AppCompatActivity implements ItemDetailC
         tvItemDesc.setText(item.getItemDescription());
         tvBrand.setText(item.getDealerName());
     }
+
 }

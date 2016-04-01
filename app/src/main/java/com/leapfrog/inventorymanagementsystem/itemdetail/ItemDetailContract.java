@@ -14,6 +14,8 @@ public interface ItemDetailContract {
 
     void purchaseFailure();
 
+    void showAddToCartDialog();
+
     interface UserInteractions{
         void addToCart(Item item);
     }
