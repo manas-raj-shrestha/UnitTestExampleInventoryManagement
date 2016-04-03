@@ -16,6 +16,7 @@ import android.view.View;
 import com.leapfrog.inventorymanagementsystem.R;
 import com.leapfrog.inventorymanagementsystem.cart.CartActivity;
 import com.leapfrog.inventorymanagementsystem.category.CategoryFragment;
+import com.leapfrog.inventorymanagementsystem.models.Inventory;
 import com.leapfrog.inventorymanagementsystem.models.Item;
 import com.leapfrog.inventorymanagementsystem.navigationdrawer.NavigationDrawerFragment;
 import com.leapfrog.inventorymanagementsystem.navigationdrawer.OnNavigationOptionSelected;
@@ -48,6 +49,7 @@ public class DashBoardActivity extends AppCompatActivity implements OnNavigation
 
         ButterKnife.bind(this);
         setToolbar();
+
 
         initializeFragments();
         initializeDrawer();

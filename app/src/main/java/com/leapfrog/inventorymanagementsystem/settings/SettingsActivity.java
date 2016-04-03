@@ -1,6 +1,7 @@
 package com.leapfrog.inventorymanagementsystem.settings;
 
 import android.app.Dialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -76,22 +77,26 @@ public class SettingsActivity extends AppCompatActivity {
         Dialog dialog = new Dialog(this);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setContentView(R.layout.dialog_language);
-        RadioGroup radioGroup = (RadioGroup) dialog.findViewById(R.id.rg_language);
+        final RadioGroup radioGroup = (RadioGroup) dialog.findViewById(R.id.rg_language);
 
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
-                Log.e("asd",""+i);
-                switch (i){
-                    case 1:
-                        HawkUtils.setLanguage(Language.CHINESE);
-                        tvLanguage.setText("CN");
-                        break;
-                    case 2:
-                        HawkUtils.setLanguage(Language.ENGLISH);
-                        tvLanguage.setText("EN");
-                        break;
+                if (i % 2 == 0) {
+                    HawkUtils.setLanguage(Language.ENGLISH);
+                    tvLanguage.setText("EN");
+                } else {
+                    HawkUtils.setLanguage(Language.CHINESE);
+                    tvLanguage.setText("CN");
                 }
+            }
+        });
+
+        dialog.setOnDismissListener(new DialogInterface.OnDismissListener() {
+            @Override
+            public void onDismiss(DialogInterface dialogInterface) {
+                Log.e("dismissed", "dismissed");
+                radioGroup.removeAllViews();
             }
         });
 

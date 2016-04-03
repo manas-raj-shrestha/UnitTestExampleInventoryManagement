@@ -3,8 +3,8 @@ package com.leapfrog.inventorymanagementsystem.models;
 import android.util.Log;
 
 import com.leapfrog.inventorymanagementsystem.ItemNotInStockException;
-import com.leapfrog.inventorymanagementsystem.R;
 import com.leapfrog.inventorymanagementsystem.MisumiApplication;
+import com.leapfrog.inventorymanagementsystem.R;
 import com.leapfrog.inventorymanagementsystem.data.HawkUtils;
 import com.leapfrog.inventorymanagementsystem.settings.SettingsActivity;
 
@@ -25,7 +25,7 @@ import java.util.HashMap;
 public class Inventory implements InventoryActions {
     private static Inventory inventory;
     public static ArrayList<Item> items = new ArrayList<>();
-    private HashMap<String,Integer> hashMap = new HashMap<>();
+    private HashMap<String, Integer> hashMap = new HashMap<>();
 
     public static Inventory getInstance() {
         if (inventory == null)
@@ -34,10 +34,7 @@ public class Inventory implements InventoryActions {
         return inventory;
     }
 
-    private Inventory() {
-//        addWireItems();
-//        addControlItems();
-//        addKnifeAndTools();
+    public void loadInventory() {
         createDrawableMap();
         try {
             JSONArray m_jArry = new JSONArray(loadJSONFromAsset());
@@ -62,16 +59,23 @@ public class Inventory implements InventoryActions {
         } catch (JSONException e) {
             e.printStackTrace();
         }
+    }
 
+    private Inventory() {
+//        addWireItems();
+//        addControlItems();
+//        addKnifeAndTools();
+
+        loadInventory();
     }
 
     public String loadJSONFromAsset() {
         String json = null;
         try {
-            InputStream is=null;
+            InputStream is = null;
             if (HawkUtils.getLanguage().equals(SettingsActivity.Language.CHINESE)) {
                 is = MisumiApplication.getContext().getAssets().open("json_cn.txt");
-            }else {
+            } else {
                 is = MisumiApplication.getContext().getAssets().open("json_en.txt");
             }
 
@@ -116,7 +120,6 @@ public class Inventory implements InventoryActions {
             throw (new ItemNotInStockException());
         }
     }
-
 
 
     /**
@@ -197,7 +200,7 @@ public class Inventory implements InventoryActions {
                 Calendar.getInstance().getTimeInMillis(), "MISUMI", 6, Item.ItemType.WIRE));
     }
 
-    public void createDrawableMap(){
+    public void createDrawableMap() {
         hashMap.put("UC1", R.drawable.uc1);
         hashMap.put("SYV1", R.drawable.syv1);
         hashMap.put("CC1", R.drawable.cc1);
@@ -205,7 +208,7 @@ public class Inventory implements InventoryActions {
         hashMap.put("CAT51", R.drawable.cat51);
         hashMap.put("DNC1", R.drawable.dnc1);
 
-        hashMap.put("FX3U",R.drawable.fx3u);
+        hashMap.put("FX3U", R.drawable.fx3u);
         hashMap.put("FX3G", R.drawable.fx3g);
         hashMap.put("S7", R.drawable.s7);
         hashMap.put("S73", R.drawable.s73);
