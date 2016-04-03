@@ -3,4 +3,4 @@
     android:id="@+id/recyclerView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android" /><!-- From: file:/Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/res/layout/fragment_wire_category.xml -->
+    xmlns:android="http://schemas.android.com/apk/res/android" /><!-- From: file:/D:/AndroidStudioProjects/UnitTestExampleInventoryManagement/app/src/main/res/layout/fragment_wire_category.xml -->

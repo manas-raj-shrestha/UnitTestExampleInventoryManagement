@@ -18,4 +18,4 @@
         android:layout_height="match_parent"
         android:layout_below="@+id/toolbar" />
 
-</RelativeLayout><!-- From: file:/Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/res/layout/cart_activity.xml -->
+</RelativeLayout><!-- From: file:/D:/AndroidStudioProjects/UnitTestExampleInventoryManagement/app/src/main/res/layout/cart_activity.xml -->
