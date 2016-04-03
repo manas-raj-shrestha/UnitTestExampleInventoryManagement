@@ -17,6 +17,10 @@
     <string name="txt_cart">Cart</string>
     <string name="txt_total">Total : </string>
 
+    //settings activity
+    <string name="txt_settings">Settings</string>
+    <string name="txt_language">Language</string>
+
     //item detail activity
     <string name="txt_purchase_successful">Purchase Successful</string>
     <string name="txt_item_not_available">Item is not available</string>

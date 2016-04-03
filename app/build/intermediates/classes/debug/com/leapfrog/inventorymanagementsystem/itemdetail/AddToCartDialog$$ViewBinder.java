@@ -8,13 +8,13 @@ import butterknife.ButterKnife.ViewBinder;
 public class AddToCartDialog$$ViewBinder<T extends com.leapfrog.inventorymanagementsystem.itemdetail.AddToCartDialog> implements ViewBinder<T> {
   @Override public void bind(final Finder finder, final T target, Object source) {
     View view;
-    view = finder.findRequiredView(source, 2131492975, "field 'ivAddToCart'");
-    target.ivAddToCart = finder.castView(view, 2131492975, "field 'ivAddToCart'");
-    view = finder.findRequiredView(source, 2131492976, "field 'tvItemName'");
-    target.tvItemName = finder.castView(view, 2131492976, "field 'tvItemName'");
-    view = finder.findRequiredView(source, 2131492977, "field 'edtQuantity'");
-    target.edtQuantity = finder.castView(view, 2131492977, "field 'edtQuantity'");
-    view = finder.findRequiredView(source, 2131492978, "method 'setOnClick'");
+    view = finder.findRequiredView(source, 2131492976, "field 'ivAddToCart'");
+    target.ivAddToCart = finder.castView(view, 2131492976, "field 'ivAddToCart'");
+    view = finder.findRequiredView(source, 2131492977, "field 'tvItemName'");
+    target.tvItemName = finder.castView(view, 2131492977, "field 'tvItemName'");
+    view = finder.findRequiredView(source, 2131492978, "field 'edtQuantity'");
+    target.edtQuantity = finder.castView(view, 2131492978, "field 'edtQuantity'");
+    view = finder.findRequiredView(source, 2131492979, "method 'setOnClick'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(

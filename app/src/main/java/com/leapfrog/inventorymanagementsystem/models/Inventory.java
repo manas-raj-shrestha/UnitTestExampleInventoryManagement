@@ -217,8 +217,6 @@ public class Inventory implements InventoryActions {
         hashMap.put("BEM1", R.drawable.bem1);
         hashMap.put("FKD1", R.drawable.fkd1);
         hashMap.put("QEFD", R.drawable.qefd);
-
-
     }
 
 }

@@ -9,10 +9,10 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 
 import com.leapfrog.inventorymanagementsystem.R;
 import com.leapfrog.inventorymanagementsystem.data.HawkUtils;
-import com.orhanobut.hawk.Hawk;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -30,15 +30,22 @@ public class SettingsActivity extends AppCompatActivity {
     @Bind(R.id.toolbar)
     Toolbar toolbar;
 
+    @Bind(R.id.tv_language)
+    TextView tvLanguage;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
         ButterKnife.bind(this);
 
-        Log.e("asdasd", String.valueOf(HawkUtils.getLanguage()));
-
         setToolbar();
+
+        if (HawkUtils.getLanguage().equals(Language.ENGLISH)){
+            tvLanguage.setText("EN");
+        }else {
+            tvLanguage.setText("CN");
+        }
     }
 
     /**
@@ -49,7 +56,7 @@ public class SettingsActivity extends AppCompatActivity {
         android.support.v7.app.ActionBar actionBar = getSupportActionBar();
 
         actionBar.setDisplayHomeAsUpEnabled(true);
-        actionBar.setTitle("Settings");
+        actionBar.setTitle(getString(R.string.txt_settings));
     }
 
     @Override
@@ -74,14 +81,15 @@ public class SettingsActivity extends AppCompatActivity {
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
-                Log.e("check", String.valueOf(i));
-
+                Log.e("asd",""+i);
                 switch (i){
                     case 1:
                         HawkUtils.setLanguage(Language.CHINESE);
+                        tvLanguage.setText("CN");
                         break;
                     case 2:
                         HawkUtils.setLanguage(Language.ENGLISH);
+                        tvLanguage.setText("EN");
                         break;
                 }
             }
