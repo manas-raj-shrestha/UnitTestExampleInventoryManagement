@@ -38,4 +38,7 @@
     <string name="txt_about_the_seller">About the seller</string>
     <string name="txt_misumi">MISUMI</string>
 
+    //item detail presenter
+    <string name="txt_item_removed">Item removed from your cart</string>
+    <string name="txt_item_added">Item added to your cart</string>
 </resources>

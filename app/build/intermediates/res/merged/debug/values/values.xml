@@ -356,8 +356,10 @@
     <string name="txt_condition">Condition</string>
     <string name="txt_condition_new">New</string>
     <string name="txt_forgot_password">Forgot Your Password</string>
+    <string name="txt_item_added">Item added to your cart</string>
     <string name="txt_item_not_available">Item is not available</string>
     <string name="txt_item_number">Item Number</string>
+    <string name="txt_item_removed">Item removed from your cart</string>
     <string name="txt_language">Language</string>
     <string name="txt_manufacture_country">Country Of Manufacture</string>
     <string name="txt_misumi">MISUMI</string>

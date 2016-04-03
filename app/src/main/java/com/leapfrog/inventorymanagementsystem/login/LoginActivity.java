@@ -33,7 +33,6 @@ public class LoginActivity extends AppCompatActivity implements LoginActivityCon
         ButterKnife.bind(this);
 
         loginActivityPresenter = new LoginActivityPresenter(this);
-        loginSuccess();
     }
 
     @Override
@@ -69,6 +68,7 @@ public class LoginActivity extends AppCompatActivity implements LoginActivityCon
     public void loginSuccess() {
         Toast.makeText(LoginActivity.this, getString(R.string.login_success), Toast.LENGTH_SHORT).show();
         startActivity(new Intent(this, DashBoardActivity.class));
+        finish();
     }
 
     @Override
