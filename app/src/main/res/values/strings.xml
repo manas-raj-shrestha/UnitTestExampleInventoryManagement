@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">MiSUMi</string>
+    <string name="chinese_currency">¥</string>
 
     //login activity
     <string name="username_error">Username cannot be empty.</string>
@@ -14,8 +15,23 @@
 
     //cart activity
     <string name="txt_cart">Cart</string>
+    <string name="txt_total">Total : </string>
 
     //item detail activity
     <string name="txt_purchase_successful">Purchase Successful</string>
     <string name="txt_item_not_available">Item is not available</string>
+    <string name="txt_shipping">Shipping</string>
+    <string name="txt_condition">Condition</string>
+    <string name="txt_condition_new">New</string>
+    <string name="txt_quantity">Quantity</string>
+    <string name="txt_100_available">100 available</string>
+    <string name="txt_brand">Brand</string>
+    <string name="txt_na">NA</string>
+    <string name="txt_manufacture_country">Country Of Manufacture</string>
+    <string name="txt_china">China</string>
+    <string name="txt_upc">UPC</string>
+    <string name="txt_item_number">Item Number</string>
+    <string name="txt_about_the_seller">About the seller</string>
+    <string name="txt_misumi">MISUMI</string>
+
 </resources>

@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.leapfrog.inventorymanagementsystem.R;
 import com.leapfrog.inventorymanagementsystem.data.HawkUtils;
 import com.leapfrog.inventorymanagementsystem.events.OnItemSelectListener;
 import com.leapfrog.inventorymanagementsystem.models.Inventory;
@@ -52,9 +53,11 @@ public class CartRvAdapter extends RecyclerView.Adapter<CartRvAdapter.ViewHolder
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         if (position < cartItems.size())
-            holder.tvItemName.setText(cartItems.get(position).getItemName() + " $" + cartItems.get(position).getPrice());
+            holder.tvItemName.setText(cartItems.get(position).getItemName()
+                    + " " + context.getString(R.string.chinese_currency)
+                    + cartItems.get(position).getPrice());
         else
-            holder.tvItemName.setText("Total : $" + totalPrice);
+            holder.tvItemName.setText(context.getString(R.string.txt_total) + context.getString(R.string.chinese_currency) + totalPrice);
     }
 
     @Override
