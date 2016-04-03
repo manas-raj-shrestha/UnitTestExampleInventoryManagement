@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/D:/AndroidStudioProjects/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <attr format="reference" name="drawerArrowStyle"/>
     <attr format="dimension" name="height"/>
@@ -32,31 +32,31 @@
     <color name="bright_foreground_material_light">@android:color/black</color>
     <color name="button_material_dark">#ff5a595b</color>
     <color name="button_material_light">#ffd6d7d7</color>
-    <!-- From: file:/Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/AndroidStudioProjects/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <color name="cardview_dark_background">#FF202020</color>
     <color name="cardview_light_background">#FFFAFAFA</color>
     <color name="cardview_shadow_end_color">#03000000</color>
     <color name="cardview_shadow_start_color">#37000000</color>
-    <!-- From: file:/Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/D:/AndroidStudioProjects/UnitTestExampleInventoryManagement/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="colorAccent">#FF9357</color>
     <color name="colorPrimary">#28282A</color>
     <color name="colorPrimaryDark">#222122</color>
-    <!-- From: file:/Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/D:/AndroidStudioProjects/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <color name="dim_foreground_disabled_material_dark">#80bebebe</color>
     <color name="dim_foreground_disabled_material_light">#80323232</color>
     <color name="dim_foreground_material_dark">#ffbebebe</color>
     <color name="dim_foreground_material_light">#ff323232</color>
-    <!-- From: file:/Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
+    <!-- From: file:/D:/AndroidStudioProjects/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <color name="error_color">#FFDD2C00</color>
     <color name="fab_stroke_end_inner_color">#0A000000</color>
     <color name="fab_stroke_end_outer_color">#0F000000</color>
     <color name="fab_stroke_top_inner_color">#1AFFFFFF</color>
     <color name="fab_stroke_top_outer_color">#2EFFFFFF</color>
-    <!-- From: file:/Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/D:/AndroidStudioProjects/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <color name="foreground_material_dark">@android:color/white</color>
     <color name="foreground_material_light">@android:color/black</color>
@@ -90,13 +90,13 @@
     <color name="secondary_text_default_material_light">#8a000000</color>
     <color name="secondary_text_disabled_material_dark">#36ffffff</color>
     <color name="secondary_text_disabled_material_light">#24000000</color>
-    <!-- From: file:/Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
+    <!-- From: file:/D:/AndroidStudioProjects/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <color name="shadow_end_color">@android:color/transparent</color>
     <color name="shadow_mid_color">#14000000</color>
     <color name="shadow_start_color">#44000000</color>
     <color name="snackbar_background_color">#323232</color>
-    <!-- From: file:/Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/D:/AndroidStudioProjects/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <color name="switch_thumb_disabled_material_dark">#ff616161</color>
     <color name="switch_thumb_disabled_material_light">#ffbdbdbd</color>
@@ -212,19 +212,19 @@
     <dimen name="abc_text_size_subtitle_material_toolbar">16dp</dimen>
     <dimen name="abc_text_size_title_material">20sp</dimen>
     <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
-    <!-- From: file:/Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/D:/AndroidStudioProjects/UnitTestExampleInventoryManagement/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <!-- From: file:/Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
+    <!-- From: file:/D:/AndroidStudioProjects/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <dimen name="appbar_elevation">4dp</dimen>
-    <!-- From: file:/Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/AndroidStudioProjects/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <dimen name="cardview_compat_inset_shadow">1dp</dimen>
     <dimen name="cardview_default_elevation">2dp</dimen>
     <dimen name="cardview_default_radius">2dp</dimen>
-    <!-- From: file:/Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/D:/AndroidStudioProjects/UnitTestExampleInventoryManagement/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="dimens_2x">16dp</dimen>
     <dimen name="dimens_3x">24dp</dimen>
@@ -232,11 +232,11 @@
     <dimen name="dimens_5x">40dp</dimen>
     <dimen name="dimens_6x">48dp</dimen>
     <dimen name="dimens_7x">56dp</dimen>
-    <!-- From: file:/Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/D:/AndroidStudioProjects/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <item format="float" name="disabled_alpha_material_dark" type="dimen">0.30</item>
     <item format="float" name="disabled_alpha_material_light" type="dimen">0.26</item>
-    <!-- From: file:/Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
+    <!-- From: file:/D:/AndroidStudioProjects/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <dimen name="fab_border_width">0.5dp</dimen>
     <dimen name="fab_content_size">24dp</dimen>
@@ -244,15 +244,15 @@
     <dimen name="fab_size_mini">40dp</dimen>
     <dimen name="fab_size_normal">56dp</dimen>
     <dimen name="fab_translation_z_pressed">6dp</dimen>
-    <!-- From: file:/Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/D:/AndroidStudioProjects/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <item format="float" name="highlight_alpha_material_colored" type="dimen">0.26</item>
     <item format="float" name="highlight_alpha_material_dark" type="dimen">0.20</item>
     <item format="float" name="highlight_alpha_material_light" type="dimen">0.12</item>
-    <!-- From: file:/Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/D:/AndroidStudioProjects/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <dimen name="item_touch_helper_max_drag_scroll_per_frame">20dp</dimen>
-    <!-- From: file:/Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
+    <!-- From: file:/D:/AndroidStudioProjects/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <dimen name="navigation_elevation">12dp</dimen>
     <dimen name="navigation_icon_padding">32dp</dimen>
@@ -261,12 +261,12 @@
     <dimen name="navigation_padding_bottom">8dp</dimen>
     <dimen name="navigation_padding_top_default">0dp</dimen>
     <dimen name="navigation_separator_vertical_padding">8dp</dimen>
-    <!-- From: file:/Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/D:/AndroidStudioProjects/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <dimen name="notification_large_icon_height">64dp</dimen>
     <dimen name="notification_large_icon_width">64dp</dimen>
     <dimen name="notification_subtext_size">12dp</dimen>
-    <!-- From: file:/Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
+    <!-- From: file:/D:/AndroidStudioProjects/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <dimen name="snackbar_action_inline_max_width">128dp</dimen>
     <dimen name="snackbar_background_corner_radius">0dp</dimen>
@@ -280,7 +280,7 @@
     <dimen name="snackbar_text_size">14sp</dimen>
     <dimen name="tab_max_width">264dp</dimen>
     <dimen name="tab_min_width">72dp</dimen>
-    <!-- From: file:/Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/D:/AndroidStudioProjects/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <drawable name="notification_template_icon_bg">#3333B5E5</drawable>
     <item name="action_bar_activity_content" type="id"/>
@@ -288,28 +288,28 @@
     <item name="action_menu_divider" type="id"/>
     <item name="action_menu_presenter" type="id"/>
     <item name="home" type="id"/>
-    <!-- From: file:/Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/D:/AndroidStudioProjects/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <item name="item_touch_helper_previous_elevation" type="id"/>
-    <!-- From: file:/Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/D:/AndroidStudioProjects/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <item name="progress_circular" type="id"/>
     <item name="progress_horizontal" type="id"/>
     <item name="split_action_bar" type="id"/>
     <item name="up" type="id"/>
-    <!-- From: file:/Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
+    <!-- From: file:/D:/AndroidStudioProjects/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <item name="view_offset_helper" type="id"/>
-    <!-- From: file:/Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/D:/AndroidStudioProjects/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <integer name="abc_config_activityDefaultDur">220</integer>
     <integer name="abc_config_activityShortDur">150</integer>
     <integer name="abc_max_action_buttons">2</integer>
     <integer name="cancel_button_image_alpha">127</integer>
-    <!-- From: file:/Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
+    <!-- From: file:/D:/AndroidStudioProjects/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <integer name="snackbar_text_max_lines">2</integer>
-    <!-- From: file:/Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/D:/AndroidStudioProjects/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <integer name="status_bar_notification_info_maxnum">999</integer>
     <string name="abc_action_bar_home_description">Navigate home</string>
@@ -331,33 +331,51 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
-    <!-- From: file:/Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/AndroidStudioProjects/UnitTestExampleInventoryManagement/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="app_name">MiSUMi</string>
-    <!-- From: file:/Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
+    <!-- From: file:/D:/AndroidStudioProjects/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
-    <!-- From: file:/Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/AndroidStudioProjects/UnitTestExampleInventoryManagement/app/src/main/res/values/strings.xml -->
     <eat-comment/>
+    <string name="chinese_currency">¥</string>
     <string name="invalid_login">Invalid Credentials</string>
     <string name="login_success">Login Success</string>
     <string name="password_error">Password cannot be empty</string>
-    <!-- From: file:/Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/D:/AndroidStudioProjects/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <string name="status_bar_notification_info_overflow">999+</string>
-    <!-- From: file:/Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/AndroidStudioProjects/UnitTestExampleInventoryManagement/app/src/main/res/values/strings.xml -->
     <eat-comment/>
+    <string name="txt_100_available">100 available</string>
+    <string name="txt_about_the_seller">About the seller</string>
+    <string name="txt_brand">Brand</string>
+    <string name="txt_cart">Cart</string>
+    <string name="txt_china">China</string>
+    <string name="txt_condition">Condition</string>
+    <string name="txt_condition_new">New</string>
     <string name="txt_forgot_password">Forgot Your Password</string>
+    <string name="txt_item_not_available">Item is not available</string>
+    <string name="txt_item_number">Item Number</string>
+    <string name="txt_manufacture_country">Country Of Manufacture</string>
+    <string name="txt_misumi">MISUMI</string>
+    <string name="txt_na">NA</string>
     <string name="txt_password">Password</string>
+    <string name="txt_purchase_successful">Purchase Successful</string>
+    <string name="txt_quantity">Quantity</string>
+    <string name="txt_shipping">Shipping</string>
+    <string name="txt_total">Total : </string>
+    <string name="txt_upc">UPC</string>
     <string name="txt_username">Username</string>
     <string name="username_error">Username cannot be empty.</string>
-    <!-- From: file:/Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/D:/AndroidStudioProjects/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>
     <style name="Animation.AppCompat.DropDownUp" parent="Base.Animation.AppCompat.DropDownUp"/>
-    <!-- From: file:/Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/D:/AndroidStudioProjects/UnitTestExampleInventoryManagement/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
@@ -367,7 +385,7 @@
 
         <item name="android:windowContentTransitions">true</item>
     </style>
-    <!-- From: file:/Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/D:/AndroidStudioProjects/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <style name="Base.AlertDialog.AppCompat" parent="android:Widget">
         <item name="android:layout">@layout/abc_alert_dialog_material</item>
@@ -1304,7 +1322,7 @@
         <item name="android:minWidth">56dp</item>
         <item name="android:scaleType">center</item>
     </style>
-    <!-- From: file:/Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
+    <!-- From: file:/D:/AndroidStudioProjects/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <style name="Base.Widget.Design.TabLayout" parent="android:Widget">
         <item name="tabMaxWidth">@dimen/tab_max_width</item>
@@ -1316,7 +1334,7 @@
         <item name="tabTextAppearance">@style/TextAppearance.Design.Tab</item>
         <item name="tabSelectedTextColor">?android:textColorPrimary</item>
     </style>
-    <!-- From: file:/Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/AndroidStudioProjects/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <style name="CardView">
         <item name="cardBackgroundColor">@color/cardview_light_background</item>
@@ -1332,7 +1350,7 @@
     <style name="CardView.Light">
         <item name="cardBackgroundColor">@color/cardview_light_background</item>
     </style>
-    <!-- From: file:/Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/D:/AndroidStudioProjects/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <style name="Platform.AppCompat" parent="android:Theme">
         <item name="android:windowNoTitle">true</item>
@@ -1534,7 +1552,7 @@
     </style>
     <style name="TextAppearance.AppCompat.Widget.Switch" parent="Base.TextAppearance.AppCompat.Widget.Switch"/>
     <style name="TextAppearance.AppCompat.Widget.TextView.SpinnerItem" parent="Base.TextAppearance.AppCompat.Widget.TextView.SpinnerItem"/>
-    <!-- From: file:/Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
+    <!-- From: file:/D:/AndroidStudioProjects/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <style name="TextAppearance.Design.Error" parent="TextAppearance.AppCompat.Caption">
         <item name="android:textColor">@color/error_color</item>
@@ -1554,7 +1572,7 @@
         <item name="android:textColor">?android:textColorSecondary</item>
         <item name="textAllCaps">true</item>
     </style>
-    <!-- From: file:/Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/D:/AndroidStudioProjects/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <style name="TextAppearance.StatusBar.EventContent" parent=""/>
     <style name="TextAppearance.StatusBar.EventContent.Info" parent=""/>
@@ -1687,7 +1705,7 @@
     <style name="Widget.AppCompat.TextView.SpinnerItem" parent="Base.Widget.AppCompat.TextView.SpinnerItem"/>
     <style name="Widget.AppCompat.Toolbar" parent="Base.Widget.AppCompat.Toolbar"/>
     <style name="Widget.AppCompat.Toolbar.Button.Navigation" parent="Base.Widget.AppCompat.Toolbar.Button.Navigation"/>
-    <!-- From: file:/Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
+    <!-- From: file:/D:/AndroidStudioProjects/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <style name="Widget.Design.AppBarLayout" parent="android:Widget">
         <item name="elevation">@dimen/appbar_elevation</item>
