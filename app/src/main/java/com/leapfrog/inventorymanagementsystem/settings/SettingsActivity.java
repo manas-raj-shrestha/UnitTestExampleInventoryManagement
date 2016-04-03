@@ -92,14 +92,6 @@ public class SettingsActivity extends AppCompatActivity {
             }
         });
 
-        dialog.setOnDismissListener(new DialogInterface.OnDismissListener() {
-            @Override
-            public void onDismiss(DialogInterface dialogInterface) {
-                Log.e("dismissed", "dismissed");
-                radioGroup.removeAllViews();
-            }
-        });
-
         dialog.show();
     }
 }

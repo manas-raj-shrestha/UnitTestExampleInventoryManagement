@@ -32,11 +32,9 @@
       <file leaf-file-name="activity_settings.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_settings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.413794">
+            <state vertical-scroll-proportion="0.0">
               <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
-              <folding>
-                <element signature="e#711#733#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
           <provider editor-type-id="android-designer">
@@ -44,12 +42,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DashBoardActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DashBoardActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/leapfrog/inventorymanagementsystem/dashboard/DashBoardActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5381166">
+            <state vertical-scroll-proportion="0.0">
               <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SettingsActivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/leapfrog/inventorymanagementsystem/settings/SettingsActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.32735425">
+              <caret line="87" column="24" selection-start-line="87" selection-start-column="24" selection-end-line="87" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -1226,7 +1236,7 @@
       <map>
         <entry key="$PROJECT_DIR$/../../MovieApp" value="4282021857000" />
         <entry key="$PROJECT_DIR$/../../Vayoo-Express-Android/customer" value="4335688572000" />
-        <entry key="$PROJECT_DIR$" value="4378236257000" />
+        <entry key="$PROJECT_DIR$" value="4378528500000" />
         <entry key="$PROJECT_DIR$/../leapfroggers-android" value="4292888331000" />
       </map>
     </option>
@@ -1644,6 +1654,8 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -1652,147 +1664,9 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UnitTestExampleInventoryManagement" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UnitTestExampleInventoryManagement" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UnitTestExampleInventoryManagement" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UnitTestExampleInventoryManagement" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UnitTestExampleInventoryManagement" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="inventorymanagementsystem" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UnitTestExampleInventoryManagement" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="inventorymanagementsystem" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="settings" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UnitTestExampleInventoryManagement" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="inventorymanagementsystem" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cart" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UnitTestExampleInventoryManagement" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manifests" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidManifestsGroupNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="ProjectPane" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1814,7 +1688,7 @@
     <property name="FullScreen" value="true" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="511f4180" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Nexus_5_API_21_x86" />
-    <property name="SearchEverywhereHistoryKey" value="Inven&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/java/com/leapfrog/inventorymanagementsystem/models/Inventory.java&#10;Dash&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/java/com/leapfrog/inventorymanagementsystem/dashboard/DashBoardActivity.java&#10;str&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/res/values/strings.xml&#10;Inve&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/java/com/leapfrog/inventorymanagementsystem/models/Inventory.java&#10;Item&#9;PSI&#9;JAVA://com.leapfrog.inventorymanagementsystem.models.Item&#10;Hawk&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/java/com/leapfrog/inventorymanagementsystem/data/HawkUtils.java&#10;Cart&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/java/com/leapfrog/inventorymanagementsystem/cart/CartActivity.java&#10;settin&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/java/com/leapfrog/inventorymanagementsystem/settings/SettingsActivity.java&#10;Settin&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/res/layout/activity_settings.xml&#10;DAS&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/java/com/leapfrog/inventorymanagementsystem/dashboard/DashBoardActivity.java&#10;navi&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/java/com/leapfrog/inventorymanagementsystem/navigationdrawer/NavigationDrawerRvAdapter.java&#10;strin&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/res/values/strings.xml&#10;login&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/res/layout/login_activity.xml&#10;Log&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/java/com/leapfrog/inventorymanagementsystem/activities/LoginActivity.java&#10;Lo&#9;PSI&#9;JAVA://com.leapfrog.inventorymanagementsystem.activities.LoginActivity&#10;itemli&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/java/com/leapfrog/inventorymanagementsystem/adapters/ItemListAdapter.java&#10;item&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/java/com/leapfrog/inventorymanagementsystem/events/OnItemSelectListener.java&#10;item_deta&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/res/layout/activity_item_detail.xml&#10;IN&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/java/com/leapfrog/inventorymanagementsystem/models/Inventory.java&#10;Das&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/java/com/leapfrog/inventorymanagementsystem/activities/DashBoardActivity.java&#10;ItemAda&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/java/com/leapfrog/inventorymanagementsystem/adapters/ItemListAdapter.java&#10;In&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/java/com/leapfrog/inventorymanagementsystem/models/Inventory.java&#10;ItemDeta&#9;PSI&#9;JAVA://com.leapfrog.inventorymanagementsystem.itemdetail.ItemDetailActivity&#10;rv&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/java/com/leapfrog/inventorymanagementsystem/navigationdrawer/NavigationDrawerRvAdapter.java&#10;Na&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/java/com/leapfrog/inventorymanagementsystem/navigationdrawer/NavigationDrawerFragment.java&#10;ite&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/res/layout/navigation_items.xml&#10;Navi&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/java/com/leapfrog/inventorymanagementsystem/navigationdrawer/NavigationDrawerFragment.java&#10;Navigation&#9;PSI&#9;JAVA://com.leapfrog.inventorymanagementsystem.navigationdrawer.NavigationDrawerFragment&#10;Inv&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/java/com/leapfrog/inventorymanagementsystem/models/Inventory.java" />
+    <property name="SearchEverywhereHistoryKey" value="Sett&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/java/com/leapfrog/inventorymanagementsystem/settings/SettingsActivity.java&#10;Inven&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/java/com/leapfrog/inventorymanagementsystem/models/Inventory.java&#10;Dash&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/java/com/leapfrog/inventorymanagementsystem/dashboard/DashBoardActivity.java&#10;str&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/res/values/strings.xml&#10;Inve&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/java/com/leapfrog/inventorymanagementsystem/models/Inventory.java&#10;Item&#9;PSI&#9;JAVA://com.leapfrog.inventorymanagementsystem.models.Item&#10;Hawk&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/java/com/leapfrog/inventorymanagementsystem/data/HawkUtils.java&#10;Cart&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/java/com/leapfrog/inventorymanagementsystem/cart/CartActivity.java&#10;settin&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/java/com/leapfrog/inventorymanagementsystem/settings/SettingsActivity.java&#10;Settin&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/res/layout/activity_settings.xml&#10;DAS&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/java/com/leapfrog/inventorymanagementsystem/dashboard/DashBoardActivity.java&#10;navi&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/java/com/leapfrog/inventorymanagementsystem/navigationdrawer/NavigationDrawerRvAdapter.java&#10;strin&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/res/values/strings.xml&#10;login&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/res/layout/login_activity.xml&#10;Log&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/java/com/leapfrog/inventorymanagementsystem/activities/LoginActivity.java&#10;Lo&#9;PSI&#9;JAVA://com.leapfrog.inventorymanagementsystem.activities.LoginActivity&#10;itemli&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/java/com/leapfrog/inventorymanagementsystem/adapters/ItemListAdapter.java&#10;item&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/java/com/leapfrog/inventorymanagementsystem/events/OnItemSelectListener.java&#10;item_deta&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/res/layout/activity_item_detail.xml&#10;IN&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/java/com/leapfrog/inventorymanagementsystem/models/Inventory.java&#10;Das&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/java/com/leapfrog/inventorymanagementsystem/activities/DashBoardActivity.java&#10;ItemAda&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/java/com/leapfrog/inventorymanagementsystem/adapters/ItemListAdapter.java&#10;In&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/java/com/leapfrog/inventorymanagementsystem/models/Inventory.java&#10;ItemDeta&#9;PSI&#9;JAVA://com.leapfrog.inventorymanagementsystem.itemdetail.ItemDetailActivity&#10;rv&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/java/com/leapfrog/inventorymanagementsystem/navigationdrawer/NavigationDrawerRvAdapter.java&#10;Na&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/java/com/leapfrog/inventorymanagementsystem/navigationdrawer/NavigationDrawerFragment.java&#10;ite&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/res/layout/navigation_items.xml&#10;Navi&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/java/com/leapfrog/inventorymanagementsystem/navigationdrawer/NavigationDrawerFragment.java&#10;Navigation&#9;PSI&#9;JAVA://com.leapfrog.inventorymanagementsystem.navigationdrawer.NavigationDrawerFragment&#10;Inv&#9;FILE&#9;file:///Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/java/com/leapfrog/inventorymanagementsystem/models/Inventory.java" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable-hdpi" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
@@ -2020,7 +1894,6 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3045326" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32719547" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3286119" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -2040,6 +1913,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286119" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -2255,7 +2129,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.86283183">
           <caret line="48" column="46" selection-start-line="48" selection-start-column="46" selection-end-line="48" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2290,7 +2163,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="107" column="17" selection-start-line="107" selection-start-column="17" selection-end-line="107" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2322,7 +2194,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="103" column="70" selection-start-line="103" selection-start-column="70" selection-end-line="103" selection-end-column="70" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2330,13 +2201,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.88495576">
           <caret line="56" column="72" selection-start-line="56" selection-start-column="72" selection-end-line="56" selection-end-column="72" />
-          <folding>
-            <element signature="e#1983#2027#0" expanded="true" />
-            <element signature="e#2138#2175#0" expanded="true" />
-            <element signature="e#2178#2222#0" expanded="true" />
-            <element signature="e#2627#2859#0" expanded="true" />
-            <element signature="e#2858#2859#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2399,7 +2263,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.29157668">
           <caret line="19" column="101" selection-start-line="19" selection-start-column="101" selection-end-line="19" selection-end-column="101" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2415,7 +2278,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2440,11 +2302,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_settings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.413794">
+        <state vertical-scroll-proportion="0.0">
           <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
-          <folding>
-            <element signature="e#711#733#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer">
@@ -2464,19 +2324,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/leapfrog/inventorymanagementsystem/settings/SettingsActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="87" column="30" selection-start-line="87" selection-start-column="30" selection-end-line="87" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1467#1499#0" expanded="true" />
-            <element signature="e#2143#2698#0" expanded="true" />
-            <element signature="e#2697#2698#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/leapfrog/inventorymanagementsystem/models/Inventory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2487,9 +2334,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/leapfrog/inventorymanagementsystem/dashboard/DashBoardActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5381166">
+        <state vertical-scroll-proportion="0.0">
           <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/leapfrog/inventorymanagementsystem/settings/SettingsActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32735425">
+          <caret line="87" column="24" selection-start-line="87" selection-start-column="24" selection-end-line="87" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
