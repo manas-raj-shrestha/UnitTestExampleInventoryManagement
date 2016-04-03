@@ -17,7 +17,7 @@ import butterknife.ButterKnife;
  */
 public class NavigationDrawerRvAdapter extends RecyclerView.Adapter<NavigationDrawerRvAdapter.ViewHolder> {
 
-    private final static String[] options = new String[]{"Wire", "Control", "Knife & Tools"};
+    private final static String[] options = new String[]{"Wire", "Control", "Knife & Tools","Settings"};
     private final static int[] optionIcons = new int[]{R.drawable.ic_shopping_cart_grey_24dp,
             R.drawable.ic_favorite_grey_24dp, R.drawable.ic_exit_to_app_grey_24dp};
 

@@ -32,7 +32,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#ffffff"
+                    android:background="@android:color/white"
                     android:orientation="vertical"
                     android:padding="8dp">
 
@@ -79,7 +79,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:text="US Shipping" />
+                        android:text="@string/txt_shipping" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -112,13 +112,13 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Condition" />
+                            android:text="@string/txt_condition" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="New" />
+                            android:text="@string/txt_condition_new" />
 
                     </TableRow>
 
@@ -132,13 +132,13 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Quantity" />
+                            android:text="@string/txt_quantity" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="100 available" />
+                            android:text="@string/txt_100_available" />
 
                     </TableRow>
 
@@ -152,14 +152,14 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Brand" />
+                            android:text="@string/txt_brand" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:id="@+id/tv_brand"
-                            android:text="NA" />
+                            android:text="@string/txt_na" />
 
                     </TableRow>
 
@@ -173,13 +173,13 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Country Of Manufacture" />
+                            android:text="@string/txt_manufacture_country" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="China" />
+                            android:text="@string/txt_china" />
 
                     </TableRow>
 
@@ -193,7 +193,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="UPC" />
+                            android:text="@string/txt_upc" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -213,7 +213,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Item Number" />
+                            android:text="@string/txt_item_number" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -242,13 +242,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="About the seller" />
+                        android:text="@string/txt_about_the_seller" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="MISUMI" />
+                        android:text="@string/txt_misumi" />
 
                 </LinearLayout>
 

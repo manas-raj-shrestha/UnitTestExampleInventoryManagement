@@ -8,10 +8,10 @@ import butterknife.ButterKnife.ViewBinder;
 public class NavigationDrawerFragment$$ViewBinder<T extends com.leapfrog.inventorymanagementsystem.navigationdrawer.NavigationDrawerFragment> implements ViewBinder<T> {
   @Override public void bind(final Finder finder, final T target, Object source) {
     View view;
-    view = finder.findRequiredView(source, 2131492986, "field 'recyclerViewNavDrawer'");
-    target.recyclerViewNavDrawer = finder.castView(view, 2131492986, "field 'recyclerViewNavDrawer'");
-    view = finder.findRequiredView(source, 2131492985, "field 'ivUserPic'");
-    target.ivUserPic = finder.castView(view, 2131492985, "field 'ivUserPic'");
+    view = finder.findRequiredView(source, 2131492988, "field 'recyclerViewNavDrawer'");
+    target.recyclerViewNavDrawer = finder.castView(view, 2131492988, "field 'recyclerViewNavDrawer'");
+    view = finder.findRequiredView(source, 2131492987, "field 'ivUserPic'");
+    target.ivUserPic = finder.castView(view, 2131492987, "field 'ivUserPic'");
   }
 
   @Override public void unbind(T target) {

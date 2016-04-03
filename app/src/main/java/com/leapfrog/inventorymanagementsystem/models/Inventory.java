@@ -5,6 +5,8 @@ import android.util.Log;
 import com.leapfrog.inventorymanagementsystem.ItemNotInStockException;
 import com.leapfrog.inventorymanagementsystem.R;
 import com.leapfrog.inventorymanagementsystem.MisumiApplication;
+import com.leapfrog.inventorymanagementsystem.data.HawkUtils;
+import com.leapfrog.inventorymanagementsystem.settings.SettingsActivity;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -66,7 +68,13 @@ public class Inventory implements InventoryActions {
     public String loadJSONFromAsset() {
         String json = null;
         try {
-            InputStream is = MisumiApplication.getContext().getAssets().open("json_cn.txt");
+            InputStream is=null;
+            if (HawkUtils.getLanguage().equals(SettingsActivity.Language.CHINESE)) {
+                is = MisumiApplication.getContext().getAssets().open("json_cn.txt");
+            }else {
+                is = MisumiApplication.getContext().getAssets().open("json_en.txt");
+            }
+
             int size = is.available();
             byte[] buffer = new byte[size];
             is.read(buffer);
@@ -76,6 +84,7 @@ public class Inventory implements InventoryActions {
             ex.printStackTrace();
             return null;
         }
+
         return json;
     }
 

@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/AndroidManifest.xml:2:1-28:12
+ADDED from /Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/AndroidManifest.xml:2:1-29:12
 	package
 		ADDED from /Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/AndroidManifest.xml:3:5-53
 		INJECTED from /Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/AndroidManifest.xml
@@ -18,7 +18,7 @@ ADDED from /Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventor
 	android:name
 		ADDED from /Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/AndroidManifest.xml:5:22-64
 application
-ADDED from /Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/AndroidManifest.xml:7:5-26:19
+ADDED from /Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/AndroidManifest.xml:7:5-27:19
 MERGED from [com.android.support:appcompat-v7:23.1.1] /Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.1.1] /Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:22.2.0] /Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/AndroidManifest.xml:22:5-20
@@ -70,6 +70,10 @@ activity#com.leapfrog.inventorymanagementsystem.favorites.FavoritesActivity
 ADDED from /Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/AndroidManifest.xml:25:9-64
 	android:name
 		ADDED from /Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/AndroidManifest.xml:25:19-62
+activity#com.leapfrog.inventorymanagementsystem.settings.SettingsActivity
+ADDED from /Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/AndroidManifest.xml:26:9-62
+	android:name
+		ADDED from /Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/AndroidManifest.xml:26:19-60
 uses-sdk
 INJECTED from /Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:23.1.1] /Users/ManasShrestha/Desktop/leapfrog-android/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/AndroidManifest.xml:20:5-43
