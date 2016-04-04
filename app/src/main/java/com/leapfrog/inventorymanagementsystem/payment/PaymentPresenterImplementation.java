@@ -34,7 +34,9 @@ public class PaymentPresenterImplementation implements PaymentPresenter, onPayme
     @Override
     public void onPaymentError() {
         if (paymentView != null) {
+            paymentView.hideProgressBar();
             paymentView.invalidCardDetail();
+
         }
 
     }
@@ -52,13 +54,12 @@ public class PaymentPresenterImplementation implements PaymentPresenter, onPayme
             if (!card.validateCard()) {
                 paymentView.invalidCardDetail();
             } else {
-                Stripe stripe = new Stripe("sk_test_HKeomFjPu8JsD5KO12tfERiJ");
+                Stripe stripe = new Stripe("pk_test_JEk3cZrIb6Pmoxdv3Y4Bbqqw");
                 stripe.createToken(
                         card,
                         new TokenCallback() {
                             public void onSuccess(Token token) {
-                                paymentView.hideProgressBar();
-                                Log.i("Payment Presenter", "onSuccess: ");
+                               onPaymentSuccess();
                             }
 
                             public void onError(Exception error) {

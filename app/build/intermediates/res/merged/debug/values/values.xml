@@ -344,10 +344,12 @@
     <string name="chinese_currency">¥</string>
     <string name="expiry_month_empty">Expiry Month can\'t be empty</string>
     <string name="expiry_year_empty">Expiry Year can\'t be empty</string>
+    <string name="invalid_card_credentials">Invalid card Credentials</string>
     <string name="invalid_login">Invalid Credentials</string>
     <string name="login_success">Login Success</string>
     <string name="make_payment">Make Payment</string>
     <string name="password_error">Password cannot be empty</string>
+    <string name="payment_successfull">Payment Successful</string>
     <!-- From: file:/D:/AndroidStudioProjects/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <string name="status_bar_notification_info_overflow">999+</string>

@@ -97,7 +97,7 @@ public class PaymentActivity extends AppCompatActivity implements PaymentView, V
 
     @Override
     public void navigateToMainActivity() {
+        Toast.makeText(PaymentActivity.this, R.string.payment_successfull, Toast.LENGTH_SHORT).show();
         startActivity(new Intent(PaymentActivity.this, DashBoardActivity.class));
     }
-
 }
