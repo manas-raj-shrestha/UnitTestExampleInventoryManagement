@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">MiSUMi</string>
+    <string name="chinese_currency">¥</string>
+
+    //login activity
+    <string name="username_error">用户名不能为空。</string>
+    <string name="password_error">密码不能为空。</string>
+    <string name="login_success">登录成功。</string>
+    <string name="invalid_login">无效证件。</string>
+
+    //login view
+    <string name="txt_username">用户名</string>
+    <string name="txt_password">密码</string>
+    <string name="txt_forgot_password">忘记密码了吗</string>
+
+    //cart activity
+    <string name="txt_cart">大车</string>
+    <string name="txt_total">总 : </string>
+
+    //item detail activity
+    <string name="txt_purchase_successful">购买成功</string>
+    <string name="txt_item_not_available">项目不可用</string>
+    <string name="txt_shipping">运输</string>
+    <string name="txt_condition">条件</string>
+    <string name="txt_condition_new">新</string>
+    <string name="txt_quantity">数量</string>
+    <string name="txt_100_available">100个可用</string>
+    <string name="txt_brand">牌</string>
+    <string name="txt_na">NA</string>
+    <string name="txt_manufacture_country">国家制法</string>
+    <string name="txt_china">中国</string>8
+    <string name="txt_upc">UPC</string>
+    <string name="txt_item_number">项目编号</string>
+    <string name="txt_about_the_seller">关于卖家</string>
+    <string name="txt_misumi">MISUMI</string>
+
+    <string name="card_number_empty">身份证号码不能为空</string>
+    <string name="card_cvc_empty">卡CVV不能为空</string>
+    <string name="expiry_month_empty">到期月份不能为空</string>
+    <string name="expiry_year_empty">到期年不能为空</string>
+
+    //item detail presenter
+    <string name="txt_item_removed">从项目您的购物车中删除</string>
+    <string name="txt_item_added">项目添加到您的购物车</string>
+    <string name="make_payment">付款</string>
+    <string name="invalid_card_credentials">无效卡凭据</string>
+    <string name="payment_successfull">支付成功</string>
+</resources>
+
