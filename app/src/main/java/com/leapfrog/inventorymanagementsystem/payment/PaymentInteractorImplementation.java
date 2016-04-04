@@ -10,7 +10,7 @@ import com.stripe.android.model.Token;
 import com.stripe.exception.AuthenticationException;
 
 /**
- * Created by sur_a on 4/1/2016.
+ * Check payment data from {@link Stripe}
  */
 public class PaymentInteractorImplementation implements PaymentInteractor {
     @Override

@@ -3,7 +3,7 @@ package com.leapfrog.inventorymanagementsystem.payment;
 import com.stripe.exception.AuthenticationException;
 
 /**
- * Created by sur_a on 3/31/2016.
+ * Interface definition for a callback to be invoked when payment is to validated.
  */
 public interface PaymentPresenter {
 

@@ -1,7 +1,7 @@
 package com.leapfrog.inventorymanagementsystem.payment;
 
 /**
- * Created by sur_a on 3/31/2016.
+ * Interface definition for a callback to be invoked when Payment process is made
  */
 public interface onPaymentFinishListener {
 

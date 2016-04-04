@@ -79,9 +79,7 @@ public class PaymentActivity extends AppCompatActivity implements PaymentView, V
 
     @Override
     public void showProgressBar() {
-
         payProgressBar.setVisibility(View.VISIBLE);
-
     }
 
     @Override
