@@ -14,7 +14,6 @@ import java.util.Locale;
  * <p>
  * You can also change the locale of your application on the fly by using the setLocale method.
  * <p>
- * Created by gunhansancar on 07/10/15.
  */
 public class LocaleHelper {
 
