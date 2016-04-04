@@ -1,6 +1,7 @@
 package com.leapfrog.inventorymanagementsystem.settings;
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -11,6 +12,7 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import com.leapfrog.inventorymanagementsystem.R;
+import com.leapfrog.inventorymanagementsystem.dashboard.DashBoardActivity;
 import com.leapfrog.inventorymanagementsystem.data.HawkUtils;
 import com.leapfrog.inventorymanagementsystem.languagechose.LocaleHelper;
 import com.leapfrog.inventorymanagementsystem.models.Inventory;
@@ -85,10 +87,16 @@ public class SettingsActivity extends AppCompatActivity {
                 if (i % 2 == 0) {
                     HawkUtils.setLanguage(Language.ENGLISH);
                     LocaleHelper.setLocale(SettingsActivity.this, "en");
+                    Intent intent = new Intent(SettingsActivity.this, DashBoardActivity.class);
+                    startActivity(intent);
+                    finish();
                     tvLanguage.setText("EN");
                 } else {
                     HawkUtils.setLanguage(Language.CHINESE);
                     LocaleHelper.setLocale(SettingsActivity.this, "zh");
+                    Intent intent = new Intent(SettingsActivity.this, DashBoardActivity.class);
+                    startActivity(intent);
+                    finish();
                     tvLanguage.setText("CN");
                 }
             }
