@@ -36,6 +36,8 @@ public class SettingsActivity extends AppCompatActivity {
     @Bind(R.id.tv_language)
     TextView tvLanguage;
 
+    private Dialog dialog;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,6 +45,8 @@ public class SettingsActivity extends AppCompatActivity {
         ButterKnife.bind(this);
 
         setToolbar();
+
+        dialog = new Dialog(this);
 
         if (HawkUtils.getLanguage().equals(Language.ENGLISH)) {
             tvLanguage.setText("EN");
@@ -76,7 +80,7 @@ public class SettingsActivity extends AppCompatActivity {
 
     @OnClick({R.id.rl_language})
     public void setOnClicks(View view) {
-        Dialog dialog = new Dialog(this);
+
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setContentView(R.layout.dialog_language);
         final RadioGroup radioGroup = (RadioGroup) dialog.findViewById(R.id.rg_language);
@@ -88,6 +92,7 @@ public class SettingsActivity extends AppCompatActivity {
                     HawkUtils.setLanguage(Language.ENGLISH);
                     LocaleHelper.setLocale(SettingsActivity.this, "en");
                     Intent intent = new Intent(SettingsActivity.this, DashBoardActivity.class);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                     startActivity(intent);
                     finish();
                     tvLanguage.setText("EN");
@@ -103,5 +108,11 @@ public class SettingsActivity extends AppCompatActivity {
         });
 
         dialog.show();
+    }
+
+    @Override
+    protected void onDestroy() {
+        dialog.dismiss();
+        super.onDestroy();
     }
 }
