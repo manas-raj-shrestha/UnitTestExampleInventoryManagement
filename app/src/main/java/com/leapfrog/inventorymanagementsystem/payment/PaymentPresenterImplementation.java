@@ -14,7 +14,7 @@ import com.stripe.exception.AuthenticationException;
 public class PaymentPresenterImplementation implements PaymentPresenter, onPaymentFinishListener {
 
     private PaymentView paymentView;
-    private PaymentInteractorImplementation paymentInteractorImplementation;
+    private PaymentInteractor paymentInteractorImplementation;
 
     public PaymentPresenterImplementation(PaymentView paymentView) {
 
@@ -43,33 +43,18 @@ public class PaymentPresenterImplementation implements PaymentPresenter, onPayme
 
     @Override
     public void onPaymentException() {
+        if (paymentView != null) {
+            paymentView.hideProgressBar();
+            paymentView.invalidCardDetail();
 
+        }
     }
 
     @Override
     public void makePaymentValidation(String cardNumber, int cardExpMonth, int cardExpYear, String cardCVC) throws AuthenticationException {
         if (paymentView != null) {
             paymentView.showProgressBar();
-            Card card = new Card(cardNumber, cardExpMonth, cardExpYear, cardCVC);
-            if (!card.validateCard()) {
-                paymentView.invalidCardDetail();
-            } else {
-                Stripe stripe = new Stripe("pk_test_JEk3cZrIb6Pmoxdv3Y4Bbqqw");
-                stripe.createToken(
-                        card,
-                        new TokenCallback() {
-                            public void onSuccess(Token token) {
-                               onPaymentSuccess();
-                            }
-
-                            public void onError(Exception error) {
-                                paymentView.hideProgressBar();
-                                Log.i("Payment Presenter", "onError: ");
-                            }
-                        }
-                );
-
-            }
+            paymentInteractorImplementation.makePayment(cardNumber, cardExpMonth, cardExpYear, cardCVC, this);
         }
     }
 }
