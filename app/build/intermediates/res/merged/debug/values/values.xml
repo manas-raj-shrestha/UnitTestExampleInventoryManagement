@@ -339,17 +339,24 @@
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <!-- From: file:/D:/AndroidStudioProjects/UnitTestExampleInventoryManagement/app/src/main/res/values/strings.xml -->
     <eat-comment/>
+<<<<<<< HEAD
     <string name="card_cvc_empty">Card CVC can\'t be empty</string>
     <string name="card_number_empty">Card Number can\'t be empty</string>
     <string name="chinese_currency">¥</string>
     <string name="expiry_month_empty">Expiry Month can\'t be empty</string>
     <string name="expiry_year_empty">Expiry Year can\'t be empty</string>
     <string name="invalid_card_credentials">Invalid card Credentials</string>
+=======
+    <string name="chinese_currency">¥</string>
+>>>>>>> addChineseLanguage
     <string name="invalid_login">Invalid Credentials</string>
     <string name="login_success">Login Success</string>
     <string name="make_payment">Make Payment</string>
     <string name="password_error">Password cannot be empty</string>
+<<<<<<< HEAD
     <string name="payment_successfull">Payment Successful</string>
+=======
+>>>>>>> addChineseLanguage
     <!-- From: file:/D:/AndroidStudioProjects/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <string name="status_bar_notification_info_overflow">999+</string>
@@ -363,18 +370,26 @@
     <string name="txt_condition">Condition</string>
     <string name="txt_condition_new">New</string>
     <string name="txt_forgot_password">Forgot Your Password</string>
+<<<<<<< HEAD
     <string name="txt_item_added">Item added to your cart</string>
     <string name="txt_item_not_available">Item is not available</string>
     <string name="txt_item_number">Item Number</string>
     <string name="txt_item_removed">Item removed from your cart</string>
     <string name="txt_language">Language</string>
+=======
+    <string name="txt_item_not_available">Item is not available</string>
+    <string name="txt_item_number">Item Number</string>
+>>>>>>> addChineseLanguage
     <string name="txt_manufacture_country">Country Of Manufacture</string>
     <string name="txt_misumi">MISUMI</string>
     <string name="txt_na">NA</string>
     <string name="txt_password">Password</string>
     <string name="txt_purchase_successful">Purchase Successful</string>
     <string name="txt_quantity">Quantity</string>
+<<<<<<< HEAD
     <string name="txt_settings">Settings</string>
+=======
+>>>>>>> addChineseLanguage
     <string name="txt_shipping">Shipping</string>
     <string name="txt_total">Total : </string>
     <string name="txt_upc">UPC</string>

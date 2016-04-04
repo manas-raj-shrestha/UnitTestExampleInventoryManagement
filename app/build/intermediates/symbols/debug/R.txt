@@ -835,6 +835,7 @@ int string abc_shareactionprovider_share_with_application 0x7f060011
 int string abc_toolbar_collapse_description 0x7f060012
 int string app_name 0x7f060014
 int string appbar_scrolling_view_behavior 0x7f060015
+<<<<<<< HEAD
 int string card_cvc_empty 0x7f060016
 int string card_number_empty 0x7f060017
 int string chinese_currency 0x7f060018
@@ -872,6 +873,34 @@ int string txt_total 0x7f060036
 int string txt_upc 0x7f060037
 int string txt_username 0x7f060038
 int string username_error 0x7f060039
+=======
+int string chinese_currency 0x7f060016
+int string invalid_login 0x7f060017
+int string login_success 0x7f060018
+int string password_error 0x7f060019
+int string status_bar_notification_info_overflow 0x7f060013
+int string txt_100_available 0x7f06001a
+int string txt_about_the_seller 0x7f06001b
+int string txt_brand 0x7f06001c
+int string txt_cart 0x7f06001d
+int string txt_china 0x7f06001e
+int string txt_condition 0x7f06001f
+int string txt_condition_new 0x7f060020
+int string txt_forgot_password 0x7f060021
+int string txt_item_not_available 0x7f060022
+int string txt_item_number 0x7f060023
+int string txt_manufacture_country 0x7f060024
+int string txt_misumi 0x7f060025
+int string txt_na 0x7f060026
+int string txt_password 0x7f060027
+int string txt_purchase_successful 0x7f060028
+int string txt_quantity 0x7f060029
+int string txt_shipping 0x7f06002a
+int string txt_total 0x7f06002b
+int string txt_upc 0x7f06002c
+int string txt_username 0x7f06002d
+int string username_error 0x7f06002e
+>>>>>>> addChineseLanguage
 int style AlertDialog_AppCompat 0x7f09007e
 int style AlertDialog_AppCompat_Light 0x7f09007f
 int style Animation_AppCompat_Dialog 0x7f090080
