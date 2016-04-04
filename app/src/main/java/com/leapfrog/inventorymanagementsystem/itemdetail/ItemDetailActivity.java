@@ -1,6 +1,7 @@
 package com.leapfrog.inventorymanagementsystem.itemdetail;
 
 import android.app.Dialog;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
@@ -81,6 +82,7 @@ public class ItemDetailActivity extends AppCompatActivity implements ItemDetailC
         setToolbar();
 
     }
+
     private void setToolbar() {
         ActionBar actionBar = getSupportActionBar();
 
@@ -146,7 +148,7 @@ public class ItemDetailActivity extends AppCompatActivity implements ItemDetailC
      *
      * @param item
      */
-    private void setData(Item item) {
+    private void setData(Item item){
         tvPrice.setText(getString(R.string.chinese_currency) + item.getPrice());
         tvItemDesc.setText(item.getItemDescription());
         tvBrand.setText(item.getDealerName());

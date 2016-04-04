@@ -37,6 +37,7 @@
     <string name="txt_item_number">Item Number</string>
     <string name="txt_about_the_seller">About the seller</string>
     <string name="txt_misumi">MISUMI</string>
+
     <string name="card_number_empty">Card Number can\'t be empty</string>
     <string name="card_cvc_empty">Card CVC can\'t be empty</string>
     <string name="expiry_month_empty">Expiry Month can\'t be empty</string>
@@ -45,6 +46,7 @@
     //item detail presenter
     <string name="txt_item_removed">Item removed from your cart</string>
     <string name="txt_item_added">Item added to your cart</string>
+
     <string name="make_payment">Make Payment</string>
     <string name="invalid_card_credentials">Invalid card Credentials</string>
     <string name="payment_successfull">Payment Successful</string>
@@ -54,4 +56,5 @@
     <string name="expiry_month">Expiry Month</string>
     <string name="expiry_year">Expiry Year</string>
     <string name="verify_payment">VERIFY PAYMENT</string>
+
 </resources>
