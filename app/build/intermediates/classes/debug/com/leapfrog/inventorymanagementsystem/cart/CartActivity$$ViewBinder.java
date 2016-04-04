@@ -10,8 +10,8 @@ public class CartActivity$$ViewBinder<T extends com.leapfrog.inventorymanagement
     View view;
     view = finder.findRequiredView(source, 2131492969, "field 'toolbar'");
     target.toolbar = finder.castView(view, 2131492969, "field 'toolbar'");
-    view = finder.findRequiredView(source, 2131492978, "field 'rvCart'");
-    target.rvCart = finder.castView(view, 2131492978, "field 'rvCart'");
+    view = finder.findRequiredView(source, 2131492987, "field 'rvCart'");
+    target.rvCart = finder.castView(view, 2131492987, "field 'rvCart'");
   }
 
   @Override public void unbind(T target) {

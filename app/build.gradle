@@ -32,4 +32,5 @@ dependencies {
     compile 'com.github.orhanobut:hawk:1.21'
 //    androidTestCompile 'junit:junit:4.12'
     compile 'junit:junit:4.12'
+    compile 'com.stripe:stripe-android:+'
 }

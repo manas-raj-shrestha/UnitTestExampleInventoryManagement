@@ -143,7 +143,7 @@ public class ItemDetailActivity extends AppCompatActivity implements ItemDetailC
      * @param item
      */
     private void setData(Item item){
-        tvPrice.setText("¥" + item.getPrice());
+        tvPrice.setText(getString(R.string.chinese_currency) + item.getPrice());
         tvItemDesc.setText(item.getItemDescription());
         tvBrand.setText(item.getDealerName());
     }

@@ -15,10 +15,12 @@ import android.view.View;
 
 import com.leapfrog.inventorymanagementsystem.R;
 import com.leapfrog.inventorymanagementsystem.cart.CartActivity;
-import com.leapfrog.inventorymanagementsystem.navigationdrawer.OnNavigationOptionSelected;
+import com.leapfrog.inventorymanagementsystem.category.CategoryFragment;
+import com.leapfrog.inventorymanagementsystem.models.Inventory;
 import com.leapfrog.inventorymanagementsystem.models.Item;
 import com.leapfrog.inventorymanagementsystem.navigationdrawer.NavigationDrawerFragment;
-import com.leapfrog.inventorymanagementsystem.category.CategoryFragment;
+import com.leapfrog.inventorymanagementsystem.navigationdrawer.OnNavigationOptionSelected;
+import com.leapfrog.inventorymanagementsystem.settings.SettingsActivity;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -47,6 +49,7 @@ public class DashBoardActivity extends AppCompatActivity implements OnNavigation
 
         ButterKnife.bind(this);
         setToolbar();
+
 
         initializeFragments();
         initializeDrawer();
@@ -93,18 +96,21 @@ public class DashBoardActivity extends AppCompatActivity implements OnNavigation
     public void onNavigationOptionSelected(String option) {
         FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
 
-        switch (option){
+        switch (option) {
             case "Wire":
-                fragmentTransaction.replace(R.id.fl_main,new CategoryFragment(Item.ItemType.WIRE));
+                fragmentTransaction.replace(R.id.fl_main, new CategoryFragment(Item.ItemType.WIRE));
                 fragmentTransaction.commit();
                 break;
             case "Control":
-                fragmentTransaction.replace(R.id.fl_main,new CategoryFragment(Item.ItemType.CONTROL));
+                fragmentTransaction.replace(R.id.fl_main, new CategoryFragment(Item.ItemType.CONTROL));
                 fragmentTransaction.commit();
                 break;
             case "Knife & Tools":
-                fragmentTransaction.replace(R.id.fl_main,new CategoryFragment(Item.ItemType.KNIFE_AND_TOOLS));
+                fragmentTransaction.replace(R.id.fl_main, new CategoryFragment(Item.ItemType.KNIFE_AND_TOOLS));
                 fragmentTransaction.commit();
+                break;
+            case "Settings":
+                startActivity(new Intent(this, SettingsActivity.class));
                 break;
         }
         mDrawerLayout.closeDrawer(GravityCompat.START);

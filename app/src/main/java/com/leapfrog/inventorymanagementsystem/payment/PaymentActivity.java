@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import com.leapfrog.inventorymanagementsystem.R;
 import com.leapfrog.inventorymanagementsystem.dashboard.DashBoardActivity;
+import com.stripe.exception.AuthenticationException;
 
 public class PaymentActivity extends AppCompatActivity implements PaymentView, View.OnClickListener {
 
@@ -73,7 +74,11 @@ public class PaymentActivity extends AppCompatActivity implements PaymentView, V
         } else if (cardExpiryYear == 0) {
             Toast.makeText(PaymentActivity.this, R.string.expiry_year_empty, Toast.LENGTH_SHORT).show();
         } else {
-            paymentPresenter.makePaymentValidation(cardNumber, cardExpiryMonth, cardExpiryYear, cardCVC);
+            try {
+                paymentPresenter.makePaymentValidation(cardNumber, cardExpiryMonth, cardExpiryYear, cardCVC);
+            } catch (AuthenticationException e) {
+                e.printStackTrace();
+            }
         }
     }
 

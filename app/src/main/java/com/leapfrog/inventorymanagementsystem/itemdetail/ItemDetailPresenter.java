@@ -1,10 +1,10 @@
 package com.leapfrog.inventorymanagementsystem.itemdetail;
 
-import android.util.Log;
 import android.widget.Toast;
 
 import com.leapfrog.inventorymanagementsystem.ItemNotInStockException;
 import com.leapfrog.inventorymanagementsystem.MisumiApplication;
+import com.leapfrog.inventorymanagementsystem.R;
 import com.leapfrog.inventorymanagementsystem.data.HawkUtils;
 import com.leapfrog.inventorymanagementsystem.models.Inventory;
 import com.leapfrog.inventorymanagementsystem.models.Item;
@@ -39,23 +39,18 @@ public class ItemDetailPresenter implements ItemDetailContract.UserInteractions 
         if (cartItems != null) {
             if (cartItems.contains(item.getItemCode())) {
                 cartItems.remove(item.getItemCode());
-                Toast.makeText(MisumiApplication.getContext(), "Item removed from your cart", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MisumiApplication.getContext(), MisumiApplication.getContext().getString(R.string.txt_item_removed), Toast.LENGTH_SHORT).show();
             } else {
                 cartItems.add(item.getItemCode());
-                Toast.makeText(MisumiApplication.getContext(), "Item added to your cart", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MisumiApplication.getContext(), MisumiApplication.getContext().getString(R.string.txt_item_added), Toast.LENGTH_SHORT).show();
             }
         } else {
             cartItems = new ArrayList<>();
             cartItems.add(item.getItemCode());
-            Toast.makeText(MisumiApplication.getContext(), "Item added to your cart", Toast.LENGTH_SHORT).show();
+            Toast.makeText(MisumiApplication.getContext(), MisumiApplication.getContext().getString(R.string.txt_item_added), Toast.LENGTH_SHORT).show();
         }
 
         HawkUtils.setCartItems(cartItems);
-
-
-        Log.e("added to card", "added to cart " + item.getItemCode());
-
-//        itemDetailContract.showAddToCartDialog();
     }
 
 }
