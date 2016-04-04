@@ -35,7 +35,7 @@ import butterknife.OnClick;
 /**
  * Shows detail for selected item
  */
-public class ItemDetailActivity extends AppCompatActivity implements ItemDetailContract, View.OnClickListener {
+public class ItemDetailActivity extends AppCompatActivity implements ItemDetailContract {
 
     ItemDetailPresenter itemDetailPresenter;
 
@@ -56,9 +56,6 @@ public class ItemDetailActivity extends AppCompatActivity implements ItemDetailC
 
     @Bind(R.id.toolbar)
     Toolbar toolbar;
-
-    @Bind(R.id.btn_make_payment)
-    Button btnMakePayment;
 
     Item item;
 
@@ -83,7 +80,6 @@ public class ItemDetailActivity extends AppCompatActivity implements ItemDetailC
 
         setToolbar();
 
-        btnMakePayment.setOnClickListener(this);
     }
     private void setToolbar() {
         ActionBar actionBar = getSupportActionBar();
@@ -154,10 +150,5 @@ public class ItemDetailActivity extends AppCompatActivity implements ItemDetailC
         tvPrice.setText(getString(R.string.chinese_currency) + item.getPrice());
         tvItemDesc.setText(item.getItemDescription());
         tvBrand.setText(item.getDealerName());
-    }
-
-    @Override
-    public void onClick(View v) {
-        startActivity(new Intent(ItemDetailActivity.this, PaymentActivity.class));
     }
 }

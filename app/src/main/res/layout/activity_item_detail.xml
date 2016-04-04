@@ -155,10 +155,10 @@
                             android:text="@string/txt_brand" />
 
                         <TextView
+                            android:id="@+id/tv_brand"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:id="@+id/tv_brand"
                             android:text="@string/txt_na" />
 
                     </TableRow>
@@ -253,12 +253,6 @@
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
-
-            <Button
-                android:id="@+id/btn_make_payment"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/make_payment"/>
 
         </LinearLayout>
 

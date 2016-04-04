@@ -9,6 +9,7 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import com.leapfrog.inventorymanagementsystem.R;
@@ -16,9 +17,11 @@ import com.leapfrog.inventorymanagementsystem.itemdetail.ItemDetailActivity;
 import com.leapfrog.inventorymanagementsystem.data.Extras;
 import com.leapfrog.inventorymanagementsystem.events.OnItemSelectListener;
 import com.leapfrog.inventorymanagementsystem.models.Item;
+import com.leapfrog.inventorymanagementsystem.payment.PaymentActivity;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 /**
  * Shows cart items
@@ -30,6 +33,7 @@ public class CartActivity extends AppCompatActivity {
 
     @Bind(R.id.rv_cart)
     RecyclerView rvCart;
+
 
     OnItemSelectListener onItemSelectListener = new OnItemSelectListener() {
         @Override
@@ -81,5 +85,10 @@ public class CartActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @OnClick({R.id.btn_make_payment})
+    public void makePayment() {
+        startActivity(new Intent(CartActivity.this, PaymentActivity.class));
     }
 }
