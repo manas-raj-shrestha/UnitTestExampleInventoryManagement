@@ -19,13 +19,13 @@
             android:id="@+id/edt_full_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Full Name" />
+            android:hint="@string/full_name" />
 
         <EditText
             android:id="@+id/edt_card_number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Card Number"
+            android:hint="@string/card_number"
             android:inputType="number"
             android:maxLength="20" />
 
@@ -33,7 +33,7 @@
             android:id="@+id/edt_card_cvc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Card CVC"
+            android:hint="@string/card_cvc"
             android:inputType="number"
             android:maxLength="4" />
 
@@ -47,7 +47,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="Expiry Month"
+                android:hint="@string/expiry_month"
                 android:inputType="number"
                 android:maxLength="2" />
 
@@ -56,7 +56,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="Expiry Year"
+                android:hint="@string/expiry_year"
                 android:inputType="number"
                 android:maxLength="4" />
 
@@ -67,7 +67,7 @@
             android:id="@+id/btn_verify"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="VERIFY PAYMENT" />
+            android:text="@string/verify_payment" />
 
     </LinearLayout>
 

@@ -45,5 +45,12 @@
     <string name="make_payment">付款</string>
     <string name="invalid_card_credentials">无效卡凭据</string>
     <string name="payment_successfull">支付成功</string>
+
+    <string name="full_name">全名</string>
+    <string name="card_number">卡号</string>
+    <string name="card_cvc">卡CVV</string>
+    <string name="expiry_month">到期月份</string>
+    <string name="expiry_year">到期年</string>
+    <string name="verify_payment">验证付款</string>
 </resources>
 

@@ -48,4 +48,10 @@
     <string name="make_payment">Make Payment</string>
     <string name="invalid_card_credentials">Invalid card Credentials</string>
     <string name="payment_successfull">Payment Successful</string>
+    <string name="full_name">Full Name</string>
+    <string name="card_number">Card Number</string>
+    <string name="card_cvc">Card CVC</string>
+    <string name="expiry_month">Expiry Month</string>
+    <string name="expiry_year">Expiry Year</string>
+    <string name="verify_payment">VERIFY PAYMENT</string>
 </resources>
