@@ -17,6 +17,8 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    sourceSets { main { res.srcDirs = ['src/main/res', 'src/main/res/values-zh-rCH'] } }
 }
 
 dependencies {
@@ -32,4 +34,5 @@ dependencies {
     compile 'com.github.orhanobut:hawk:1.21'
 //    androidTestCompile 'junit:junit:4.12'
     compile 'junit:junit:4.12'
+    compile 'com.stripe:stripe-android:+'
 }

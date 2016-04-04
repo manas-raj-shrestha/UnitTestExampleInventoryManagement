@@ -254,6 +254,13 @@
 
             </android.support.v7.widget.CardView>
 
+            <Button
+                android:id="@+id/btn_make_payment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/make_payment"/>
+
+
         </LinearLayout>
 
     </ScrollView>
