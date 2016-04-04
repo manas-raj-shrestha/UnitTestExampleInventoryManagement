@@ -45,4 +45,6 @@
     //item detail presenter
     <string name="txt_item_removed">Item removed from your cart</string>
     <string name="txt_item_added">Item added to your cart</string>
+    <string name="make_payment">Make Payment</string>
+    <string name="invalid_card_credentials">Invalid card Credentials</string>
 </resources>

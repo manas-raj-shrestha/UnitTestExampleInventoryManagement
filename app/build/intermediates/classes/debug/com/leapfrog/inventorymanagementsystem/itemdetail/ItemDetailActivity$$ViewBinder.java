@@ -20,6 +20,8 @@ public class ItemDetailActivity$$ViewBinder<T extends com.leapfrog.inventorymana
     target.linearLayout = finder.castView(view, 2131492968, "field 'linearLayout'");
     view = finder.findRequiredView(source, 2131492969, "field 'toolbar'");
     target.toolbar = finder.castView(view, 2131492969, "field 'toolbar'");
+    view = finder.findRequiredView(source, 2131492974, "field 'btnMakePayment'");
+    target.btnMakePayment = finder.castView(view, 2131492974, "field 'btnMakePayment'");
   }
 
   @Override public void unbind(T target) {
@@ -29,5 +31,6 @@ public class ItemDetailActivity$$ViewBinder<T extends com.leapfrog.inventorymana
     target.tvBrand = null;
     target.linearLayout = null;
     target.toolbar = null;
+    target.btnMakePayment = null;
   }
 }

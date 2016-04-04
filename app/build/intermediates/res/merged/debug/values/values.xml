@@ -346,6 +346,7 @@
     <string name="expiry_year_empty">Expiry Year can\'t be empty</string>
     <string name="invalid_login">Invalid Credentials</string>
     <string name="login_success">Login Success</string>
+    <string name="make_payment">Make Payment</string>
     <string name="password_error">Password cannot be empty</string>
     <!-- From: file:/D:/AndroidStudioProjects/UnitTestExampleInventoryManagement/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>

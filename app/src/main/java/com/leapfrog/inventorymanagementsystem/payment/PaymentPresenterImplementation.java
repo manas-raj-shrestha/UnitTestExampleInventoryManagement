@@ -1,5 +1,7 @@
 package com.leapfrog.inventorymanagementsystem.payment;
 
+import android.util.Log;
+
 import com.stripe.android.Stripe;
 import com.stripe.android.TokenCallback;
 import com.stripe.android.model.Card;
@@ -50,14 +52,18 @@ public class PaymentPresenterImplementation implements PaymentPresenter, onPayme
             if (!card.validateCard()) {
                 paymentView.invalidCardDetail();
             } else {
-                Stripe stripe = new Stripe("pk_test_JEk3cZrIb6Pmoxdv3Y4Bbqqw");
+                Stripe stripe = new Stripe("sk_test_HKeomFjPu8JsD5KO12tfERiJ");
                 stripe.createToken(
                         card,
                         new TokenCallback() {
                             public void onSuccess(Token token) {
+                                paymentView.hideProgressBar();
+                                Log.i("Payment Presenter", "onSuccess: ");
                             }
-                            public void onError(Exception error) {
 
+                            public void onError(Exception error) {
+                                paymentView.hideProgressBar();
+                                Log.i("Payment Presenter", "onError: ");
                             }
                         }
                 );

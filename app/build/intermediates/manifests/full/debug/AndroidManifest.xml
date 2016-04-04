@@ -29,6 +29,7 @@
         <activity android:name="com.leapfrog.inventorymanagementsystem.cart.CartActivity" />
         <activity android:name="com.leapfrog.inventorymanagementsystem.favorites.FavoritesActivity" />
         <activity android:name="com.leapfrog.inventorymanagementsystem.settings.SettingsActivity" />
+        <activity android:name="com.leapfrog.inventorymanagementsystem.payment.PaymentActivity" />
     </application>
 
 </manifest>

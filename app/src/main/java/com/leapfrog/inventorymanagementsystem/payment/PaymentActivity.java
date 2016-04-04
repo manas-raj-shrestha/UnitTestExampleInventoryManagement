@@ -57,11 +57,6 @@ public class PaymentActivity extends AppCompatActivity implements PaymentView, V
         cardExpiryYear = Integer.parseInt(edtCardExpiryYear.getText().toString().trim());
     }
 
-    private void cardValidation() {
-
-
-    }
-
     @Override
     public void onClick(View v) {
         getCardData();
@@ -93,12 +88,11 @@ public class PaymentActivity extends AppCompatActivity implements PaymentView, V
     public void hideProgressBar() {
         payProgressBar.setVisibility(View.GONE);
 
-
     }
 
     @Override
     public void invalidCardDetail() {
-        Toast.makeText(PaymentActivity.this, "Invalid card Credentials", Toast.LENGTH_SHORT).show();
+        Toast.makeText(PaymentActivity.this, R.string.invalid_card_credentials, Toast.LENGTH_SHORT).show();
     }
 
     @Override

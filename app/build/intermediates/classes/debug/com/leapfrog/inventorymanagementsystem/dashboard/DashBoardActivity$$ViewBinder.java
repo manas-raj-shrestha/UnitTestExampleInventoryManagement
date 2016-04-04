@@ -8,13 +8,13 @@ import butterknife.ButterKnife.ViewBinder;
 public class DashBoardActivity$$ViewBinder<T extends com.leapfrog.inventorymanagementsystem.dashboard.DashBoardActivity> implements ViewBinder<T> {
   @Override public void bind(final Finder finder, final T target, Object source) {
     View view;
-    view = finder.findRequiredView(source, 2131492988, "field 'mDrawerLayout'");
-    target.mDrawerLayout = finder.castView(view, 2131492988, "field 'mDrawerLayout'");
+    view = finder.findRequiredView(source, 2131492989, "field 'mDrawerLayout'");
+    target.mDrawerLayout = finder.castView(view, 2131492989, "field 'mDrawerLayout'");
     view = finder.findRequiredView(source, 2131492969, "field 'toolbar'");
     target.toolbar = finder.castView(view, 2131492969, "field 'toolbar'");
-    view = finder.findRequiredView(source, 2131492990, "field 'collapsingToolbarLayout'");
-    target.collapsingToolbarLayout = finder.castView(view, 2131492990, "field 'collapsingToolbarLayout'");
-    view = finder.findRequiredView(source, 2131492992, "method 'setOnClicks'");
+    view = finder.findRequiredView(source, 2131492991, "field 'collapsingToolbarLayout'");
+    target.collapsingToolbarLayout = finder.castView(view, 2131492991, "field 'collapsingToolbarLayout'");
+    view = finder.findRequiredView(source, 2131492993, "method 'setOnClicks'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(

@@ -1,6 +1,7 @@
 package com.leapfrog.inventorymanagementsystem.itemdetail;
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -11,6 +12,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
@@ -21,17 +23,19 @@ import com.bumptech.glide.Glide;
 import com.leapfrog.inventorymanagementsystem.R;
 import com.leapfrog.inventorymanagementsystem.data.Extras;
 import com.leapfrog.inventorymanagementsystem.models.Item;
+import com.leapfrog.inventorymanagementsystem.payment.PaymentActivity;
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 /**
  * Shows detail for selected item
  */
-public class ItemDetailActivity extends AppCompatActivity implements ItemDetailContract {
+public class ItemDetailActivity extends AppCompatActivity implements ItemDetailContract, View.OnClickListener {
 
     ItemDetailPresenter itemDetailPresenter;
 
@@ -52,6 +56,9 @@ public class ItemDetailActivity extends AppCompatActivity implements ItemDetailC
 
     @Bind(R.id.toolbar)
     Toolbar toolbar;
+
+    @Bind(R.id.btn_make_payment)
+    Button btnMakePayment;
 
     Item item;
 
@@ -75,8 +82,9 @@ public class ItemDetailActivity extends AppCompatActivity implements ItemDetailC
         }
 
         setToolbar();
-    }
 
+        btnMakePayment.setOnClickListener(this);
+    }
     private void setToolbar() {
         ActionBar actionBar = getSupportActionBar();
 
@@ -106,7 +114,7 @@ public class ItemDetailActivity extends AppCompatActivity implements ItemDetailC
 
     @Override
     public void showAddToCartDialog() {
-        AddToCartDialog addToCartDialog = new AddToCartDialog(this,item,itemDetailPresenter);
+        AddToCartDialog addToCartDialog = new AddToCartDialog(this, item, itemDetailPresenter);
         addToCartDialog.show();
     }
 
@@ -142,10 +150,14 @@ public class ItemDetailActivity extends AppCompatActivity implements ItemDetailC
      *
      * @param item
      */
-    private void setData(Item item){
+    private void setData(Item item) {
         tvPrice.setText(getString(R.string.chinese_currency) + item.getPrice());
         tvItemDesc.setText(item.getItemDescription());
         tvBrand.setText(item.getDealerName());
     }
 
+    @Override
+    public void onClick(View v) {
+        startActivity(new Intent(ItemDetailActivity.this, PaymentActivity.class));
+    }
 }

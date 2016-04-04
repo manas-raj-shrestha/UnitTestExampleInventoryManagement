@@ -10,9 +10,9 @@ public class SettingsActivity$$ViewBinder<T extends com.leapfrog.inventorymanage
     View view;
     view = finder.findRequiredView(source, 2131492969, "field 'toolbar'");
     target.toolbar = finder.castView(view, 2131492969, "field 'toolbar'");
-    view = finder.findRequiredView(source, 2131492982, "field 'tvLanguage'");
-    target.tvLanguage = finder.castView(view, 2131492982, "field 'tvLanguage'");
-    view = finder.findRequiredView(source, 2131492981, "method 'setOnClicks'");
+    view = finder.findRequiredView(source, 2131492983, "field 'tvLanguage'");
+    target.tvLanguage = finder.castView(view, 2131492983, "field 'tvLanguage'");
+    view = finder.findRequiredView(source, 2131492982, "method 'setOnClicks'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
