@@ -34,4 +34,16 @@
     <string name="txt_about_the_seller">关于卖家</string>
     <string name="txt_misumi">MISUMI</string>
 
+    <string name="card_number_empty">身份证号码不能为空</string>
+    <string name="card_cvc_empty">卡CVV不能为空</string>
+    <string name="expiry_month_empty">到期月份不能为空</string>
+    <string name="expiry_year_empty">到期年不能为空</string>
+
+    //item detail presenter
+    <string name="txt_item_removed">从项目您的购物车中删除</string>
+    <string name="txt_item_added">项目添加到您的购物车</string>
+    <string name="make_payment">付款</string>
+    <string name="invalid_card_credentials">无效卡凭据</string>
+    <string name="payment_successfull">支付成功</string>
 </resources>
+
