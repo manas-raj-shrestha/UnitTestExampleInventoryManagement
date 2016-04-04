@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 import com.leapfrog.inventorymanagementsystem.R;
 import com.leapfrog.inventorymanagementsystem.data.HawkUtils;
+import com.leapfrog.inventorymanagementsystem.languagechose.LocaleHelper;
 import com.leapfrog.inventorymanagementsystem.models.Inventory;
 
 import butterknife.Bind;
@@ -23,8 +24,8 @@ import butterknife.OnClick;
  */
 public class SettingsActivity extends AppCompatActivity {
 
-    public enum Language{
-        ENGLISH,CHINESE
+    public enum Language {
+        ENGLISH, CHINESE
     }
 
     @Bind(R.id.toolbar)
@@ -41,9 +42,9 @@ public class SettingsActivity extends AppCompatActivity {
 
         setToolbar();
 
-        if (HawkUtils.getLanguage().equals(Language.ENGLISH)){
+        if (HawkUtils.getLanguage().equals(Language.ENGLISH)) {
             tvLanguage.setText("EN");
-        }else {
+        } else {
             tvLanguage.setText("CN");
         }
     }
@@ -72,7 +73,7 @@ public class SettingsActivity extends AppCompatActivity {
     }
 
     @OnClick({R.id.rl_language})
-    public void setOnClicks(View view){
+    public void setOnClicks(View view) {
         Dialog dialog = new Dialog(this);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setContentView(R.layout.dialog_language);
@@ -83,9 +84,11 @@ public class SettingsActivity extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 if (i % 2 == 0) {
                     HawkUtils.setLanguage(Language.ENGLISH);
+                    LocaleHelper.setLocale(SettingsActivity.this, "en");
                     tvLanguage.setText("EN");
                 } else {
                     HawkUtils.setLanguage(Language.CHINESE);
+                    LocaleHelper.setLocale(SettingsActivity.this, "zh");
                     tvLanguage.setText("CN");
                 }
             }

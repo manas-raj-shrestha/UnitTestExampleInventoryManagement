@@ -3,6 +3,8 @@ package com.leapfrog.inventorymanagementsystem;
 import android.app.Application;
 import android.content.Context;
 
+import com.leapfrog.inventorymanagementsystem.data.HawkUtils;
+import com.leapfrog.inventorymanagementsystem.languagechose.LocaleHelper;
 import com.orhanobut.hawk.Hawk;
 import com.orhanobut.hawk.HawkBuilder;
 import com.orhanobut.hawk.LogLevel;
@@ -20,6 +22,8 @@ public class MisumiApplication extends Application {
 
         misumiApplication = this;
         initHawk();
+        LocaleHelper.onCreate(this, HawkUtils.getLanguage().toString());
+
     }
 
     public static Context getContext() {
