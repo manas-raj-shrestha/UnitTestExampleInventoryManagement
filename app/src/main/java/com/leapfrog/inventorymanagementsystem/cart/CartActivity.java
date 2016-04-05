@@ -1,6 +1,9 @@
 package com.leapfrog.inventorymanagementsystem.cart;
 
+import android.content.Context;
 import android.content.Intent;
+import android.graphics.Canvas;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -9,13 +12,12 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.Toast;
 
 import com.leapfrog.inventorymanagementsystem.R;
-import com.leapfrog.inventorymanagementsystem.itemdetail.ItemDetailActivity;
 import com.leapfrog.inventorymanagementsystem.data.Extras;
 import com.leapfrog.inventorymanagementsystem.events.OnItemSelectListener;
+import com.leapfrog.inventorymanagementsystem.itemdetail.ItemDetailActivity;
 import com.leapfrog.inventorymanagementsystem.models.Item;
 import com.leapfrog.inventorymanagementsystem.payment.PaymentActivity;
 
@@ -62,6 +64,7 @@ public class CartActivity extends AppCompatActivity {
     private void setRecyclerView() {
         rvCart.setAdapter(new CartRvAdapter(this, onItemSelectListener));
         rvCart.setLayoutManager(new LinearLayoutManager(this));
+        rvCart.addItemDecoration(new SimpleDividerItemDecoration(this));
     }
 
     /**
@@ -90,5 +93,35 @@ public class CartActivity extends AppCompatActivity {
     @OnClick({R.id.btn_make_payment})
     public void makePayment() {
         startActivity(new Intent(CartActivity.this, PaymentActivity.class));
+    }
+
+
+
+
+    class SimpleDividerItemDecoration extends RecyclerView.ItemDecoration {
+        private Drawable mDivider;
+
+        public SimpleDividerItemDecoration(Context context) {
+            mDivider = context.getResources().getDrawable(R.drawable.line_divider);
+        }
+
+        @Override
+        public void onDrawOver(Canvas c, RecyclerView parent, RecyclerView.State state) {
+            int left = parent.getPaddingLeft();
+            int right = parent.getWidth() - parent.getPaddingRight();
+
+            int childCount = parent.getChildCount();
+            for (int i = 0; i < childCount; i++) {
+                View child = parent.getChildAt(i);
+
+                RecyclerView.LayoutParams params = (RecyclerView.LayoutParams) child.getLayoutParams();
+
+                int top = child.getBottom() + params.bottomMargin;
+                int bottom = top + mDivider.getIntrinsicHeight();
+
+                mDivider.setBounds(left, top, right, bottom);
+                mDivider.draw(c);
+            }
+        }
     }
 }
