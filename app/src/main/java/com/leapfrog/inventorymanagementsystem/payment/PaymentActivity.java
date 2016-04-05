@@ -3,6 +3,7 @@ package com.leapfrog.inventorymanagementsystem.payment;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
@@ -43,6 +44,8 @@ public class PaymentActivity extends AppCompatActivity implements PaymentView, V
         getSupportActionBar().setTitle("");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+        //setToolbar();
+
         paymentPresenter = new PaymentPresenterImplementation(this);
 
         initViews();
@@ -79,6 +82,19 @@ public class PaymentActivity extends AppCompatActivity implements PaymentView, V
         cardExpiryMonth = Integer.parseInt(edtCardExpiryMonth.getText().toString().trim());
         cardExpiryYear = Integer.parseInt(edtCardExpiryYear.getText().toString().trim());
     }
+
+    /**
+     * set up toolbar
+     */
+    private void setToolbar() {
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        ActionBar actionBar = getSupportActionBar();
+
+        actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setTitle(R.string.payment);
+    }
+
 
     @Override
     public void onClick(View v) {

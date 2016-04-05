@@ -90,10 +90,11 @@ public class CartActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    @OnClick({R.id.btn_make_payment,R.id.btn_make_payment_wechat})
+
+    @OnClick({R.id.btn_make_payment, R.id.btn_make_payment_wechat})
     public void makePayment(View view) {
-        int payment =PaymentActivity.PAYMENT_STRIPE;
-        switch (view.getId()){
+        int payment = PaymentActivity.PAYMENT_STRIPE;
+        switch (view.getId()) {
             case R.id.btn_make_payment:
                 payment = PaymentActivity.PAYMENT_STRIPE;
                 break;
@@ -101,10 +102,8 @@ public class CartActivity extends AppCompatActivity {
                 payment = PaymentActivity.PAYMENT_WEPAY;
                 break;
         }
-        startActivity(PaymentActivity.launchActivity(this,payment));
+        startActivity(PaymentActivity.launchActivity(this, payment));
     }
-
-
 
 
     class SimpleDividerItemDecoration extends RecyclerView.ItemDecoration {
@@ -132,5 +131,6 @@ public class CartActivity extends AppCompatActivity {
                 mDivider.draw(c);
             }
         }
+
     }
 }

@@ -23,20 +23,20 @@
             android:id="@+id/btn_make_payment"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginRight="1dp"
             android:layout_weight="1"
-            android:src="@drawable/ic_stripe_logo"
             android:background="@color/colorPrimary_fade"
-            android:layout_marginRight="1dp"/>
+            android:src="@drawable/ic_stripe_logo" />
 
         <ImageView
             android:id="@+id/btn_make_payment_wechat"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:src="@drawable/ic_wepay_logo"
-            android:text="@string/make_payment"
             android:layout_marginLeft="1dp"
-            android:background="@color/colorPrimary_fade"/>
+            android:layout_weight="1"
+            android:background="@color/colorPrimary_fade"
+            android:src="@drawable/ic_wepay_logo"
+            android:text="@string/make_payment" />
 
     </LinearLayout>
 

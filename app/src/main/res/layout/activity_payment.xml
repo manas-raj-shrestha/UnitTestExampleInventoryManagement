@@ -26,10 +26,12 @@
         android:paddingTop="@dimen/activity_vertical_margin"
         tools:context="com.surdroid.stripepaymentexample.MainActivity">
 
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
 
             <EditText
                 android:id="@+id/edt_full_name"
@@ -67,6 +69,7 @@
                     android:inputType="number"
                     android:maxLength="2" />
 
+
                 <EditText
                     android:id="@+id/edt_card_expiry_year"
                     android:layout_width="0dp"
@@ -78,6 +81,7 @@
 
 
             </LinearLayout>
+
 
             <Button
                 android:id="@+id/btn_verify"
