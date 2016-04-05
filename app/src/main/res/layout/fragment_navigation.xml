@@ -22,7 +22,7 @@
             android:layout_alignParentBottom="true"
             android:layout_margin="16dp"
             android:fontFamily="sans-serif-light"
-            android:text="Manas Shrestha"
+            android:text="@string/manas_shrestha"
             android:textColor="@android:color/white"
             android:textSize="18sp" />
 

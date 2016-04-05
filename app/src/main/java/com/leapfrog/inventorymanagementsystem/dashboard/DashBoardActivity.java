@@ -11,12 +11,12 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 
 import com.leapfrog.inventorymanagementsystem.R;
 import com.leapfrog.inventorymanagementsystem.cart.CartActivity;
 import com.leapfrog.inventorymanagementsystem.category.CategoryFragment;
-import com.leapfrog.inventorymanagementsystem.models.Inventory;
 import com.leapfrog.inventorymanagementsystem.models.Item;
 import com.leapfrog.inventorymanagementsystem.navigationdrawer.NavigationDrawerFragment;
 import com.leapfrog.inventorymanagementsystem.navigationdrawer.OnNavigationOptionSelected;
@@ -42,10 +42,15 @@ public class DashBoardActivity extends AppCompatActivity implements OnNavigation
     @Bind(R.id.collapsing_toolbar)
     CollapsingToolbarLayout collapsingToolbarLayout;
 
+    FragmentTransaction fragmentTransaction;
+    CategoryFragment categoryFragment;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dashboard_activity);
+
+        Log.i("MainActivity", "onCreate: ");
 
         ButterKnife.bind(this);
         setToolbar();
@@ -72,8 +77,9 @@ public class DashBoardActivity extends AppCompatActivity implements OnNavigation
      * initialize fragments
      */
     private void initializeFragments() {
-        FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
-        fragmentTransaction.add(R.id.fl_main, new CategoryFragment(Item.ItemType.WIRE));
+        fragmentTransaction = getFragmentManager().beginTransaction();
+        categoryFragment = new CategoryFragment(Item.ItemType.WIRE);
+        fragmentTransaction.add(R.id.fl_main, categoryFragment);
         fragmentTransaction.add(R.id.fl_navigation_drawer, new NavigationDrawerFragment()).commit();
     }
 
@@ -93,23 +99,23 @@ public class DashBoardActivity extends AppCompatActivity implements OnNavigation
     }
 
     @Override
-    public void onNavigationOptionSelected(String option) {
+    public void onNavigationOptionSelected(int option) {
         FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
 
         switch (option) {
-            case "Wire":
+            case 0:
                 fragmentTransaction.replace(R.id.fl_main, new CategoryFragment(Item.ItemType.WIRE));
                 fragmentTransaction.commit();
                 break;
-            case "Control":
+            case 1:
                 fragmentTransaction.replace(R.id.fl_main, new CategoryFragment(Item.ItemType.CONTROL));
                 fragmentTransaction.commit();
                 break;
-            case "Knife & Tools":
+            case 2:
                 fragmentTransaction.replace(R.id.fl_main, new CategoryFragment(Item.ItemType.KNIFE_AND_TOOLS));
                 fragmentTransaction.commit();
                 break;
-            case "Settings":
+            case 3:
                 startActivity(new Intent(this, SettingsActivity.class));
                 break;
         }
@@ -125,5 +131,4 @@ public class DashBoardActivity extends AppCompatActivity implements OnNavigation
                 break;
         }
     }
-
 }

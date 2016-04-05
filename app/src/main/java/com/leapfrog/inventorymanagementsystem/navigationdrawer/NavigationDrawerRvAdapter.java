@@ -17,7 +17,8 @@ import butterknife.ButterKnife;
  */
 public class NavigationDrawerRvAdapter extends RecyclerView.Adapter<NavigationDrawerRvAdapter.ViewHolder> {
 
-    private final static String[] options = new String[]{"Wire", "Control", "Knife & Tools","Settings"};
+    private int selectedPosition = 0;
+    private String[] options;
     private final static int[] optionIcons = new int[]{R.drawable.ic_shopping_cart_grey_24dp,
             R.drawable.ic_favorite_grey_24dp, R.drawable.ic_exit_to_app_grey_24dp};
 
@@ -27,6 +28,11 @@ public class NavigationDrawerRvAdapter extends RecyclerView.Adapter<NavigationDr
     public NavigationDrawerRvAdapter(Context context, OnNavigationOptionSelected onNavigationOptionSelected) {
         this.context = context;
         this.onNavigationOptionSelected = onNavigationOptionSelected;
+
+        // nav drawer icons from resources
+        options = context.getResources()
+                .getStringArray(R.array.nav_drawer_items);
+
     }
 
     @Override
@@ -36,8 +42,15 @@ public class NavigationDrawerRvAdapter extends RecyclerView.Adapter<NavigationDr
     }
 
     @Override
-    public void onBindViewHolder(ViewHolder holder, int position) {
+    public void onBindViewHolder(ViewHolder holder, final int position) {
+
         holder.tvOption.setText(options[position]);
+        holder.tvOption.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onNavigationOptionSelected.onNavigationOptionSelected(position);
+            }
+        });
     }
 
     @Override
@@ -45,7 +58,7 @@ public class NavigationDrawerRvAdapter extends RecyclerView.Adapter<NavigationDr
         return options.length;
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+    public class ViewHolder extends RecyclerView.ViewHolder {
 
         @Bind(android.R.id.text1)
         TextView tvOption;
@@ -53,12 +66,6 @@ public class NavigationDrawerRvAdapter extends RecyclerView.Adapter<NavigationDr
         public ViewHolder(View itemView) {
             super(itemView);
             ButterKnife.bind(this, itemView);
-            itemView.setOnClickListener(this);
-        }
-
-        @Override
-        public void onClick(View view) {
-            onNavigationOptionSelected.onNavigationOptionSelected(tvOption.getText().toString());
         }
     }
 }

@@ -56,5 +56,14 @@
     <string name="expiry_month">有効期限月</string>
     <string name="expiry_year">有効期限の年</string>
     <string name="verify_payment">支払いを確認</string>
+    <string name="manas_shrestha">春樹</string>
+
+    <!-- Navigation Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>ワイヤー</item>
+        <item>コントロール</item>
+        <item>ナイフ＆ツール</item>
+        <item>設定</item>
+    </string-array>
 
 </resources>
