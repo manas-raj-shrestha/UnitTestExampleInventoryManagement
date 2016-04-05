@@ -18,7 +18,11 @@ android {
         }
     }
 
-    sourceSets { main { res.srcDirs = ['src/main/res', 'src/main/res/values-zh-rCH'] } }
+    sourceSets {
+        main {
+            res.srcDirs = ['src/main/res', 'src/main/res/values-zh-rCH', 'src/main/res/values-ja']
+        }
+    }
 }
 
 dependencies {

@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">MiSUMi</string>
+    <string name="chinese_currency">¥</string>
+
+    //login activity
+    <string name="username_error">ユーザー名は空にすることはできません。</string>
+    <string name="password_error">パスワードは空にすることはできません</string>
+    <string name="login_success">ログイン成功</string>
+    <string name="invalid_login">無効な資格情報</string>
+
+    //login view
+    <string name="txt_username">ユーザー名</string>
+    <string name="txt_password">パスワード</string>
+    <string name="txt_forgot_password">パスワードをお忘れですか</string>
+
+    //cart activity
+    <string name="txt_cart">カート</string>
+    <string name="txt_total">合計 : </string>
+
+    //settings activity
+    <string name="txt_settings">設定</string>
+    <string name="txt_language">言語</string>
+
+    //item detail activity
+    <string name="txt_purchase_successful">成功した購入</string>
+    <string name="txt_item_not_available">アイテムは使用できません</string>
+    <string name="txt_shipping">運送</string>
+    <string name="txt_condition">調子</string>
+    <string name="txt_condition_new">新しい</string>
+    <string name="txt_quantity">量</string>
+    <string name="txt_100_available">利用可能な100</string>
+    <string name="txt_brand">ブランド</string>
+    <string name="txt_na">NA</string>
+    <string name="txt_manufacture_country">製造国</string>
+    <string name="txt_china">中国</string>
+    <string name="txt_upc">UPC</string>
+    <string name="txt_item_number">商品番号</string>
+    <string name="txt_about_the_seller">売り手について</string>
+    <string name="txt_misumi">MISUMI</string>
+
+    <string name="card_number_empty">カード番号は空にすることはできません</string>
+    <string name="card_cvc_empty">カードのCVV空にすることはできません</string>
+    <string name="expiry_month_empty">有効期限を空にすることはできません</string>
+    <string name="expiry_year_empty">有効期限年は空にすることはできません</string>
+
+    //item detail presenter
+    <string name="txt_item_removed">アイテムは、あなたのカートから削除します</string>
+    <string name="txt_item_added">アイテムがショッピングカートに追加しました</string>
+
+    <string name="make_payment">支払う</string>
+    <string name="invalid_card_credentials">無効なカードクレデンシャル</string>
+    <string name="payment_successfull">支払い完了</string>
+    <string name="full_name">フルネーム</string>
+    <string name="card_number">カード番号</string>
+    <string name="card_cvc">カードのCVV</string>
+    <string name="expiry_month">有効期限月</string>
+    <string name="expiry_year">有効期限の年</string>
+    <string name="verify_payment">支払いを確認</string>
+
+</resources>

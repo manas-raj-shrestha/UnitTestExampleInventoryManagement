@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RadioGroup
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_marginRight="100dp"
-    android:padding="16dp"
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/rg_language"
-    android:layout_height="wrap_content">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="100dp"
+    android:padding="16dp">
 
     <RadioButton
         android:layout_width="match_parent"
@@ -16,5 +15,10 @@
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:text="English" />
+
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Japneese" />
 
 </RadioGroup>

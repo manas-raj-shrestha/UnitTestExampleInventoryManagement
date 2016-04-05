@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
@@ -27,7 +28,7 @@ import butterknife.OnClick;
 public class SettingsActivity extends AppCompatActivity {
 
     public enum Language {
-        ENGLISH, CHINESE
+        ENGLISH, CHINESE, JAPNEESE
     }
 
     @Bind(R.id.toolbar)
@@ -50,8 +51,10 @@ public class SettingsActivity extends AppCompatActivity {
 
         if (HawkUtils.getLanguage().equals(Language.ENGLISH)) {
             tvLanguage.setText("EN");
-        } else {
+        } else if (HawkUtils.getLanguage().equals(Language.CHINESE)) {
             tvLanguage.setText("CN");
+        } else {
+            tvLanguage.setText("JP");
         }
     }
 
@@ -88,21 +91,41 @@ public class SettingsActivity extends AppCompatActivity {
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
-                if (i % 2 == 0) {
+
+
+                int radioButtonID = radioGroup.getCheckedRadioButtonId();
+                View radioButton = radioGroup.findViewById(radioButtonID);
+                int idx = radioGroup.indexOfChild(radioButton);
+
+                Log.i("Settings", "onCheckedChanged: " + idx);
+
+                if (idx == 0) {
+                    HawkUtils.setLanguage(Language.CHINESE);
+                    LocaleHelper.setLocale(SettingsActivity.this, "zh");
+                    Intent intent = new Intent(SettingsActivity.this, DashBoardActivity.class);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                    startActivity(intent);
+                    finish();
+                    Log.i("Settings", "onCheckedChanged: CH");
+                    tvLanguage.setText("EN");
+                } else if (idx == 1) {
                     HawkUtils.setLanguage(Language.ENGLISH);
                     LocaleHelper.setLocale(SettingsActivity.this, "en");
                     Intent intent = new Intent(SettingsActivity.this, DashBoardActivity.class);
                     intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                     startActivity(intent);
                     finish();
-                    tvLanguage.setText("EN");
+                    Log.i("Settings", "onCheckedChanged: EN" + idx);
+                    tvLanguage.setText("CN");
                 } else {
-                    HawkUtils.setLanguage(Language.CHINESE);
-                    LocaleHelper.setLocale(SettingsActivity.this, "zh");
+                    HawkUtils.setLanguage(Language.JAPNEESE);
+                    LocaleHelper.setLocale(SettingsActivity.this, "ja");
                     Intent intent = new Intent(SettingsActivity.this, DashBoardActivity.class);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                     startActivity(intent);
                     finish();
-                    tvLanguage.setText("CN");
+                    Log.i("Settings", "onCheckedChanged: JP" + idx);
+                    tvLanguage.setText("JP");
                 }
             }
         });
