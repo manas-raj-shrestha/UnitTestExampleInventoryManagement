@@ -103,7 +103,7 @@ public class SettingsActivity extends AppCompatActivity {
                     HawkUtils.setLanguage(Language.CHINESE);
                     LocaleHelper.setLocale(SettingsActivity.this, "zh");
                     Intent intent = new Intent(SettingsActivity.this, DashBoardActivity.class);
-                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent);
                     finish();
                     Log.i("Settings", "onCheckedChanged: CH");
@@ -112,7 +112,7 @@ public class SettingsActivity extends AppCompatActivity {
                     HawkUtils.setLanguage(Language.ENGLISH);
                     LocaleHelper.setLocale(SettingsActivity.this, "en");
                     Intent intent = new Intent(SettingsActivity.this, DashBoardActivity.class);
-                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent);
                     finish();
                     Log.i("Settings", "onCheckedChanged: EN" + idx);
@@ -121,7 +121,7 @@ public class SettingsActivity extends AppCompatActivity {
                     HawkUtils.setLanguage(Language.JAPNEESE);
                     LocaleHelper.setLocale(SettingsActivity.this, "ja");
                     Intent intent = new Intent(SettingsActivity.this, DashBoardActivity.class);
-                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent);
                     finish();
                     Log.i("Settings", "onCheckedChanged: JP" + idx);

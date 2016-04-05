@@ -43,7 +43,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:hint="@string/txt_username" />
+                android:hint="@string/txt_username"
+                android:imeOptions="actionNext"
+                android:nextFocusDown="@+id/edt_password"
+                android:singleLine="true" />
 
             <EditText
                 android:id="@+id/edt_password"
@@ -53,7 +56,9 @@
                 android:layout_marginRight="20dp"
                 android:layout_marginTop="20dp"
                 android:hint="@string/txt_password"
-                android:inputType="textPassword" />
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:singleLine="true" />
 
             <ImageButton
                 android:layout_width="match_parent"

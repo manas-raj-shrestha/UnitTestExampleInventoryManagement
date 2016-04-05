@@ -75,8 +75,10 @@ public class Inventory implements InventoryActions {
             InputStream is = null;
             if (HawkUtils.getLanguage().equals(SettingsActivity.Language.CHINESE)) {
                 is = MisumiApplication.getContext().getAssets().open("json_cn.txt");
-            } else {
+            } else if (HawkUtils.getLanguage().equals(SettingsActivity.Language.ENGLISH)) {
                 is = MisumiApplication.getContext().getAssets().open("json_en.txt");
+            } else {
+                is = MisumiApplication.getContext().getAssets().open("json_jp.txt");
             }
 
             int size = is.available();

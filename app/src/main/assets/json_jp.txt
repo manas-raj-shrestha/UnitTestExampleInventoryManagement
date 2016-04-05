@@ -1,0 +1,139 @@
+[{
+		"itemCode": "OK50H",
+		"itemName": "0Hホールカッター",
+		"itemQuantity": 100,
+		"itemDescription": "50Hホールカッター",
+		"dealerName": "OMI Kogyo",
+		"price": 150,
+		"itemType": "KNIFE_AND_TOOLS"
+	}, {
+		"itemCode": "OK35SQ",
+		"itemName": "35SQ ホールカッター",
+		"itemQuantity": 100,
+		"itemDescription": "35SQ ホールカッター",
+		"dealerName": "OMI Kogyo",
+		"price": 150,
+		"itemType": "KNIFE_AND_TOOLS"
+	}, {
+		"itemCode": "CX500",
+		"itemName": "2ボールエンドミルコーティングCX500と高硬度鋼の刃",
+		"itemQuantity": 100,
+		"itemDescription": "高速加工やドライ加工に適した寿命を増やします。高精度な3次元加工に最適です。加工面粗さが良いです。",
+		"dealerName": "CKK",
+		"price": 150,
+		"itemType": "KNIFE_AND_TOOLS"
+	}, {
+		"itemCode": "BEM1",
+		"itemName": "BEM縁取られた超硬ボールエンドミル",
+		"itemQuantity": 100,
+		"itemDescription": "BEM縁取られた超硬ボールエンドミル",
+		"dealerName": "AST",
+		"price": 150,
+		"itemType": "KNIFE_AND_TOOLS"
+	}, {
+		"itemCode": "FKD1",
+		"itemName": "サイドカッター（共通のエッジ）",
+		"itemQuantity": 100,
+		"itemDescription": "外周側が広く処理槽で使用される刃先を有するように表面加工、側面加工、幅決意と段差。",
+		"dealerName": "FKD",
+		"price": 150,
+		"itemType": "KNIFE_AND_TOOLS"
+	}, {
+		"itemCode": "QEFD",
+		"itemName": "円筒状の切断/溝切り旋削工具QEFD",
+		"itemQuantity": 100,
+		"itemDescription": "美しく、シンプルでコンパクトな構造",
+		"dealerName": "Zhuzhou China",
+		"price": 150,
+		"itemType": "KNIFE_AND_TOOLS"
+	}, {
+		"itemCode": "FX3U",
+		"itemName": "MELSEC-F FX3Uシリーズ本体",
+		"itemQuantity": 100,
+		"itemDescription": "そして、もっと使いやすさと拡張性の高いの柔軟性と、それはお金のために優れた価値の小規模な制御に適している以下の128*1を制御するためにFX3を容易にします。",
+		"dealerName": "MITSUBISHI",
+		"price": 150,
+		"itemType": "CONTROL"
+	}, {
+		"itemCode": "FX3G",
+		"itemName": "MELSEC-F FX3Gシリーズのメインユニット",
+		"itemQuantity": 100,
+		"itemDescription": "使いやすさ-1と柔軟な拡張性、小規模な制御のためのお金のために優れた値と一緒に。",
+		"dealerName": "MITSUBISHI",
+		"price": 150,
+		"itemType": "CONTROL"
+	},  {
+		"itemCode": "S7",
+		"itemName": "S7-200中央処理装置（CPU）",
+		"itemQuantity": 100,
+		"itemDescription": "小規模の性能要件を満たすためにモジュラーマイクロPLCシステムは、会うと制御タスク、シンプルで実用的な分散型アーキテクチャとマルチインターフェースネットワーク機能は、アプリケーションが非常に柔軟になりを自動化するために適応させることは非常に良好であることができます。",
+		"dealerName": "Seimens",
+		"price": 150,
+		"itemType": "CONTROL"
+	}, {
+		"itemCode": "S73",
+		"itemName": "S7-300中央処理装置（CPU）",
+		"itemQuantity": 100,
+		"itemDescription": "小規模の性能要件を満たすためにモジュラーマイクロPLCシステムは、会うと制御タスク、シンプルで実用的な分散型アーキテクチャとマルチインターフェースネットワーク機能は、アプリケーションが非常に柔軟になりを自動化するために適応させることは非常に良好であることができます。",
+		"dealerName": "Seimens",
+		"price": 150,
+		"itemType": "CONTROL"
+	}, {
+		"itemCode": "qnu1",
+		"itemName": "QnUシリーズCPUモジュール",
+		"itemQuantity": 100,
+		"itemDescription": "QnUシリーズCPUモジュール",
+		"dealerName": "MITSUBISHI",
+		"price": 150,
+		"itemType": "CONTROL"
+	}, {
+		"itemCode": "UC1",
+		"itemName": "ユニバーサル同軸CD/ RGタイプ",
+		"itemQuantity": 100,
+		"itemDescription": "ユニバーサル同軸CD/ RGタイプ",
+		"dealerName": "MISUMI",
+		"price": 150,
+		"itemType": "WIRE"
+	}, {
+		"itemCode": "SYV1",
+		"itemName": "ポリエチレンは、RF同軸ケーブルSYVを絶縁しました",
+		"itemQuantity": 100,
+		"itemDescription": "ポリエチレンは、RF同軸ケーブルSYVを絶縁しました",
+		"dealerName": "MISUMI",
+		"price": 150,
+		"itemType": "WIRE"
+	}, {
+		"itemCode": "CC1",
+		"itemName": "同軸ケーブル",
+		"itemQuantity": 100,
+		"itemDescription": "同軸ケーブル",
+		"dealerName": "BELDEN USA",
+		"price": 150,
+		"itemType": "WIRE"
+	}, {
+		"itemCode": "NACC1",
+		"itemName": "NACC-UL標準CC-Linkケーブル",
+		"itemQuantity": 100,
+		"itemDescription": "NACC-UL標準CC-Linkケーブル",
+		"dealerName": "MISUMI",
+		"price": 150,
+		"itemType": "WIRE"
+	}, {
+		"itemCode": "CAT51",
+		"itemName": "CAT.5ELAN",
+		"itemQuantity": 100,
+		"itemDescription": "高い曲げCAT5E LANケーブル",
+		"dealerName": "Japan Oki Electric Cable (OKI)",
+		"price": 150,
+		"itemType": "WIRE"
+	}, {
+		"itemCode": "DNC1",
+		"itemName": "DeviceNetケーブル",
+		"itemQuantity": 100,
+		"itemDescription": "固定部分/低速移動-UL仕様-Deviceネットケーブル",
+		"dealerName": "MISUMI",
+		"price": 150,
+		"itemType": "WIRE"
+	}
+
+]
