@@ -32,7 +32,7 @@
     <string name="txt_upc">UPC</string>
     <string name="txt_item_number">项目编号</string>
     <string name="txt_about_the_seller">关于卖家</string>
-    <string name="txt_misumi">MISUMI</string>
+    <string name="txt_misumi">三隅</string>
 
     <string name="card_number_empty">身份证号码不能为空</string>
     <string name="card_cvc_empty">卡CVV不能为空</string>
@@ -45,6 +45,7 @@
     <string name="make_payment">付款</string>
     <string name="invalid_card_credentials">无效卡凭据</string>
     <string name="payment_successfull">支付成功</string>
+    <string name="manas_shrestha">三隅</string>
 
     <!-- Navigation Drawer Menu Items -->
     <string-array name="nav_drawer_items">
