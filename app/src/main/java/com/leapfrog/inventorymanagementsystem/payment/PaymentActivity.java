@@ -1,9 +1,12 @@
 package com.leapfrog.inventorymanagementsystem.payment;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -27,15 +30,35 @@ public class PaymentActivity extends AppCompatActivity implements PaymentView, V
 
     private PaymentPresenter paymentPresenter;
 
+    private Toolbar toolbar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_payment);
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        int payment = getIntent().getIntExtra(PAYMENT,PAYMENT_STRIPE);
+        getSupportActionBar().setIcon(payment == PAYMENT_STRIPE?R.drawable.ic_stripe_logo:R.drawable.ic_wepay_logo);
+        getSupportActionBar().setTitle("");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         paymentPresenter = new PaymentPresenterImplementation(this);
 
         initViews();
 
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                onBackPressed();
+                break;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 
     private void initViews() {
@@ -97,5 +120,15 @@ public class PaymentActivity extends AppCompatActivity implements PaymentView, V
     public void navigateToMainActivity() {
         Toast.makeText(PaymentActivity.this, R.string.payment_successfull, Toast.LENGTH_SHORT).show();
         startActivity(new Intent(PaymentActivity.this, DashBoardActivity.class));
+    }
+
+
+    public static final int PAYMENT_STRIPE = 0x1, PAYMENT_WEPAY = 0x2;
+    private static final String PAYMENT = "payment";
+
+    public static Intent launchActivity(Context context, int payment) {
+        Intent intent = new Intent(context, PaymentActivity.class);
+        intent.putExtra(PAYMENT, payment);
+        return intent;
     }
 }

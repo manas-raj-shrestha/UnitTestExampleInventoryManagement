@@ -90,9 +90,18 @@ public class CartActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    @OnClick({R.id.btn_make_payment})
-    public void makePayment() {
-        startActivity(new Intent(CartActivity.this, PaymentActivity.class));
+    @OnClick({R.id.btn_make_payment,R.id.btn_make_payment_wechat})
+    public void makePayment(View view) {
+        int payment =PaymentActivity.PAYMENT_STRIPE;
+        switch (view.getId()){
+            case R.id.btn_make_payment:
+                payment = PaymentActivity.PAYMENT_STRIPE;
+                break;
+            case R.id.btn_make_payment_wechat:
+                payment = PaymentActivity.PAYMENT_WEPAY;
+                break;
+        }
+        startActivity(PaymentActivity.launchActivity(this,payment));
     }
 
 
