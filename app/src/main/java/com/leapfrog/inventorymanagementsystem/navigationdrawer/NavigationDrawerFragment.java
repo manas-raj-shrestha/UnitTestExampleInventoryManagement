@@ -46,7 +46,7 @@ public class NavigationDrawerFragment extends Fragment {
         recyclerViewNavDrawer.setAdapter(new NavigationDrawerRvAdapter(getActivity(), dashBoardNavigationListener));
         recyclerViewNavDrawer.setLayoutManager(new LinearLayoutManager(getActivity()));
 
-        Glide.with(this).load(R.drawable.user_pic).asBitmap().centerCrop().into(new BitmapImageViewTarget(ivUserPic) {
+        Glide.with(this).load(R.drawable.ic_misumi_logo).asBitmap().centerCrop().into(new BitmapImageViewTarget(ivUserPic) {
             @Override
             protected void setResource(Bitmap resource) {
                 RoundedBitmapDrawable circularBitmapDrawable =
