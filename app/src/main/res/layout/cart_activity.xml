@@ -13,11 +13,35 @@
         android:layout_height="match_parent"
         android:layout_below="@+id/toolbar" />
 
-    <Button
+    <RelativeLayout
         android:id="@+id/btn_make_payment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:text="@string/make_payment" />
+        android:layout_margin="8dp"
+        android:background="#1E88E5">
+
+        <TextView
+            android:id="@+id/txt_stripe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="Stripe"
+            android:layout_alignParentLeft="true"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_stripe"
+            android:layout_toRightOf="@id/txt_stripe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="@string/make_payment"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
 
 </RelativeLayout>

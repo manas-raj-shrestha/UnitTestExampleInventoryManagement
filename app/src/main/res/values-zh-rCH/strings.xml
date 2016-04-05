@@ -45,13 +45,14 @@
     <string name="make_payment">付款</string>
     <string name="invalid_card_credentials">无效卡凭据</string>
     <string name="payment_successfull">支付成功</string>
+    <string name="payment">付款</string>
 
     <!-- Navigation Drawer Menu Items -->
     <string-array name="nav_drawer_items">
-        <item >线</item>
-        <item >控制</item>
-        <item >刀子和工具</item>
-        <item >设置</item>
+        <item>线</item>
+        <item>控制</item>
+        <item>刀子和工具</item>
+        <item>设置</item>
     </string-array>
 </resources>
 

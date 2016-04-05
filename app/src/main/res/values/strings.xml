@@ -57,6 +57,7 @@
     <string name="expiry_year">Expiry Year</string>
     <string name="verify_payment">VERIFY PAYMENT</string>
     <string name="manas_shrestha">Manas Shrestha</string>
+    <string name="payment">Payment</string>
 
     <!-- Navigation Drawer Menu Items -->
     <string-array name="nav_drawer_items">

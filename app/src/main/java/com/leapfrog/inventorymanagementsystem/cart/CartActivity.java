@@ -87,7 +87,7 @@ public class CartActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    @OnClick({R.id.btn_make_payment})
+    @OnClick({R.id.btn_make_payment, R.id.txt_stripe, R.id.btn_stripe})
     public void makePayment() {
         startActivity(new Intent(CartActivity.this, PaymentActivity.class));
     }

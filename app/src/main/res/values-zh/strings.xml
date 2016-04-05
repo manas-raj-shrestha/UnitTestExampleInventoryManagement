@@ -53,6 +53,7 @@
     <string name="expiry_year">到期年</string>
     <string name="verify_payment">验证付款</string>
     <string name="manas_shrestha">劉ヤン</string>
+    <string name="payment">付款</string>
 
 
     <!-- Navigation Drawer Menu Items -->

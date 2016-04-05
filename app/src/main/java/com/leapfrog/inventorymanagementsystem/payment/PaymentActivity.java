@@ -2,7 +2,9 @@ package com.leapfrog.inventorymanagementsystem.payment;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
@@ -13,6 +15,8 @@ import android.widget.Toast;
 import com.leapfrog.inventorymanagementsystem.R;
 import com.leapfrog.inventorymanagementsystem.dashboard.DashBoardActivity;
 import com.stripe.exception.AuthenticationException;
+
+import butterknife.Bind;
 
 public class PaymentActivity extends AppCompatActivity implements PaymentView, View.OnClickListener {
 
@@ -27,10 +31,14 @@ public class PaymentActivity extends AppCompatActivity implements PaymentView, V
 
     private PaymentPresenter paymentPresenter;
 
+    private Toolbar toolbar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_payment);
+
+        setToolbar();
 
         paymentPresenter = new PaymentPresenterImplementation(this);
 
@@ -56,6 +64,19 @@ public class PaymentActivity extends AppCompatActivity implements PaymentView, V
         cardExpiryMonth = Integer.parseInt(edtCardExpiryMonth.getText().toString().trim());
         cardExpiryYear = Integer.parseInt(edtCardExpiryYear.getText().toString().trim());
     }
+
+    /**
+     * set up toolbar
+     */
+    private void setToolbar() {
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        ActionBar actionBar = getSupportActionBar();
+
+        actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setTitle(R.string.payment);
+    }
+
 
     @Override
     public void onClick(View v) {
