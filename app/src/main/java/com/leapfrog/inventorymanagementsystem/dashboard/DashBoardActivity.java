@@ -11,7 +11,6 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.View;
 
 import com.leapfrog.inventorymanagementsystem.R;
@@ -50,11 +49,8 @@ public class DashBoardActivity extends AppCompatActivity implements OnNavigation
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dashboard_activity);
 
-        Log.i("MainActivity", "onCreate: ");
-
         ButterKnife.bind(this);
         setToolbar();
-
 
         initializeFragments();
         initializeDrawer();

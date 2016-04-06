@@ -1,5 +1,7 @@
 package com.leapfrog.inventorymanagementsystem.api;
 
+import java.util.concurrent.TimeUnit;
+
 import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
@@ -24,6 +26,9 @@ public class RetrofitManager {
                     HttpLoggingInterceptor loggingInterceptor = new HttpLoggingInterceptor();
                     loggingInterceptor.setLevel(HttpLoggingInterceptor.Level.HEADERS);
                     okhttpClientBuilder.addInterceptor(loggingInterceptor);
+
+                    okhttpClientBuilder.connectTimeout(2, TimeUnit.MINUTES);
+                    okhttpClientBuilder.readTimeout(2,TimeUnit.MINUTES);
                     retrofit = new Retrofit.Builder()
                             .baseUrl(EndPoints.BASE_URL)
                             .addConverterFactory(GsonConverterFactory.create())

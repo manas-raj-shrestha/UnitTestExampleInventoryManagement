@@ -41,5 +41,6 @@ dependencies {
     //    androidTestCompile 'junit:junit:4.12'
     compile 'junit:junit:4.12'
     compile 'com.stripe:stripe-android:+'
+    compile 'com.jakewharton.timber:timber:4.1.2'
     compile 'com.squareup:otto:1.3.8'
 }

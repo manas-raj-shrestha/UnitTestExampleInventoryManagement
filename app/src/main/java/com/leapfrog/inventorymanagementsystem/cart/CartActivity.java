@@ -36,6 +36,8 @@ public class CartActivity extends AppCompatActivity {
     @Bind(R.id.rv_cart)
     RecyclerView rvCart;
 
+    CartRvAdapter adapter;
+
 
     OnItemSelectListener onItemSelectListener = new OnItemSelectListener() {
         @Override
@@ -62,7 +64,8 @@ public class CartActivity extends AppCompatActivity {
      * set up recycler view for cart items
      */
     private void setRecyclerView() {
-        rvCart.setAdapter(new CartRvAdapter(this, onItemSelectListener));
+        adapter = new CartRvAdapter(this, onItemSelectListener);
+        rvCart.setAdapter(adapter);
         rvCart.setLayoutManager(new LinearLayoutManager(this));
         rvCart.addItemDecoration(new SimpleDividerItemDecoration(this));
     }
@@ -102,7 +105,7 @@ public class CartActivity extends AppCompatActivity {
                 payment = PaymentActivity.PAYMENT_WEPAY;
                 break;
         }
-        startActivity(PaymentActivity.launchActivity(this, payment));
+        startActivity(PaymentActivity.launchActivity(this, payment, adapter.getTotalPrice()));
     }
 
 

@@ -7,5 +7,5 @@ import com.stripe.exception.AuthenticationException;
  */
 public interface PaymentInteractor {
 
-    void makePayment(String cardNumber, int cardExpMonth, int cardExpYear, String cardCVC, onPaymentFinishListener onPaymentFinishListener) throws AuthenticationException;
+    void makePayment(String cardNumber, int cardExpMonth, int cardExpYear, String cardCVC,String price, onPaymentFinishListener onPaymentFinishListener) throws AuthenticationException;
 }

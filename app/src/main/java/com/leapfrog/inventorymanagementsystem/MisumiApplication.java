@@ -9,6 +9,8 @@ import com.orhanobut.hawk.Hawk;
 import com.orhanobut.hawk.HawkBuilder;
 import com.orhanobut.hawk.LogLevel;
 
+import timber.log.Timber;
+
 /**
  * Application class
  */
@@ -23,6 +25,7 @@ public class MisumiApplication extends Application {
         misumiApplication = this;
         initHawk();
         LocaleHelper.onCreate(this, HawkUtils.getLanguage().toString());
+        Timber.plant(new Timber.DebugTree());
 
     }
 

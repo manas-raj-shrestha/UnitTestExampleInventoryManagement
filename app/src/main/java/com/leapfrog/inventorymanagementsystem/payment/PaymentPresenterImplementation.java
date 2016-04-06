@@ -38,10 +38,10 @@ public class PaymentPresenterImplementation implements PaymentPresenter, onPayme
     }
 
     @Override
-    public void makePaymentValidation(String cardNumber, int cardExpMonth, int cardExpYear, String cardCVC) throws AuthenticationException {
+    public void makePaymentValidation(String cardNumber, int cardExpMonth, int cardExpYear, String cardCVC,String price) throws AuthenticationException {
         if (paymentView != null) {
             paymentView.showProgressBar();
-            paymentInteractorImplementation.makePayment(cardNumber, cardExpMonth, cardExpYear, cardCVC, this);
+            paymentInteractorImplementation.makePayment(cardNumber, cardExpMonth, cardExpYear, cardCVC, price, this);
         }
     }
 }

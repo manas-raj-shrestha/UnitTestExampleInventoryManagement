@@ -5,4 +5,6 @@ package com.leapfrog.inventorymanagementsystem.data;
  */
 public class Extras {
     public static String KEY_ITEM_EXTRA = "item_extra";
+
+
 }
