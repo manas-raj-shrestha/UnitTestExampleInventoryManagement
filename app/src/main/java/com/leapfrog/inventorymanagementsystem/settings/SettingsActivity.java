@@ -15,6 +15,8 @@ import android.widget.TextView;
 import com.leapfrog.inventorymanagementsystem.R;
 import com.leapfrog.inventorymanagementsystem.dashboard.DashBoardActivity;
 import com.leapfrog.inventorymanagementsystem.data.HawkUtils;
+import com.leapfrog.inventorymanagementsystem.events.EventBus;
+import com.leapfrog.inventorymanagementsystem.events.LanguageChangeEvent;
 import com.leapfrog.inventorymanagementsystem.languagechose.LocaleHelper;
 
 import butterknife.Bind;
@@ -43,6 +45,8 @@ public class SettingsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
         ButterKnife.bind(this);
+
+        EventBus.register(this);
 
         setToolbar();
 
@@ -99,33 +103,37 @@ public class SettingsActivity extends AppCompatActivity {
                 Log.i("Settings", "onCheckedChanged: " + idx);
 
                 if (idx == 0) {
+                    tvLanguage.setText("CN");
                     HawkUtils.setLanguage(Language.CHINESE);
                     LocaleHelper.setLocale(SettingsActivity.this, "zh");
                     Intent intent = new Intent(SettingsActivity.this, DashBoardActivity.class);
-                    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
                     startActivity(intent);
                     finish();
                     Log.i("Settings", "onCheckedChanged: CH");
-                    tvLanguage.setText("EN");
+
                 } else if (idx == 1) {
+                    tvLanguage.setText("EN");
                     HawkUtils.setLanguage(Language.ENGLISH);
                     LocaleHelper.setLocale(SettingsActivity.this, "en");
                     Intent intent = new Intent(SettingsActivity.this, DashBoardActivity.class);
-                    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
                     startActivity(intent);
                     finish();
                     Log.i("Settings", "onCheckedChanged: EN" + idx);
-                    tvLanguage.setText("CN");
+
                 } else {
+                    tvLanguage.setText("JP");
                     HawkUtils.setLanguage(Language.JAPNEESE);
                     LocaleHelper.setLocale(SettingsActivity.this, "ja");
                     Intent intent = new Intent(SettingsActivity.this, DashBoardActivity.class);
-                    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
                     startActivity(intent);
                     finish();
                     Log.i("Settings", "onCheckedChanged: JP" + idx);
-                    tvLanguage.setText("JP");
+
                 }
+                EventBus.post(new LanguageChangeEvent());
             }
         });
 

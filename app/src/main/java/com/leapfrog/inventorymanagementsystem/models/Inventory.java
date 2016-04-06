@@ -23,6 +23,7 @@ import java.util.HashMap;
  * Creates dummy items
  */
 public class Inventory implements InventoryActions {
+    private static final String TAG = Inventory.class.getSimpleName();
     private static Inventory inventory;
     public static ArrayList<Item> items = new ArrayList<>();
     private HashMap<String, Integer> hashMap = new HashMap<>();
@@ -30,11 +31,11 @@ public class Inventory implements InventoryActions {
     public static Inventory getInstance() {
         if (inventory == null)
             inventory = new Inventory();
-
         return inventory;
     }
 
     public void loadInventory() {
+        items.clear();
         createDrawableMap();
         try {
             JSONArray m_jArry = new JSONArray(loadJSONFromAsset());
@@ -48,12 +49,14 @@ public class Inventory implements InventoryActions {
                 Item item = new Item();
                 item.setItemCode(jo_inside.getString("itemCode"));
                 item.setItemName(jo_inside.getString("itemName"));
+                Log.i(TAG, "loadInventory: called here "+item.getItemName());
                 item.setItemQuantity(jo_inside.getInt("itemQuantity"));
                 item.setItemDescription(jo_inside.getString("itemDescription"));
                 item.setDealerName(jo_inside.getString("dealerName"));
                 item.setPrice(jo_inside.getInt("price"));
                 item.setItemType(Item.ItemType.valueOf(jo_inside.getString("itemType")));
                 item.setPicDrawableId(hashMap.get(item.getItemCode()));
+
                 items.add(item);
             }
         } catch (JSONException e) {
@@ -61,7 +64,7 @@ public class Inventory implements InventoryActions {
         }
     }
 
-    private Inventory() {
+    public Inventory() {
 //        addWireItems();
 //        addControlItems();
 //        addKnifeAndTools();
@@ -75,10 +78,13 @@ public class Inventory implements InventoryActions {
             InputStream is = null;
             if (HawkUtils.getLanguage().equals(SettingsActivity.Language.CHINESE)) {
                 is = MisumiApplication.getContext().getAssets().open("json_cn.txt");
+                Log.i(TAG, "loadJSONFromAsset: chinese");
             } else if (HawkUtils.getLanguage().equals(SettingsActivity.Language.ENGLISH)) {
                 is = MisumiApplication.getContext().getAssets().open("json_en.txt");
+                Log.i(TAG, "loadJSONFromAsset: english");
             } else {
                 is = MisumiApplication.getContext().getAssets().open("json_jp.txt");
+                Log.i(TAG, "loadJSONFromAsset: japan");
             }
 
             int size = is.available();
