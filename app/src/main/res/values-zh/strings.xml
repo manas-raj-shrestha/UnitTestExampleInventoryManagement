@@ -65,5 +65,8 @@
         <item >刀子和工具</item>
         <item >设置</item>
     </string-array>
+
+    <string name="card_name">云珠</string>
+
 </resources>
 

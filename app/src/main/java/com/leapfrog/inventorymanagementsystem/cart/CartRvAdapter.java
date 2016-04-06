@@ -12,6 +12,7 @@ import com.leapfrog.inventorymanagementsystem.data.HawkUtils;
 import com.leapfrog.inventorymanagementsystem.events.OnItemSelectListener;
 import com.leapfrog.inventorymanagementsystem.models.Inventory;
 import com.leapfrog.inventorymanagementsystem.models.Item;
+import com.leapfrog.inventorymanagementsystem.settings.SettingsActivity;
 
 import java.util.ArrayList;
 
@@ -27,10 +28,12 @@ public class CartRvAdapter extends RecyclerView.Adapter<CartRvAdapter.ViewHolder
     Context context;
     int totalPrice;
     OnItemSelectListener onItemSelectListener;
+    String currency = "$";
 
     public CartRvAdapter(Context context, OnItemSelectListener onItemSelectListener) {
         this.context = context;
         this.onItemSelectListener = onItemSelectListener;
+        generateCurrency();
 
         if (HawkUtils.getCartItems() != null) {
             cartItemNames = HawkUtils.getCartItems();
@@ -44,6 +47,20 @@ public class CartRvAdapter extends RecyclerView.Adapter<CartRvAdapter.ViewHolder
         }
     }
 
+    private void generateCurrency() {
+        SettingsActivity.Language language = HawkUtils.getLanguage();
+        switch (language) {
+            case ENGLISH:
+                currency = "$";
+                break;
+            case JAPNEESE:
+            case CHINESE:
+                currency = context.getString(R.string.chinese_currency);
+                break;
+        }
+
+    }
+
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(context).inflate(R.layout.card_item, parent, false);
@@ -54,10 +71,10 @@ public class CartRvAdapter extends RecyclerView.Adapter<CartRvAdapter.ViewHolder
     public void onBindViewHolder(ViewHolder holder, int position) {
         if (position < cartItems.size())
             holder.tvItemName.setText(cartItems.get(position).getItemName()
-                    + " " + context.getString(R.string.chinese_currency)
+                    + " " + currency
                     + cartItems.get(position).getPrice());
         else
-            holder.tvItemName.setText(context.getString(R.string.txt_total) + context.getString(R.string.chinese_currency) + totalPrice);
+            holder.tvItemName.setText(context.getString(R.string.txt_total) +" "+currency + totalPrice);
     }
 
     @Override

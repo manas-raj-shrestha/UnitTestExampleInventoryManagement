@@ -16,7 +16,6 @@ import com.leapfrog.inventorymanagementsystem.R;
 import com.leapfrog.inventorymanagementsystem.dashboard.DashBoardActivity;
 import com.leapfrog.inventorymanagementsystem.data.HawkUtils;
 import com.leapfrog.inventorymanagementsystem.languagechose.LocaleHelper;
-import com.leapfrog.inventorymanagementsystem.models.Inventory;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -138,4 +137,6 @@ public class SettingsActivity extends AppCompatActivity {
         dialog.dismiss();
         super.onDestroy();
     }
+
+
 }

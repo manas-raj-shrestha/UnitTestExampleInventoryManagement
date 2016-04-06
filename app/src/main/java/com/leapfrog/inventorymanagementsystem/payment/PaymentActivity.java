@@ -16,6 +16,7 @@ import android.widget.Toast;
 
 import com.leapfrog.inventorymanagementsystem.R;
 import com.leapfrog.inventorymanagementsystem.dashboard.DashBoardActivity;
+import com.leapfrog.inventorymanagementsystem.data.Customer;
 import com.stripe.exception.AuthenticationException;
 
 public class PaymentActivity extends AppCompatActivity implements PaymentView, View.OnClickListener {
@@ -39,8 +40,8 @@ public class PaymentActivity extends AppCompatActivity implements PaymentView, V
         setContentView(R.layout.activity_payment);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        int payment = getIntent().getIntExtra(PAYMENT,PAYMENT_STRIPE);
-        getSupportActionBar().setIcon(payment == PAYMENT_STRIPE?R.drawable.ic_stripe_logo:R.drawable.ic_wepay_logo);
+        int payment = getIntent().getIntExtra(PAYMENT, PAYMENT_STRIPE);
+        getSupportActionBar().setIcon(payment == PAYMENT_STRIPE ? R.drawable.ic_stripe_logo : R.drawable.ic_wepay_logo);
         getSupportActionBar().setTitle("");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
@@ -73,6 +74,14 @@ public class PaymentActivity extends AppCompatActivity implements PaymentView, V
         payProgressBar = (ProgressBar) findViewById(R.id.payment_progress_bar);
         btnMakePayment = (Button) findViewById(R.id.btn_verify);
         btnMakePayment.setOnClickListener(this);
+
+
+        Customer customer = Customer.getValidCustomer();
+        edtFullName.setText(customer.fullName);
+        edtCardNumber.setText(customer.cardNumber);
+        edtCardCVC.setText(customer.cardCVC);
+        edtCardExpiryMonth.setText(customer.expiryMonth);
+        edtCardExpiryYear.setText(customer.expiryYear);
     }
 
     private void getCardData() {

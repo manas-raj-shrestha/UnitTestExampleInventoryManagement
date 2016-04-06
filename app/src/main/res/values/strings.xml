@@ -70,4 +70,12 @@
         <item>Settings</item>
     </string-array>
 
+
+    <string name="card_name">Yun Zhu</string>
+    <string name="card_email">yun.zhu@misumi.sh.cn</string>
+    <string name="card_number_valid">4242424242424242</string>
+    <string name="card_cvc_valid">123</string>
+    <string name="card_expiry_month">12</string>
+    <string name="card_expiry_year">17</string>
+
 </resources>
