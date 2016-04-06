@@ -25,7 +25,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 
 /**
- * items for dashboard
+ * item for dashboard
  */
 public class CustomItemViewGroup extends RelativeLayout implements View.OnTouchListener {
 
