@@ -107,7 +107,7 @@ public class SettingsActivity extends AppCompatActivity {
                     HawkUtils.setLanguage(Language.CHINESE);
                     LocaleHelper.setLocale(SettingsActivity.this, "zh");
                     Intent intent = new Intent(SettingsActivity.this, DashBoardActivity.class);
-                    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent);
                     finish();
                     Log.i("Settings", "onCheckedChanged: CH");
