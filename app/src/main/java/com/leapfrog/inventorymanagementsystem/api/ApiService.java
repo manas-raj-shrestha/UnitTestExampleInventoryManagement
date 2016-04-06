@@ -1,5 +1,6 @@
 package com.leapfrog.inventorymanagementsystem.api;
 
+import com.leapfrog.inventorymanagementsystem.data.Charge;
 import com.leapfrog.inventorymanagementsystem.data.Customer;
 
 import okhttp3.ResponseBody;
@@ -29,7 +30,7 @@ public interface ApiService {
 
     @FormUrlEncoded
     @POST("https://api.stripe.com/v1/charges")
-    Call<ResponseBody> createCharge(
+    Call<Charge> createCharge(
             @Header("Authorization") String authorization,
             @Field("amount") String amount,
             @Field("currency") String currency,

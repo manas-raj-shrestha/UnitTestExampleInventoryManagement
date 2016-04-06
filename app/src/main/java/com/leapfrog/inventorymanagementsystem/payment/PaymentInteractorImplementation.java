@@ -6,6 +6,7 @@ import android.util.Log;
 import com.leapfrog.inventorymanagementsystem.api.DataCallback;
 import com.leapfrog.inventorymanagementsystem.api.EndPoints;
 import com.leapfrog.inventorymanagementsystem.api.EntityInterceptor;
+import com.leapfrog.inventorymanagementsystem.data.Charge;
 import com.leapfrog.inventorymanagementsystem.data.Customer;
 import com.leapfrog.inventorymanagementsystem.data.HawkUtils;
 import com.leapfrog.inventorymanagementsystem.utils.GeneralUtils;
@@ -15,7 +16,6 @@ import com.stripe.android.model.Card;
 import com.stripe.android.model.Token;
 import com.stripe.exception.AuthenticationException;
 
-import okhttp3.ResponseBody;
 import timber.log.Timber;
 
 /**
@@ -86,13 +86,16 @@ public class PaymentInteractorImplementation implements PaymentInteractor {
         //this should be passed from interface
         params[1] = GeneralUtils.getCurrency();
         params[2] = customerId;
-        for (String str : params)
-            Timber.d("Params %s", str);
-        EntityInterceptor.getInstance().createCharge(new DataCallback<ResponseBody>() {
+
+        EntityInterceptor.getInstance().createCharge(new DataCallback<Charge>() {
             @Override
-            public void onResponse(ResponseBody response) {
-                Timber.d("onResponse null ", response == null);
-                callback.onPaymentSuccess();
+            public void onResponse(Charge response) {
+                if (response != null && response.id != null) {
+                    Timber.d("Payment id =%s", response.id);
+                    callback.onPaymentSuccess();
+                    return;
+                }
+                onFailure("Error making payment");
             }
 
             @Override

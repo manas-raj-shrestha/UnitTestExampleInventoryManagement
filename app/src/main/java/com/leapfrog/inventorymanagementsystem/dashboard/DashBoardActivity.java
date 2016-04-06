@@ -11,7 +11,6 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.View;
 
 import com.leapfrog.inventorymanagementsystem.R;
@@ -20,7 +19,6 @@ import com.leapfrog.inventorymanagementsystem.category.CategoryFragment;
 import com.leapfrog.inventorymanagementsystem.models.Item;
 import com.leapfrog.inventorymanagementsystem.navigationdrawer.NavigationDrawerFragment;
 import com.leapfrog.inventorymanagementsystem.navigationdrawer.OnNavigationOptionSelected;
-import com.leapfrog.inventorymanagementsystem.payment.PaymentActivity;
 import com.leapfrog.inventorymanagementsystem.settings.SettingsActivity;
 
 import butterknife.Bind;
@@ -51,17 +49,8 @@ public class DashBoardActivity extends AppCompatActivity implements OnNavigation
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dashboard_activity);
 
-        Log.i("MainActivity", "onCreate: ");
-
         ButterKnife.bind(this);
         setToolbar();
-
-        if (true) {
-            startActivity(PaymentActivity.launchActivity(this,PaymentActivity.PAYMENT_STRIPE,"200"));
-            this.finish();
-            return;
-        }
-
 
         initializeFragments();
         initializeDrawer();
