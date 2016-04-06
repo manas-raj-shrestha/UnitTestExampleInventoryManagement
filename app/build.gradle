@@ -38,7 +38,8 @@ dependencies {
     compile 'com.github.orhanobut:hawk:1.21'
     compile 'com.squareup.retrofit2:retrofit:2.0.1'
     compile 'com.squareup.retrofit2:converter-gson:2.0.1'
-//    androidTestCompile 'junit:junit:4.12'
+    //    androidTestCompile 'junit:junit:4.12'
     compile 'junit:junit:4.12'
     compile 'com.stripe:stripe-android:+'
+    compile 'com.jakewharton.timber:timber:4.1.2'
 }

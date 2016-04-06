@@ -20,6 +20,7 @@ import com.leapfrog.inventorymanagementsystem.category.CategoryFragment;
 import com.leapfrog.inventorymanagementsystem.models.Item;
 import com.leapfrog.inventorymanagementsystem.navigationdrawer.NavigationDrawerFragment;
 import com.leapfrog.inventorymanagementsystem.navigationdrawer.OnNavigationOptionSelected;
+import com.leapfrog.inventorymanagementsystem.payment.PaymentActivity;
 import com.leapfrog.inventorymanagementsystem.settings.SettingsActivity;
 
 import butterknife.Bind;
@@ -54,6 +55,12 @@ public class DashBoardActivity extends AppCompatActivity implements OnNavigation
 
         ButterKnife.bind(this);
         setToolbar();
+
+        if (true) {
+            startActivity(new Intent(this, PaymentActivity.class));
+            this.finish();
+            return;
+        }
 
 
         initializeFragments();

@@ -74,7 +74,7 @@ public class CartRvAdapter extends RecyclerView.Adapter<CartRvAdapter.ViewHolder
                     + " " + currency
                     + cartItems.get(position).getPrice());
         else
-            holder.tvItemName.setText(context.getString(R.string.txt_total) +" "+currency + totalPrice);
+            holder.tvItemName.setText(context.getString(R.string.txt_total) + " " + currency + totalPrice);
     }
 
     @Override
@@ -118,6 +118,10 @@ public class CartRvAdapter extends RecyclerView.Adapter<CartRvAdapter.ViewHolder
         }
 
         return null;
+    }
+
+    public String getTotalPrice() {
+        return String.valueOf(totalPrice);
     }
 
 }

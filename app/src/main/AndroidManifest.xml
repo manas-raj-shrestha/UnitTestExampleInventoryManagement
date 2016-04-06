@@ -12,16 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".dashboard.DashBoardActivity">
-
             android:theme="@style/AppTheme">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity android:name=".itemdetail.ItemDetailActivity" />
         <activity android:name=".cart.CartActivity" />
         <activity android:name=".favorites.FavoritesActivity" />
@@ -31,6 +28,8 @@
         <meta-data
             android:name="com.leapfrog.inventorymanagementsystem.api.GlideConfigurator"
             android:value="GlideModule" />
+
+        <activity android:name=".TestActivity"></activity>
     </application>
 
 </manifest>

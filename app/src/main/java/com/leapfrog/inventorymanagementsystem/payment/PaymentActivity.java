@@ -33,6 +33,7 @@ public class PaymentActivity extends AppCompatActivity implements PaymentView, V
     private PaymentPresenter paymentPresenter;
 
     private Toolbar toolbar;
+    private String price = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +42,7 @@ public class PaymentActivity extends AppCompatActivity implements PaymentView, V
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         int payment = getIntent().getIntExtra(PAYMENT, PAYMENT_STRIPE);
+        price = getIntent().getStringExtra(PRICE);
         getSupportActionBar().setIcon(payment == PAYMENT_STRIPE ? R.drawable.ic_stripe_logo : R.drawable.ic_wepay_logo);
         getSupportActionBar().setTitle("");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -118,7 +120,7 @@ public class PaymentActivity extends AppCompatActivity implements PaymentView, V
             Toast.makeText(PaymentActivity.this, R.string.expiry_year_empty, Toast.LENGTH_SHORT).show();
         } else {
             try {
-                paymentPresenter.makePaymentValidation(cardNumber, cardExpiryMonth, cardExpiryYear, cardCVC);
+                paymentPresenter.makePaymentValidation(cardNumber, cardExpiryMonth, cardExpiryYear, cardCVC,price);
             } catch (AuthenticationException e) {
                 e.printStackTrace();
             }
@@ -149,11 +151,12 @@ public class PaymentActivity extends AppCompatActivity implements PaymentView, V
 
 
     public static final int PAYMENT_STRIPE = 0x1, PAYMENT_WEPAY = 0x2;
-    private static final String PAYMENT = "payment";
+    private static final String PAYMENT = "payment", PRICE = "price";
 
-    public static Intent launchActivity(Context context, int payment) {
+    public static Intent launchActivity(Context context, int payment, String price) {
         Intent intent = new Intent(context, PaymentActivity.class);
         intent.putExtra(PAYMENT, payment);
+        intent.putExtra(PRICE, price);
         return intent;
     }
 }

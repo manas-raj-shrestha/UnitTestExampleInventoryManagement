@@ -7,5 +7,5 @@ import com.stripe.exception.AuthenticationException;
  */
 public interface PaymentPresenter {
 
-    void makePaymentValidation(String cardNumber, int cardExpMonth, int cardExpYear, String cardCVC) throws AuthenticationException;
+    void makePaymentValidation(String cardNumber, int cardExpMonth, int cardExpYear, String cardCVC,String price) throws AuthenticationException;
 }
