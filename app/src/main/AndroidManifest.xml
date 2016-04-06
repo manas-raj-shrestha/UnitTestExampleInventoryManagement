@@ -27,6 +27,10 @@
         <activity android:name=".favorites.FavoritesActivity" />
         <activity android:name=".settings.SettingsActivity" />
         <activity android:name=".payment.PaymentActivity" />
+
+        <meta-data
+            android:name="com.leapfrog.inventorymanagementsystem.api.GlideConfigurator"
+            android:value="GlideModule" />
     </application>
 
 </manifest>
