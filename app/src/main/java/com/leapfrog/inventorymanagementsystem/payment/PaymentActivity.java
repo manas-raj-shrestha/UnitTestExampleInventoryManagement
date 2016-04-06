@@ -53,6 +53,7 @@ public class PaymentActivity extends AppCompatActivity implements PaymentView, V
 
         initViews();
 
+
     }
 
     @Override
@@ -120,7 +121,12 @@ public class PaymentActivity extends AppCompatActivity implements PaymentView, V
             Toast.makeText(PaymentActivity.this, R.string.expiry_year_empty, Toast.LENGTH_SHORT).show();
         } else {
             try {
-                paymentPresenter.makePaymentValidation(cardNumber, cardExpiryMonth, cardExpiryYear, cardCVC,price);
+                long mainPrice = Long.valueOf(price);
+                if (mainPrice / 1000 < 1) {
+                    mainPrice += (1000 - mainPrice);
+                    price = String.valueOf(mainPrice);
+                }
+                paymentPresenter.makePaymentValidation(cardNumber, cardExpiryMonth, cardExpiryYear, cardCVC, price);
             } catch (AuthenticationException e) {
                 e.printStackTrace();
             }

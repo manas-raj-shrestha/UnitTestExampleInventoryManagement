@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.leapfrog.inventorymanagementsystem.api.ApiUtils;
 import com.leapfrog.inventorymanagementsystem.api.EndPoints;
+import com.leapfrog.inventorymanagementsystem.data.HawkUtils;
 
 import timber.log.Timber;
 
@@ -17,6 +18,8 @@ public class TestActivity extends AppCompatActivity {
 
         String encodedString = ApiUtils.generateBasicAuthHeader(EndPoints.STRIPE_SECRET_KEY, "");
         Timber.d("EncodedString =%s",encodedString);
+        Timber.d("Customer Id =%s", HawkUtils.getCustomerId());
+
 
     }
 }

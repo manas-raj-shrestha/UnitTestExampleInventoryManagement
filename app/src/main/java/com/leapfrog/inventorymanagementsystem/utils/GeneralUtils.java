@@ -5,6 +5,7 @@ import android.content.res.Resources;
 import android.util.DisplayMetrics;
 
 import com.leapfrog.inventorymanagementsystem.MisumiApplication;
+import com.leapfrog.inventorymanagementsystem.data.HawkUtils;
 import com.leapfrog.inventorymanagementsystem.models.Item;
 
 import java.util.ArrayList;
@@ -51,7 +52,16 @@ public class GeneralUtils {
         return MisumiApplication.getContext().getString(stringId);
     }
 
-
+    public static String getCurrency() {
+        switch (HawkUtils.getLanguage()) {
+            case ENGLISH:
+                return "usd";
+            case CHINESE:
+                return "cny";
+            default:
+                return "jpy";
+        }
+    }
 
 
 }

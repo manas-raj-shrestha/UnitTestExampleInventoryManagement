@@ -57,7 +57,7 @@ public class DashBoardActivity extends AppCompatActivity implements OnNavigation
         setToolbar();
 
         if (true) {
-            startActivity(new Intent(this, PaymentActivity.class));
+            startActivity(PaymentActivity.launchActivity(this,PaymentActivity.PAYMENT_STRIPE,"200"));
             this.finish();
             return;
         }
