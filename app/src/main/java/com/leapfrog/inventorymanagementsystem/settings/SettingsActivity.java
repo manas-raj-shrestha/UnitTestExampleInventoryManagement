@@ -43,6 +43,7 @@ public class SettingsActivity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        LocaleHelper.onCreate(this, LocaleHelper.getLanguage(this));
         setContentView(R.layout.activity_settings);
         ButterKnife.bind(this);
 
@@ -107,7 +108,7 @@ public class SettingsActivity extends AppCompatActivity {
                     HawkUtils.setLanguage(Language.CHINESE);
                     LocaleHelper.setLocale(SettingsActivity.this, "zh");
                     Intent intent = new Intent(SettingsActivity.this, DashBoardActivity.class);
-                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent);
                     finish();
                     Log.i("Settings", "onCheckedChanged: CH");
@@ -117,7 +118,7 @@ public class SettingsActivity extends AppCompatActivity {
                     HawkUtils.setLanguage(Language.ENGLISH);
                     LocaleHelper.setLocale(SettingsActivity.this, "en");
                     Intent intent = new Intent(SettingsActivity.this, DashBoardActivity.class);
-                    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent);
                     finish();
                     Log.i("Settings", "onCheckedChanged: EN" + idx);
@@ -127,7 +128,7 @@ public class SettingsActivity extends AppCompatActivity {
                     HawkUtils.setLanguage(Language.JAPNEESE);
                     LocaleHelper.setLocale(SettingsActivity.this, "ja");
                     Intent intent = new Intent(SettingsActivity.this, DashBoardActivity.class);
-                    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent);
                     finish();
                     Log.i("Settings", "onCheckedChanged: JP" + idx);
@@ -146,5 +147,8 @@ public class SettingsActivity extends AppCompatActivity {
         super.onDestroy();
     }
 
-
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
 }

@@ -2,6 +2,7 @@ package com.leapfrog.inventorymanagementsystem.dashboard;
 
 import android.app.FragmentTransaction;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v4.content.ContextCompat;
@@ -16,6 +17,7 @@ import android.view.View;
 import com.leapfrog.inventorymanagementsystem.R;
 import com.leapfrog.inventorymanagementsystem.cart.CartActivity;
 import com.leapfrog.inventorymanagementsystem.category.CategoryFragment;
+import com.leapfrog.inventorymanagementsystem.languagechose.LocaleHelper;
 import com.leapfrog.inventorymanagementsystem.models.Item;
 import com.leapfrog.inventorymanagementsystem.navigationdrawer.NavigationDrawerFragment;
 import com.leapfrog.inventorymanagementsystem.navigationdrawer.OnNavigationOptionSelected;
@@ -24,6 +26,7 @@ import com.leapfrog.inventorymanagementsystem.settings.SettingsActivity;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import timber.log.Timber;
 
 /**
  * Dashboard screen
@@ -47,6 +50,9 @@ public class DashBoardActivity extends AppCompatActivity implements OnNavigation
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Timber.d("onCreate called");
+        Timber.d("Language :%s", LocaleHelper.getLanguage(this));
+        LocaleHelper.onCreate(this, LocaleHelper.getLanguage(this));
         setContentView(R.layout.dashboard_activity);
 
         ButterKnife.bind(this);
@@ -126,5 +132,20 @@ public class DashBoardActivity extends AppCompatActivity implements OnNavigation
                 startActivity(new Intent(DashBoardActivity.this, CartActivity.class));
                 break;
         }
+    }
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        // refresh your views here
+        super.onConfigurationChanged(newConfig);
+    }
+
+    @Override
+    protected void onResume() {
+        Timber.d("Language :%s", LocaleHelper.getLanguage(this));
+//        LocaleHelper.onCreate(this, LocaleHelper.getLanguage(this));
+        super.onResume();
+        Timber.d("onResume called");
+
     }
 }

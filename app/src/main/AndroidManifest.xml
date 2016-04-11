@@ -3,6 +3,12 @@
     package="com.leapfrog.inventorymanagementsystem">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
 
     <application
         android:name=".MisumiApplication"
@@ -11,7 +17,6 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
         <activity android:name=".dashboard.DashBoardActivity">
-            android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

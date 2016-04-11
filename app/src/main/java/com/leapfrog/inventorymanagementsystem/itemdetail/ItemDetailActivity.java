@@ -23,6 +23,7 @@ import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.leapfrog.inventorymanagementsystem.R;
 import com.leapfrog.inventorymanagementsystem.data.Extras;
+import com.leapfrog.inventorymanagementsystem.languagechose.LocaleHelper;
 import com.leapfrog.inventorymanagementsystem.models.Item;
 import com.leapfrog.inventorymanagementsystem.payment.PaymentActivity;
 
@@ -63,6 +64,7 @@ public class ItemDetailActivity extends AppCompatActivity implements ItemDetailC
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        LocaleHelper.onCreate(this, LocaleHelper.getLanguage(this));
         setContentView(R.layout.activity_item_detail);
 
         ButterKnife.bind(this);
@@ -148,9 +150,14 @@ public class ItemDetailActivity extends AppCompatActivity implements ItemDetailC
      *
      * @param item
      */
-    private void setData(Item item){
+    private void setData(Item item) {
         tvPrice.setText(getString(R.string.chinese_currency) + item.getPrice());
         tvItemDesc.setText(item.getItemDescription());
         tvBrand.setText(item.getDealerName());
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
     }
 }

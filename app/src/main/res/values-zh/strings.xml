@@ -13,6 +13,11 @@
     <string name="txt_password">密码</string>
     <string name="txt_forgot_password">忘记密码了吗</string>
 
+    //settings activity
+    <string name="txt_settings">設定</string>
+    <string name="txt_language">言語</string>
+
+
     //cart activity
     <string name="txt_cart">大车</string>
     <string name="txt_total">总 : </string>
@@ -60,10 +65,10 @@
 
     <!-- Navigation Drawer Menu Items -->
     <string-array name="nav_drawer_items">
-        <item >线</item>
-        <item >控制</item>
-        <item >刀子和工具</item>
-        <item >设置</item>
+        <item>线</item>
+        <item>控制</item>
+        <item>刀子和工具</item>
+        <item>设置</item>
     </string-array>
 
     <string name="card_name">云珠</string>
