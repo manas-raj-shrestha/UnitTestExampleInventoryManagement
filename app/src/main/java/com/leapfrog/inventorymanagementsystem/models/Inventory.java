@@ -230,4 +230,16 @@ public class Inventory implements InventoryActions {
         hashMap.put("QEFD", R.drawable.qefd);
     }
 
+    private void getHomeJsonData(){
+
+        try {
+            JSONObject homeJsonObject = new JSONObject(loadJSONFromAsset());
+            String faculty = homeJsonObject.getString("faculty");
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+
+    }
+
 }

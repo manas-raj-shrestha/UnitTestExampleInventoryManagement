@@ -18,6 +18,7 @@ import com.leapfrog.inventorymanagementsystem.R;
 import com.leapfrog.inventorymanagementsystem.data.Extras;
 import com.leapfrog.inventorymanagementsystem.events.OnItemSelectListener;
 import com.leapfrog.inventorymanagementsystem.itemdetail.ItemDetailActivity;
+import com.leapfrog.inventorymanagementsystem.languagechose.LocaleHelper;
 import com.leapfrog.inventorymanagementsystem.models.Item;
 import com.leapfrog.inventorymanagementsystem.payment.PaymentActivity;
 
@@ -52,6 +53,7 @@ public class CartActivity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        LocaleHelper.onCreate(this, LocaleHelper.getLanguage(this));
         setContentView(R.layout.cart_activity);
 
         ButterKnife.bind(this);
